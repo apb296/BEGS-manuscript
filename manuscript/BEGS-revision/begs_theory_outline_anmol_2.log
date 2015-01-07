@@ -1,0 +1,774 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.10.23)  22 SEP 2014 16:59
+entering extended mode
+ %&-line parsing enabled.
+**begs_theory_outline_anmol_2.tex
+(./begs_theory_outline_anmol_2.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./chadstyle.sty
+(/usr/share/texmf-texlive/tex/latex/psnfss/utopia.sty
+Package: utopia 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
+
+
+Package utopia Warning: This package is to be regarded as obsolete.
+(utopia)                See the PSNFSS documentation.
+
+) (/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count99
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip48
+\f@ncyO@elh=\skip49
+\f@ncyO@erh=\skip50
+\f@ncyO@olh=\skip51
+\f@ncyO@orh=\skip52
+\f@ncyO@elf=\skip53
+\f@ncyO@erf=\skip54
+\f@ncyO@olf=\skip55
+\f@ncyO@orf=\skip56
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count100
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/latex/oberdiek/pdfcolmk.sty
+Package: pdfcolmk 2008/08/11 v1.2 PDFtex COLor MarK (HO)
+Package pdfcolmk Info: The color stack of pdfTeX >= 1.40 is used. Therefore
+(pdfcolmk)             this package is not necessary and not loaded.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen114
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 2864.
+Package hyperref Info: Option `breaklinks' set `true' on input line 2864.
+Package hyperref Info: Option `bookmarks' set `false' on input line 2864.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 2864.
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks OFF on input line 3197.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count103
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
+\Field@toks=\toks21
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring ON on input line 4395.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count104
+\c@Item=\count105
+)
+
+Package hyperref Warning: Wrong driver `hdvips.def';
+(hyperref)                pdfTeX is running in PDF mode.
+(hyperref)                Forcing driver `hpdftex.def'.
+
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count106
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hypcap.sty
+Package: hypcap 2008/09/08 v1.10 Adjusting anchors of captions (HO)
+))
+\c@proposition=\count107
+
+(/usr/share/texmf-texlive/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count108
+\c@@ppsavesec=\count109
+\c@@ppsaveapp=\count110
+)
+(/usr/share/texmf-texlive/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count111
+\output=\toks22
+\linenoprevgraf=\count112
+\linenumbersep=\dimen117
+\linenumberwidth=\dimen118
+\c@linenumber=\count113
+\c@pagewiselinenumber=\count114
+\c@LN@truepage=\count115
+
+
+Package lineno Warning: Option [displaymath] is obsolete -- default now!.
+
+\c@internallinenumber=\count116
+\c@internallinenumbers=\count117
+\quotelinenumbersep=\dimen119
+\bframerule=\dimen120
+\bframesep=\dimen121
+\bframebox=\box28
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+\symboldlasy=\mathgroup10
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2009/10/17 v2.4 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2009/10/17 v2.4 Base part for package epstopdf
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+15.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 433.
+(/usr/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2009/10/26 v1.1 Configuration of epstopdf for TeX Live
+)))
+\c@theorem=\count118
+\c@assumption=\count119
+\c@axiom=\count120
+\c@conjecture=\count121
+\c@corollary=\count122
+\c@definition=\count123
+\c@lemma=\count124
+\c@example=\count125
+\c@exercise=\count126
+\c@notation=\count127
+\c@remark=\count128
+
+(./tcilatex.tex
+TCILATEX Macros for Scientific Word 3.5 <19 July 2000>.
+NOTICE: This macro file is NOT proprietary and may be freely copied and distrib
+uted.
+\@hour=\count129
+\@minute=\count130
+\GRAPHICSTYPE=\count131
+\draft=\count132
+\dispkind=\count133
+\c@chapter=\count134
+\theight=\dimen122
+LaTeX Info: Redefining \rm on input line 597.
+LaTeX Info: Redefining \sf on input line 598.
+LaTeX Info: Redefining \tt on input line 599.
+LaTeX Info: Redefining \bf on input line 600.
+LaTeX Info: Redefining \it on input line 601.
+LaTeX Info: Redefining \sl on input line 602.
+LaTeX Info: Redefining \sc on input line 603.
+\c@equationnumber=\count135
+amsmath already loaded amsgen already loaded)
+
+LaTeX Warning: Unused global option(s):
+    [11.5pt].
+
+(./begs_theory_outline_anmol_2.aux)
+\openout1 = `begs_theory_outline_anmol_2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Try loading font information for OT1+put on input line 111.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1put.fd
+File: ot1put.fd 2001/06/04 font definitions for OT1/put.
+)
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count136
+\scratchdimen=\dimen123
+\scratchbox=\box29
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen124
+\MPnumerator=\count140
+\everyMPtoPDFconversion=\toks24
+)
+Package hyperref Info: Link coloring ON on input line 111.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+\c@section@level=\count141
+)
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+\AtBeginShipoutBox=\box30
+LaTeX Font Info:    Try loading font information for U+msa on input line 123.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 123.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 123.
+
+(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 123.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 123.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 123.
+ [1
+
+
+Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 161.
+
+
+Package natbib Warning: Citation `newcomb1865critical' on page 1 undefined on i
+nput line 161.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 I
+       n most of this paper, we study an optimal  government policy when age...
+[1]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (9.35548pt too wide) in paragraph at lines 363--371
+\OT1/put/m/it/10 there ex-ist se-quences $[][]$ and $[][]$ that sat-isfy ([][]6
+[][]) such that $[][]$ and $[][]$
+ []
+
+[3]
+
+Package natbib Warning: Citation `Barro1974' on page 4 undefined on input line 
+434.
+
+
+Package natbib Warning: Citation `Wallace1981' on page 4 undefined on input lin
+e 438.
+
+
+Package natbib Warning: Citation `sargent1987dynamic' on page 4 undefined on in
+put line 438.
+
+[4]
+
+Package natbib Warning: Citation `Bryant1984' on page 5 undefined on input line
+ 476.
+
+
+Package natbib Warning: Citation `Sargent1987' on page 5 undefined on input lin
+e 476.
+
+
+Package natbib Warning: Citation `Yared2012' on page 5 undefined on input line 
+509.
+
+
+Package natbib Warning: Citation `Yared2013' on page 5 undefined on input line 
+509.
+
+[5]
+
+LaTeX Warning: Reference `appndx: borrowing constraints example' on page 6 unde
+fined on input line 562.
+
+
+LaTeX Warning: Reference `appndx: affine eqm nec and stuff' on page 6 undefined
+ on input line 675.
+
+
+Package natbib Warning: Citation `Magill1994' on page 6 undefined on input line
+ 675.
+
+
+Package natbib Warning: Citation `Constantinides1996' on page 6 undefined on in
+put line 675.
+
+
+Overfull \hbox (4.97308pt too wide) in paragraph at lines 675--682
+\OT1/put/b/n/10 Proof. \OT1/put/m/n/10 Ne-ces-sity is ob-vi-ous. In ap-pendix [
+], we use ar-gu-ments of \OT1/put/b/n/10 ? \OT1/put/m/n/10 and \OT1/put/b/n/10 
+? \OT1/put/m/n/10 to show that any $[][]$
+ []
+
+[6]
+
+Package natbib Warning: Citation `LucasJr.1983' on page 7 undefined on input li
+ne 691.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+
+Package natbib Warning: Citation `Kydland1980' on page 8 undefined on input lin
+e 758.
+
+
+Package natbib Warning: Citation `Farhi2010' on page 8 undefined on input line 
+758.
+
+
+Overfull \hbox (27.31424pt too wide) in paragraph at lines 757--761
+\OT1/put/m/n/10 prob-lem re-cur-sively. For the pur-pose of con-struct-ing a re
+-cur-sive rep-re-sen-ta-tion, let $\OML/cmm/b/it/10 x \OT1/cmr/m/n/10 = [][] []
+$\OT1/put/m/n/10 ,
+ []
+
+
+Underfull \vbox (badness 2617) has occurred while \output is active []
+
+ [8]
+[9] [10] [11]
+
+LaTeX Warning: Reference `' on page 12 undefined on input line 945.
+
+[12]
+LaTeX Font Info:    Try loading font information for OMS+put on input line 951.
+
+ (/usr/share/texmf-texlive/tex/latex/psnfss/omsput.fd
+File: omsput.fd 
+)
+LaTeX Font Info:    Font shape `OMS/put/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 951.
+
+<plots/ErgodicQL.pdf, id=207, 1045.9075pt x 555.07375pt>
+File: plots/ErgodicQL.pdf Graphic file (type pdf)
+
+<use plots/ErgodicQL.pdf>
+Overfull \hbox (50.64592pt too wide) in paragraph at lines 968--969
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `Sec: ricardian eq' on page 13 undefined on input line
+ 978.
+
+[13] [14 <./plots/ErgodicQL.pdf>]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 1010.
+
+Overfull \hbox (13.64594pt too wide) detected at line 1010
+[]\OMS/cmsy/m/n/9 f[] \OML/cmm/m/it/9 T[] \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ; [
+] [][] \OT1/cmr/m/n/9 = [][]([])\OML/cmm/m/it/9 ; [] B[] \OT1/cmr/m/n/9 = \OML/
+cmm/m/it/9 B[][] [] T[] > \OT1/cmr/m/n/9 0[]\OML/cmm/m/it/9 ; [] [][] \OT1/cmr/
+m/n/9 = [][]([])\OML/cmm/m/it/9 ; [] B[] \OT1/cmr/m/n/9 = \OMS/cmsy/m/n/9 B\OT1
+/cmr/m/n/9 ([])\OMS/cmsy/m/n/9 g \OML/cmm/m/it/9 > \OT1/cmr/m/n/9 0
+ []
+
+[15]
+Overfull \hbox (1.81621pt too wide) in paragraph at lines 1068--1070
+[]\OT1/put/m/n/10 For the IID case, the op-ti-mal pol-icy solves the fol-low-in
+g Bell-man equa-tion for $\OML/cmm/b/it/10 x\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s
+[]\OT1/cmr/m/n/10 ) = \OML/cmm/b/it/10 x\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+LaTeX Warning: Reference `apndx: numerical methods' on page 16 undefined on inp
+ut line 1084.
+
+[16]
+Overfull \hbox (4.82817pt too wide) detected at line 1108
+[]\OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\O
+ML/cmm/m/it/10 ; []; s\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ [] [][]\OML/cmm/m/
+it/10 Z[]\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/1
+0 ; []; s\OT1/cmr/m/n/10 ) + [][]\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/1
+0 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []; s\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
+^^@ [][][]\U/msb/m/n/10 E\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\
+OT1/cmr/m/n/10 )\OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10 s\OT1/
+cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/
+n/10 )\OML/cmm/m/it/10 ; s\OT1/cmr/m/n/10 ) = 0\OML/cmm/m/it/10 :[]
+ []
+
+
+LaTeX Warning: Reference `lem.1' on page 17 undefined on input line 1118.
+
+
+LaTeX Warning: Reference `' on page 17 undefined on input line 1118.
+
+
+Overfull \hbox (4.51183pt too wide) in paragraph at lines 1133--1135
+[]\OT1/put/m/it/10 Suppose that $\OML/cmm/m/it/10 g < []\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 s\OT1/cmr/m/n/10 )$ \OT1/put/m/it/10 for all $\OML/cmm/m/it/10 s:$ \
+OT1/put/m/it/10 Let $\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/
+cmr/m/n/10 )$ \OT1/put/m/it/10 be the gross in-ter-est rates and $\OML/cmm/m/it
+/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s
+\OT1/cmr/m/n/10 ) []$ 
+ []
+
+[17]
+
+Package natbib Warning: Citation `Barro1979' on page 18 undefined on input line
+ 1157.
+
+
+Package natbib Warning: Citation `Ray2002' on page 18 undefined on input line 1
+172.
+
+
+Package natbib Warning: Citation `Albanesi2012' on page 18 undefined on input l
+ine 1172.
+
+[18]
+
+LaTeX Warning: Reference `apndx: numerical methods' on page 19 undefined on inp
+ut line 1197.
+
+
+LaTeX Warning: Reference `' on page 19 undefined on input line 1215.
+
+[19]
+Overfull \hbox (4.66174pt too wide) in paragraph at lines 1220--1221
+\OT1/put/m/n/10 As a last step in this anal-y-sis we fi-nally turn to nu-mer-i-
+cal meth-ods and solve for more gen-eral economies
+ []
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 1235.
+
+<plots/badshock.pdf, id=309, 798.985pt x 414.54875pt>
+File: plots/badshock.pdf Graphic file (type pdf)
+ <use plots/badshock.pdf>
+[20] <plots/convergence.pdf, id=319, 819.06pt x 422.57875pt>
+File: plots/convergence.pdf Graphic file (type pdf)
+
+<use plots/convergence.pdf> [21 <./plots/badshock.pdf>]
+<plots/comp_statics.pdf, id=334, 1033.8625pt x 478.78876pt>
+File: plots/comp_statics.pdf Graphic file (type pdf)
+
+<use plots/comp_statics.pdf> <plots/spanning.pdf, id=336, 578.16pt x 433.62pt>
+File: plots/spanning.pdf Graphic file (type pdf)
+
+<use plots/spanning.pdf> [22 <./plots/convergence.pdf> <./plots/comp_statics.pd
+f>] (./begs_theory_outline_anmol_2.bbl [23 <./plots/spanning.pdf>]
+Underfull \hbox (badness 1033) in paragraph at lines 45--50
+\OT1/put/m/n/10 www . sciencedirect . com / science / article / pii / 016518898
+0900524$[][], DOI: [][]$http : / / dx . doi . org / http : / / dx .
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 52--57
+[]\OT1/put/b/n/10 Lucas, Robert E, and Nancy L Stokey. \OT1/put/m/n/10 1983. ``
+Op-ti-mal fis-cal and mon-e-tary pol-icy in an
+ []
+
+
+Underfull \hbox (badness 6944) in paragraph at lines 52--57
+\OT1/put/m/n/10 econ-omy with-out cap-i-tal.'' \OT1/put/m/it/10 Jour-nal of Mon
+-e-tary Eco-nomics\OT1/put/m/n/10 , 12(1): 55--93, URL: [][]$http : / /
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 52--57
+\OT1/put/m/n/10 www . sciencedirect . com / science / article / pii / 030439328
+3900491$[][], DOI: [][]$http : / / dx . doi . org / http : / / dx .
+ []
+
+[24]) [25]
+
+Package natbib Warning: There were undefined citations.
+
+(./begs_theory_outline_anmol_2.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7095 strings out of 493848
+ 97699 string characters out of 1152822
+ 179999 words of memory out of 3000000
+ 10032 multiletter control sequences out of 15000+50000
+ 79620 words of font info for 121 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 45i,16n,45p,964b,648s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cmextra/cmmib8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy5.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb></usr/share/texmf-texlive/fonts/type1/adobe/utopia/putb8a.pfb>
+</usr/share/texmf-texlive/fonts/type1/adobe/utopia/putbi8a.pfb></usr/share/texm
+f-texlive/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf-texlive/fonts/t
+ype1/adobe/utopia/putri8a.pfb>
+Output written on begs_theory_outline_anmol_2.pdf (26 pages, 648415 bytes).
+PDF statistics:
+ 548 PDF objects out of 1000 (max. 8388607)
+ 150 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

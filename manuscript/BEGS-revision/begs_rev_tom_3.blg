@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: begs_rev_tom_3.aux
+The style file: econ_aer.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: BEGS.bib
+Warning--I didn't find a database entry for "LucasJr"
+Warning--I didn't find a database entry for "Prescott1992"
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Kuhn2014
+while executing---line 6581 of file econ_aer.bst
+Warning--to sort, need author or key in Kuhn2014
+Warning--empty note in Bassetto1999
+Warning--empty author in Kuhn2014
+Warning--empty journal in Kuhn2014
+Warning--there is no volume, number, and pages in Kuhn2014
+Warning--there's a number but no volume in shin2006ramsey
+Warning--empty note in Werning2012
+Warning--empty note in Yared2012
+You've used 28 entries,
+            6548 wiz_defined-function locations,
+            1454 strings with 14350 characters,
+and the built_in function-call counts, 29926 in all, are:
+= -- 4919
+> -- 841
+< -- 77
++ -- 296
+- -- 262
+* -- 1864
+:= -- 3589
+add.period$ -- 25
+call.type$ -- 28
+change.case$ -- 193
+chr.to.int$ -- 26
+cite$ -- 39
+duplicate$ -- 955
+empty$ -- 1440
+format.name$ -- 277
+if$ -- 7577
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 93
+num.names$ -- 203
+pop$ -- 330
+preamble$ -- 1
+purify$ -- 192
+quote$ -- 0
+skip$ -- 2372
+stack$ -- 0
+substring$ -- 2855
+swap$ -- 204
+text.length$ -- 94
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 498
+warning$ -- 8
+while$ -- 211
+width$ -- 0
+write$ -- 455
+(There was 1 error message)

@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: begs_rev_anmol_6.aux
+The style file: econ_aer.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: BEGS.bib
+Warning--I didn't find a database entry for "Prescott1992"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Warning--empty note in Bassetto1999
+Warning--empty note in Evans2014
+Warning--empty journal in Kuhn2014
+Warning--there is no volume, number, and pages in Kuhn2014
+Warning--empty note in QuadriniRull2014
+Warning--there's a number but no volume in shin2006ramsey
+Warning--empty note in Werning2012
+Warning--empty note in Yared2012
+You've used 30 entries,
+            6548 wiz_defined-function locations,
+            1463 strings with 14648 characters,
+and the built_in function-call counts, 31587 in all, are:
+= -- 5179
+> -- 920
+< -- 82
++ -- 321
+- -- 286
+* -- 1952
+:= -- 3855
+add.period$ -- 25
+call.type$ -- 30
+change.case$ -- 209
+chr.to.int$ -- 29
+cite$ -- 38
+duplicate$ -- 1000
+empty$ -- 1501
+format.name$ -- 300
+if$ -- 7974
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 99
+num.names$ -- 226
+pop$ -- 359
+preamble$ -- 1
+purify$ -- 208
+quote$ -- 0
+skip$ -- 2481
+stack$ -- 0
+substring$ -- 2962
+swap$ -- 204
+text.length$ -- 94
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 532
+warning$ -- 8
+while$ -- 229
+width$ -- 0
+write$ -- 482
+(There were 9 warnings)

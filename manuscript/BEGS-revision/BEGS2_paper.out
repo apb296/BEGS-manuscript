@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{Environment}{}
+\BOOKMARK [1][-]{section.3}{Two Ramsey problems}{}
+\BOOKMARK [2][-]{subsection.3.1}{Motivation for quasi-linear U}{section.3}
+\BOOKMARK [1][-]{section.4}{Quasi-linear preferences}{}
+\BOOKMARK [2][-]{subsection.4.1}{The Optimal Payoff Matrix}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{The Inverse of P* Again}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Long Run Assets}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{Economic forces driving convergence}{section.4}
+\BOOKMARK [1][-]{section.5}{More than Two Shocks}{}
+\BOOKMARK [2][-]{subsection.5.1}{Steady State Payoff Vectors}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Ergodic Distribution of Linearized Policy Rules}{section.5}
+\BOOKMARK [1][-]{section.6}{Turning on risk-aversion}{}
+\BOOKMARK [2][-]{subsection.6.1}{Computational and analytic strategy}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{Motivation to focus on risk-free bond economy}{section.6}
+\BOOKMARK [2][-]{subsection.6.3}{Allowing nonnegative transfers}{section.6}
+\BOOKMARK [1][-]{section.7}{Concluding remarks}{}
+\BOOKMARK [1][-]{appendix.A}{Linearization Methods}{}
+\BOOKMARK [1][-]{appendix.B}{Numerical Approximations of Bellman Equations}{}
+\BOOKMARK [1][-]{appendix.C}{Rate of Convergence}{}

@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: begs_revision_anmol_1.aux
+The style file: econ_aer.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: BEGS.bib
+I was expecting a `,' or a `}'---line 316 of file BEGS.bib
+ : 
+ : year = {2014},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Kuhn2014
+while executing---line 6581 of file econ_aer.bst
+Warning--to sort, need author or key in Kuhn2014
+Warning--empty author in Kuhn2014
+Warning--there's no year in Kuhn2014
+Warning--empty journal in Kuhn2014
+Warning--there is no volume, number, and pages in Kuhn2014
+Warning--empty note in Yared2012
+You've used 16 entries,
+            6548 wiz_defined-function locations,
+            1367 strings with 12193 characters,
+and the built_in function-call counts, 17345 in all, are:
+= -- 2849
+> -- 467
+< -- 45
++ -- 162
+- -- 144
+* -- 1074
+:= -- 2059
+add.period$ -- 15
+call.type$ -- 16
+change.case$ -- 110
+chr.to.int$ -- 16
+cite$ -- 25
+duplicate$ -- 561
+empty$ -- 845
+format.name$ -- 149
+if$ -- 4402
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 57
+num.names$ -- 117
+pop$ -- 193
+preamble$ -- 1
+purify$ -- 110
+quote$ -- 0
+skip$ -- 1390
+stack$ -- 0
+substring$ -- 1674
+swap$ -- 130
+text.length$ -- 54
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 285
+warning$ -- 6
+while$ -- 125
+width$ -- 0
+write$ -- 264
+(There were 2 error messages)

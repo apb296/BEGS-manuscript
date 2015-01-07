@@ -1,0 +1,71 @@
+
+
+List of results
+----------------------
+----------------------
+
+
+a] QL economy
+----------------
+Under the assumption that agents have 
+	i] ql preferences, 
+	ii] one agent has zero productivity and 
+	iii] non negativity constraint on consumption of the unproductive agent
+	iv] iid aggregate shocks
+
+we have the following results
+
+Result 1] with a risk free bond, for a high enough pareto weight on the productive agent we have taxes and government debt diverging to infinity
+
+
+
+Result 2] with a bond that prefectly spans aggregate risk, for a high enough pareto weight on the productive agent the government assets (and taxes) converge to a steady state level. the sign and the maginitude of correlation matter for the sign and the magnitude of the steady state level of assets. 
+
+Result 3] with a bond that imperfectly spans aggregate risk, for a high enough pareto weight on the productive agent, we have an approximation result that relates volatility of debt, taxes with how imperfect the markets. 
+
+
+Result 4] with a risk free bond and , for a low enough pareto weight on the productive agent we have taxes and government debt converging to a finite value. There is a positive relationship between the pareto weight of the productive agent and the level of government assets
+
+
+
+b] Risk aversion
+
+We can construct an example with 2 agents, log-quadratic preferences and binary iid shocks to show existence of steady state and say something about the sign of the steady state assets
+
+c] Persistence
+
+with persistence, we can construct an example similiar to the ql environment.  
+
+
+-----------
+
+
+
+Message to David
+
+1] Consider the following environment AMSS + Risky debt and a constraint T=0. Explain the relationship between P(s) and long run dynamics. this will have three parts, P(s)=1, P(s) aligned with g(s) and apporximation result.
+
+2] Now say that T=0 constraint can come out naturally  by introducing concerns for redistribution - Add a mass of unproductive agents with non negative consumption and allow unrestricted transfers
+Show that for high enough Pareto weight on the productive agent we a have T=0 and exactly same dynamics as before.
+
+3] To explain the link between concerns for redistribution and incentives for accumalting assets work out the case when pareto weights on the productive agent are low. I think we have the result that  debt is either constant or converges to a level that depends on the pareto weights. transfers will be used i.o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

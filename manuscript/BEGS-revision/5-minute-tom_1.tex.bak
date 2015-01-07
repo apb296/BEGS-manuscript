@@ -1,0 +1,247 @@
+\documentclass[thmsb,11pt]{article}
+\usepackage{amsfonts}
+\usepackage{appendix}
+\usepackage[pagewise,displaymath, mathlines]{lineno}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{refcount}
+\usepackage{natbib}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{epstopdf}
+\setcounter{MaxMatrixCols}{10}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{notation}{Notation}
+\newtheorem{remark}{Remark}
+\newcommand{\bmat}{\begin{matrix}}
+\newcommand{\emat}{\end{matrix}}
+\newcommand{\ov}{\overline}
+\newcommand{\un}{\underline}
+\newcommand{\EE}{\mathbb E}
+\newcommand{\var}{\mathrm{var}}
+\newcommand{\cov}{\mathrm{cov}}
+\newcommand{\corr}{\mathrm{corr}}
+\newcommand{\dd}{\displaystyle}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\LL}{\mathbb L}
+\newcommand{\MM}{\mathbb M}
+\newcommand{\KK}{\mathbb K}
+\newcommand{\HH}{\mathbb H}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\Pin}{P_{\text{in}}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bp}{\mathbf{p}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\cP}{{\cal P}}
+\newcommand{\bB}{\mathbf B}
+\newcommand{\bM}{\mathbf M}
+\newcommand{\bS}{\mathbf S}
+\newcommand{\phis}{\varphi}
+\newcommand{\barphis}{\overline\phis}
+\newcommand{\se}{\text{se}}
+\newcommand{\daga}{a^\dagger}
+\newcommand{\devides}{\bigl |}
+\newcommand{\eval}{\biggl |}
+\newcommand{\ybar}{\overline y}
+\newcommand{\bWhat}{\hat{\mathbf W}}
+\newcommand{\bW}{\mathbf W}
+\newcommand{\bz}{\mathbf z}
+\newcommand{\bs}{\mathbf s}
+\newcommand{\rightas}{\stackrel{a.s.}{\rightarrow}}
+\newcommand{\rightp}{\stackrel{p}{\rightarrow}}
+\newcommand{\rightd}{\stackrel{d}{\rightarrow}}
+\newcommand{\bI}{\mathbf I}
+\newcommand{\barB}{{\overline B}}
+\newcommand{\barC}{{\overline C}}
+\newcommand{\pbar}{{\overline p}}
+\newcommand{\bbar}{{\overline b}}
+\newcommand{\mubar}{{\overline \mu}}
+
+\newenvironment{proof}[1][Proof]{\noindent \textbf{#1.} }{\  \rule{0.5em}{0.5em}}
+\topmargin=-1cm
+\oddsidemargin=-0cm
+\textheight=22.2cm
+\textwidth=16cm
+\setcounter{secnumdepth}{2}
+\pagestyle{plain}
+\setcounter{figure}{0}
+%\setpagewiselinenumbers
+%\linenumbers
+\begin{document}
+
+ A Ramsey planner redistributes and finances  government expenditures by  using proportionate labor taxes, transfers and borrowing/saving in a risk free debt market. Government's debt dynamics  depend on  restrictions  on transfers that affect its ability both to redistribute and  to hedge 
+ government expenditure shocks.
+
+
+Under an affine tax system as studied here, restrictions on transfers  additionally alter the planner's ability to redistribute across agents. We begin with a representative agent economy in section \ref{sec rep agent} that abstracts from the issues concerning redistribution and then come back to it section \ref{sec two agents} where we study settings with multiple agents.
+
+\section{Representative agent}
+\label{sec rep agent}
+The setup has a representative agent who values consumption and leisure with quasi linear preferences of the form $u(c,l)=c-\frac{l^{1+\gamma}}{1+\gamma}$ and has access to a risk free bond market. Using the primal approach, we substitute tax rates and interest rates appearing in the budget constraint of the agent using the corresponding first order conditions and describe the Ramsey allocation as a solution to the following problem: Let $b_t$ be household's assets at time $t$. Given some intial assets $b_{-1}$,
+
+\begin{equation}
+W(b_{-1})= \max_{\{c_t,l_t,b_{t},T_t\}_t,}\mathbb{E}_0\sum_{t}\beta^t \left[c_t-\frac{l_t^{1+\gamma}}{1+\gamma}\right]
+\end{equation}
+subject to the following for $t\geq 0$
+\begin{equation}
+\label{eq imp}
+c_t+b_{t}=l_t^{1+\gamma}+\beta^{-1}b_{t-1}+T_t ,
+\end{equation}
+\begin{equation}
+c_t+g_t \leq \theta l_t
+\end{equation}
+
+\begin{equation}
+\label{eq bounds}
+\underline{b}\leq b_t\leq \overline{b}
+\end{equation}
+
+The limits on government debt  $\underline{b}$ and $\overline{b}$ are arbitrary at this point. They can correspond to natural debt limits which are a function of the government policies.
+
+The optimal allocation depends on what restrictions we impose on transfers. Theorem \ref{thm rep agent} describes outcomes under three cases that progressively restrict transfers $T_t$.
+
+
+\begin{theorem}
+\label{thm rep agent}
+For the representative agent with quasilinear utility,
+
+\begin{enumerate}
+
+
+\item \textbf{[First Best]:} If $T_t$ are unrestricted
+
+\[\tau_t=0,l_t=\theta^{1/\gamma},c_t=\theta^{1+ \frac{1}{\gamma}}-g_t,T_t=b_{-1}(\beta^{-1}-1)-g_t,b_t=b_{-1}\]
+
+
+\item \textbf{[AMSS]:} If $T_t\geq 0$ and $\underline{b}<\frac{-\max_{s}g(s)}{\beta^{-1}-1}$
+
+\[\lim_t \tau_t=0, \lim_t l_t=\theta^{\frac{1}{\gamma}},\lim_t c_t=\theta^{1+ \frac{1}{\gamma}}-g_t, \lim_t b_t=\frac{-\max_{s}g(s)}{\beta^{-1}-1}, T_t>0 \quad i.o\]
+\item \textbf{[BEGS]:}If $T_t\equiv 0$, there is an invariant distribution of government assets such that
+
+\[\forall \epsilon>0, \quad \Pr\{b_t<\underline{b}+\epsilon  \ \text{ or } b_t>\overline{b}-\epsilon \quad i.o \}=1\]
+Further across economies with $\underline{b}\to -\infty$,
+\[\lim_t b_t=-\infty, \lim_t \tau_t=-\infty\]
+
+\end{enumerate}
+For cases 2 and 3 we can show that labor taxes, $\tau_t=\tau(s_t|b_{t-1})$ with $\frac{\partial  \tau(s_{t}|b_{t-1})}{\partial b}>0$. Suppose $\overline{b}$ is the natural debt limit for the government,
+
+\[\lim_{b\_ \to \overline{b}}\tau (s
+|b\_)=\frac{\gamma}{1+\gamma} \text{ and } \lim_{b\_ \to -\infty}\tau (s|b\_)=-\infty\]
+
+\end{theorem}
+It is apparent that outcomes can differ from the first best (i.e the allocation with $\tau_t=0, \forall t\geq0$) because of the binding implementability constraints in equations \ref{eq imp}. The Lagrange multipliers on these constraints at any date $t$ can be interpreted as the marginal costs of raising revenues through taxes and its tightness depends on the initial debt holdings of the government. What is crucial is how  properties of the multiplier change as a consequence of the restrictions we impose on  $T_t$.
+
+The first case underscores an observation that absent any restriction on $T_t$, the implementability  constraints in equations \ref{eq imp} are  slack (the multipliers are zero for all $t\geq 0$). The planner thus implements the first best allocation from date $t=0$.
+
+The second case with non negative transfers is the one studied by AMSS. Here the multipliers constitute a martingale and the non negativity constraint imposes an upper bound of zero. Standard martingale convergence arguments imply that eventually this constraint will be slack. The dynamics of asset holdings are different because the government cannot hedge the shocks completely with transfers. The incompleteness of markets is as such binding and  this induces a precautionary motive to accumulate assets. Eventually the Ramsey planner reaches the first best level of assets; a level where the revenues from the asset are enough to finance the worst possible expenditure shock. At this point the excess revenues associated if any are returned to the household in  costless manner using positive transfers and tax rates are zero.
+
+
+
+The last case eliminates transfers by setting $T_t$ to zero at all histories. Effectively the government looses its ability to completely smooth labor taxes. For any given level of initial assets consider a policy that has tax rates constant across all shocks that can occur in the next period. This will imply fluctuations in the net of interest deficit, and absent transfers translate into fluctuations in asset holdings. Thus depending on the realized shock the government will have more or less assets in the next period. Since the tightness of the implementability constraint depends on the asset holdings with which the government enters in any period, marginal costs of raising resources through taxes are \emph{not} constant. This contradicts the policy to smooth taxes. The optimal plan features fluctuating debt/taxes and depending on the sequences of shocks can have wide variations in their levels. The ergodic distribution of debt visits all neighbourhoods of the bounds, i.e., $\underline{b},\overline{b}$ in equation \eqref{eq bounds} with probability one. Since taxes are related to debt, they vary accordingly.
+
+
+\section{Two QL agents}
+To study how restrictions on transfers interfere with the planner's ability to redistribute across different agents we modify the previous setting to include a positive mass of unproductive agents who also have quasilinear preferences. A Ricardian equivalence property allows to normalize the asset holdings of these unproductive agents to zero and analogous to the previous section, the Ramsey allocation solves the following problem:
+
+\label{sec two agents}
+
+\begin{equation}
+W(b_{1,-1})=\max_{\{c_{1,t},c_{2,t},l_{1,t},b_{1,t}\}_t} \mathbb{E}_0\sum_{t}\beta^{t}\left[\omega \left(c_{1,t}-\frac{l_{1,t}^{1+\gamma}}{1+\gamma}\right)+(1-\omega)c_{2,t}\right]
+\end{equation}
+
+subject to the following two constraints for $t\geq 0$
+
+\begin{equation}
+\label{imp}
+c_{1,t}-c_{2,t}+b_{1,t}=l_{1,t}^{1+\gamma}+\beta^{-1}b_{1,t-1}
+\end{equation}
+\begin{equation}
+nc_{1,t}+(1-n)c_{2_t}\leq n \theta  l_{1,t}
+\end{equation}
+
+\begin{equation}
+\underline{b}\leq b_t\leq \overline{b}
+\end{equation}
+
+The allocation depends on constraints on $c_{2,t}$. Given the normalization that assets of agent 2 are zero we have transfers $T_t=c_{2,t}$
+
+\begin{theorem}
+\begin{itemize}
+\item If $c_{2,t}$ is unconstrained,
+\begin{enumerate}
+
+\item The problem is concave only if $\omega<n \left(\frac{1+\gamma}{\gamma}\right)$. In this case the supremum $W(b_{-1})$ is finite and the (unique) optimal debt holdings are given by $b_{t}=b_{-1}$. The allocation:
+\[l_{1,t}=\left(\frac{n\theta_1}{\omega-(\omega-n)(1+\gamma)}\right)^{\frac{1}{\gamma}},\]\[c_{2,t}=nl_{1,t}(\theta_1-l_{1,t}^{\gamma})-n (\beta^{-1}-1)b_{-1}-g_t,\]\[c_{1,t}=(1-n)(\beta^{-1}-1)b_{-1}-g_t+l_{1,t}^{1+\gamma}-n(\theta_1-l^{\gamma}_{1,t}).\]
+\item For $\omega\geq n \left(\frac{1+\gamma}{\gamma}\right)$ maximizing  a objective function that is convex function over an unbounded choice set implies no solution. However we can construct a limiting argument. Suppose $\tau_t\geq \underline{\tau}$. The optimal policy will have a corner solution for taxes with $\tau_t=\underline{\tau},b_t=b_{-1}, T_t=\underline{\tau}n\theta_1 l_1(\underline{\tau})-(\beta^{-1}-1)b_{-1}-g_t)$ for all $t\geq 0$ and as $\underline{\tau}\to -\infty$, $W(b_{-1})$ approaches $\infty$.
+\end{enumerate}
+\item If $c_{2,t}\geq 0 $
+
+\begin{enumerate}
+ \item For $\omega\geq n \left(\frac{1+\gamma}{\gamma}\right)$,  $T_t=0$.  The optimal policy $\{\tau_t,b_{1,t}\}$ is same as in the representative agent economy without transfers with $b_{1,t}=b_t$.
+   \item For $\omega< n \left(\frac{1+\gamma}{\gamma}\right)$ there exist  a $\mathcal{B}(\omega)$  satisfying $\mathcal{B}'(\omega)<0$ and a $\tau^*(\omega)$ such that
+ \begin{enumerate}
+  \item If $b_{1,-1}\_\leq \mathcal{B(\omega)}$
+\[T_t>0, \quad \tau_t=\tau^*(\omega), \textit{ and } b_{1,t}=b_{1,-1} \quad \forall t \geq 0 \]
+\item If $b_{1,-1}> \mathcal{B(\omega)}$ then
+   \[ T_t>0 \text{ i.o.},\quad \lim_t\tau_t=\tau^*(\omega) \text{ and } \lim_tb_{1,t}=\mathcal{B}(\omega)\quad \textit{a.s}\]
+\end{enumerate}
+
+\end{enumerate}
+ \end{itemize}
+
+\end{theorem}
+With multiple agents, using transfers to hedge aggregate shocks also implies giving resources to agents that the planner may not care enough about. Transfers being identical across agents are thus inferior in terms redistributing resources and their costs mainly depend on the Pareto weights relative to the respective mass of the agents. More specifically these costs are low when the Pareto weight of the productive agent (i.e $\omega$ relative to their mass $n$) is low.
+
+
+
+In the first case when consumption of agent 2 can be  negative, for low enough values of $\omega$, the planner hedges all shocks with transfers and keep asset holdings and tax rates constant.  Tax rates are decreasing $\omega$ and approach $-\infty$ when $\omega$ reaches the threshold $n\left(\frac{1+\gamma}{\gamma}\right).$
+
+
+
+
+Now imposing non-negativity constaint on $c_{2,t}$ makes this solution infeasible, especially for high values of initial government debt where desired transfers would have otherwise been negative. In this case the optimal policy gradually reduces debt (or builds up assets) until the debt holdings reach a threshold where the planner can finance fluctuations in the net-of interest deficit entirely with positive transfers and keep tax rates constant. This threshold level of debt is higher for more  redistributive planners. This is because such planners (with lower $\omega$)  collect higher revenues from labor taxes and consequently the returns on asset holdings needed to finance the expenditure shocks are smaller.
+
+For large enough $\omega$, transfers are too costly for any level of initial debt and hence the non-negativity constraint implies that they are equal to zero at all dates. Once can immediately see that having an unproductive agent with zero consumption is isopmorhic to a represenative agent economy where transfers are not allowed. This case was studied in the previous section and we can import the results about tax, debt dynamics from there.
+
+Thus we have a complete characterization of dynamics of taxes and debt when transfers can be potentially restricted.
+
+
+
+
+As a remark we describe the case when the unproductive agent is strictly risk averse. In this  if $\underline{b}=\infty$, we have that
+
+\begin{itemize}
+\item If $n>\frac{\gamma}{1+\gamma}$
+\[\tau_t=\tau^*(n,\gamma),T_t=\infty,b_t\to -\infty\]
+and
+\item If $n<\frac{\gamma}{1+\gamma}$
+\[\tau_t=-\infty,T_t=T^*<\infty,b_t\to -\infty\]
+\end{itemize}
+
+Thus government assets diverge irrespective of Pareto weights. Adding a finite lower bound to $b_t$ will give us an invariant distribution whose properties are not easy to characterize analytically.
+
+\end{document} 
