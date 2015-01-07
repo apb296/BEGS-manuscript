@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: begs_rev_tom_1.aux
+The style file: econ_aer.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: BEGS.bib
+I was expecting a `,' or a `}'---line 316 of file BEGS.bib
+ : 
+ : year = {2014},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Kuhn2014
+while executing---line 6581 of file econ_aer.bst
+Warning--to sort, need author or key in Kuhn2014
+Warning--empty author in Kuhn2014
+Warning--there's no year in Kuhn2014
+Warning--empty journal in Kuhn2014
+Warning--there is no volume, number, and pages in Kuhn2014
+Warning--empty note in Yared2012
+You've used 17 entries,
+            6548 wiz_defined-function locations,
+            1374 strings with 12394 characters,
+and the built_in function-call counts, 18586 in all, are:
+= -- 3042
+> -- 515
+< -- 48
++ -- 179
+- -- 160
+* -- 1162
+:= -- 2207
+add.period$ -- 16
+call.type$ -- 17
+change.case$ -- 118
+chr.to.int$ -- 17
+cite$ -- 26
+duplicate$ -- 599
+empty$ -- 903
+format.name$ -- 167
+if$ -- 4713
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 60
+num.names$ -- 123
+pop$ -- 205
+preamble$ -- 1
+purify$ -- 118
+quote$ -- 0
+skip$ -- 1482
+stack$ -- 0
+substring$ -- 1791
+swap$ -- 141
+text.length$ -- 55
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 303
+warning$ -- 6
+while$ -- 132
+width$ -- 0
+write$ -- 280
+(There were 2 error messages)
