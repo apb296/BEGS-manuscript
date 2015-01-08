@@ -192,9 +192,9 @@
 \title{\textbf{Taxes, debts,  and redistributions with aggregate shocks%
 \thanks{%
 We thank Mark Aguiar, Stefania Albanesi, Manuel Amador,  Andrew Atkeson, Marco Bassetto, V.V. Chari, Harold
-L. Cole, Guy Laroque, Francesco Lippi, Robert E. Lucas, Jr., Ali Shourideh, Pierre Yared and seminar
+L. Cole, Guy Laroque, Francesco Lippi, Robert E. Lucas, Jr., Ali Shourideh, Pierre Yared, Ellen Mcgrattan and seminar
 participants at Bocconi, Chicago, EIEF, the Federal Reserve Bank of
-Minneapolis, IES, Princeton, Stanford, UCL, Universidade Cat\'{o}lica, 2012
+Minneapolis, IES, Princeton, Stanford, the Federal Reserve Bank of Atlanta, UCL, Universidade Cat\'{o}lica,Wharton, Swiss Finance Institute, 2012
 Minnesota macro conference, Monetary Policy Workshop NY Fed for helpful
 comments.}}}
 \date{November 2014}
@@ -270,15 +270,14 @@ Section \ref{Sec: environment} sets out  preferences and possibilities that defi
 Section \ref{sec:Ricardian101}
 describes a  Ricardian property for our environment that we subsequently exploit in concisely formulating the Ramsey problem
 in section \ref{sec: Ramsey Plan}.
-Net, not gross asset positions, affect the set of allocations that can be implemented
+Net asset positions, by which we mean assets of individuals minus assets of some benchmark agent affect the set of allocations that can be implemented
 in competitive equilibria with a proportional labor tax and transfers.
-This insight reduces the dimension of the state needed to characterize a Ramsey plan recursively.
-It also justifies a normalization that lets  us interpret transfers and public debt separately.
+This insight reduces the dimension of the state needed to characterize a Ramsey plan recursively. It also justifies a normalization that allows us to interpret government debt and transfers separately. We do this by setting asset holdings of the least productive agent to be zero, and back out transfers as a gap between the consumption and after tax labor income of this agent. 
 
 
 
 A Ramsey plan induces an ergodic distribution of transfers,   the labor tax rate, and the distribution of assets that is
-%that we shall describe in sections \ref{Sec: quasilinear} and \ref{Sec: more general economies}.
+%that we shall describe in sections \ref{Sec: environment} quasilinear} and \ref{Sec: more general economies}.
 %The ergodic joint distribution is
   determined by interactions between
 a) the government's  ability to hedge aggregate shocks by taking advantage of fluctuations in  the return on the asset it trades;
@@ -291,7 +290,7 @@ But if the return on the asset is {\em high} when the net-of-interest government
  government will accumulate assets.
   The long run variances of government assets and the tax rate are both lower and  rates of convergence to the ergodic distribution are
 higher in economies in which the comovement between the net-of interest deficit and  the return on  the asset is bigger in absolute magnitude.
- Other things equal, governments that want more redistribution eventually issue more debt.
+ Other things equal, governments that want more redistribution eventually hold fewer assets.
 
 The comovement between the aggregate shock that drives government expenditures and returns
 on the single asset is a key intermediating object that shapes the ergodic joint distribution of the tax rate and government debt.  In our general setting, one-period utilities are concave in consumption. That makes  the return on the single asset an equilibrium object partly under the control of the Ramsey planner.
@@ -366,23 +365,29 @@ government debt. %If the  government starts with sufficiently high  initial debt
 These outcomes differ both qualitatively and quantitatively from those in either a representative agent model or in a version
 of our model in which a  recession is modelled as a pure TFP shock that leaves the distribution of skills unchanged.
 
+
+We obtain our main results using two methodological contributions, which we believe will be useful in our settings as well. First, for the quasilinear preferences studied in section \ref{Sec: quasilinear}, we obtain sharp characterizations of the ergodic distribution of debt and taxes by approximating transition dynamics around economies that permit perfect fiscal hedging. This approach also enabled a local stability analysis for economies with the more general preferences of section \ref{sec:stability}. Second, quantitative applications as ambitious as those in our section \ref{sec: numerical results} are made possible by taking a sequence of polynomial approximations about steady states of a sequence of deterministic economies and evaluating the
+polynomials at a current distribution of idiosyncratic state variables of the incomplete markets economy. This approach allows us to study transition paths of the optimal allocation that express the dynamics of the joint distribution of individual wealths and past consumptions, a high dimension endogenous state vector. Both of these contributions build on ideas developed in \cite{Evans2014} 
+
+
 Section \ref{sec:concluding} offers concluding remarks.  
 
-In this paper, we have adhered to the adage that technique should  efface itself in the service of economic analysis. 
-Nevertheless, it is appropriate to mention that we have attained the main results in this paper only by taking advantage of 
-important technical improvements developed during our work on this paper. Two types  of contributions are interesting in their own right
-because they will surely be useful in other settings. They are distinct applications of a new approach of \cite{Evans2014} that involves computing 
-approximations of dynamic  heterogeneous agent incomplete market economies about steady states of carefully chosen {\em other} economies.
-First, for the quasilinear preferences studied in section \ref{Sec: quasilinear}, we obtain sharp characterizations of the ergodic distribution of debt and taxes by  
-approximating transition dynamics around economies that permit perfect fiscal hedging. This approach also enabled a
-local stability analysis for economies with the more general preferences of section \ref{sec:stability}.
-Second, quantitative applications as ambitious as those in our section \ref{sec: numerical results} are made possible  
-by taking a {\em sequence} of polynomial approximations about 
-steady states of a {\em sequence} of  deterministic economies and evaluating the polynomials at a current distribution 
-of idiosyncratic state variables of the incomplete markets economy. This approach 
-allows us to study transition paths of the optimal allocation that express the dynamics of 
-the joint distribution of individual wealths and past consumptions, a high dimension endogenous state vector. 
-These technical insights did not appear out of thin air but instead emerged partly from studying the economic structure in this paper.
+
+%In this paper, we have adhered to the adage that technique should  efface itself in the service of economic analysis. 
+%Nevertheless, it is appropriate to mention that we have attained the main results in this paper only by taking advantage of 
+%important technical improvements developed during our work on this paper. Two types  of contributions are interesting in their own right
+%because they will surely be useful in other settings. They are distinct applications of a new approach of \cite{Evans2014} that involves computing 
+%approximations of dynamic  heterogeneous agent incomplete market economies about steady states of carefully chosen {\em other} economies.
+%First, for the quasilinear preferences studied in section \ref{Sec: quasilinear}, we obtain sharp characterizations of the ergodic distribution of debt and taxes by  
+%approximating transition dynamics around economies that permit perfect fiscal hedging. This approach also enabled a
+%local stability analysis for economies with the more general preferences of section \ref{sec:stability}.
+%Second, quantitative applications as ambitious as those in our section \ref{sec: numerical results} are made possible  
+%by taking a {\em sequence} of polynomial approximations about 
+%steady states of a {\em sequence} of  deterministic economies and evaluating the polynomials at a current distribution 
+%of idiosyncratic state variables of the incomplete markets economy. This approach 
+%allows us to study transition paths of the optimal allocation that express the dynamics of 
+%the joint distribution of individual wealths and past consumptions, a high dimension endogenous state vector. 
+%These technical insights did not appear out of thin air but instead emerged partly from studying the economic structure in this paper.
 
 %An economic insight underlies the  type 2 method -- that along a sample path of an incomplete markets economy, there are economic reasons to recommend .  
 
@@ -826,8 +831,8 @@ Throughout this paper we avail ourselves of Theorem \ref{theorem: main} to impos
 %sequences $\left\{ T_{t}\right\} _{t}$ and asset profiles $\left\{
 %b_{i,t},B_{t}\right\} _{i,t}$  support the same  equilibrium allocation.
 %As such we use a normalization to define the notion of \emph{public debt} for our setting.
-we assume that productivities are ordered as  $\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and set $b_{I,t}=0$. This allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as
-public debt. Limits on $\sum_{i<I}n_ib_{i,t}$ are counterparts  to  debt limits in a representative agent economy.
+we assume that productivities are ordered as  $\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and set $b_{I,t}=0$. With this normalization we can recover canonical representative agent incomplete market sets up with linear taxes and debt a-la Chari, AMSS if government does not care about redistribution, as explained in more details in \ref{Sec: quasilinear}. This allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as
+public debt and limits on $\sum_{i<I}n_ib_{i,t}$ are counterparts  to  debt limits in a representative agent economy.
 % \textbf{Anmol XXXXXX: 1.  I am not sure what the last sentence means and think it could be disposed of or else should be sharpened.
 % 2.  We should decide on the ```ordering'' of $\theta_i$'s soon and set them for the entire paper.}
 %
@@ -837,130 +842,69 @@ public debt. Limits on $\sum_{i<I}n_ib_{i,t}$ are counterparts  to  debt limits 
 
 \color{black}
 
-\section{Optimal equilibria with affine taxes}\label{sec: Ramsey Plan}
-% We now focus on the characterization of optimal plans by applying  the primal approach.
-% This involves using household optimality conditions to obtain a set of restrictions on allocations chosen by the government to ensure that they are `implementable' as competitive equilibria. In the last section we describe a recursive formulation of the Ramsey plan.
-%We use the state  dimension reduction  from subsection \ref{sec:Ricardian101} to  formulate the Ramsey problem.
-%Following \citet{LucasJr.1983} and \citet{Aiyagari2002}, we use households' first-order necessary conditions to describe restrictions on competitive
-%equilibrium allocations.
-
-With natural borrowing limits for households, first-order necessary conditions for the  household's problem
- are%
-\begin{equation}
-\left( 1-\tau _{t}\right) \theta _{i,t}U_{c,t}^{i}=-U_{l,t}^{i},
-\label{FOC consumption labor}
-\end{equation}%
-and%
-\begin{equation}
-U_{c,t}^{i}=\beta\mathbb{E}_{t}R_{t+1}U_{c,t+1}^{i}.  \label{FOC Euler}
-\end{equation}%
-To help characterize an equilibrium, we use
-
-\begin{theorem}
-\label{prop: affine eqm nec and suff}A sequence $\{ \left \{
-c_{i,t},l_{i,t},b_{i,t}\right \} _{i},R_{t},\tau _{t},T_{t}\}_t$ is part of
-a competitive equilibrium with affine taxes if and only if it satisfies (\ref{eqn:feasiblity}), (\ref{agent bc affine}), (\ref{FOC consumption labor}%
-), and (\ref{FOC Euler}) and $b_{i,t}$ is bounded for all $i$ and $t.$
-\end{theorem}
-\begin{proof}
-Necessity is obvious. In  appendix   \ref{appndx: affine eqm nec and stuff}, we use arguments of \cite{Magill1994} and \cite{Constantinides1996} to show that any $\left \{
-c_{i,t},l_{i,t},b_{i,t}\right \} _{i,t}$ that satisfies (\ref{agent bc
-affine}), (\ref{FOC consumption labor}), and (\ref{FOC Euler}) solves consumer $i$'s  problem. Equilibrium $\{B_{t}\}_t$ is determined by
-(\ref{feasibility bonds}) and constraint (\ref{govmt bc affine}) is then
-implied by Walras' Law
-\end{proof}
-
-By Theorem  \ref{prop: affine eqm nec and suff}, to find an optimal equilibrium
-we can choose $\{ \left \{ c_{i,t},l_{i,t},b_{i,t}\right \} _{i},R_{t},\tau
-_{t},T_{t}\}_{t}$ to maximize (\ref{govmt objective}) subject to (\ref{eqn:feasiblity}), (\ref{agent bc affine}), (\ref{FOC consumption labor}), and (\ref{FOC Euler}).
-% The last two constraints determine $\left \{ R_{t},\tau _{t}\right \}
-%_{t} $ and are not featured anywhere else in maximization, so the
-%allocations can be optimized over $\{\left \{
-%c_{i,t},l_{i,t},b_{i,t}\right \} _{i},,T_{t}\}_t$ which often simplifies
-%optimization.
-We  apply a first-order approach and follow steps similar to those taken by \cite{LucasJr.1983} and \citet{Aiyagari2002}.
- Substituting consumers' first-order
-conditions (\ref{FOC consumption labor})\ and (\ref{FOC Euler})\ into the
-budget constraints (\ref{agent bc affine}) yields the implementability constraints % for  $t\geq 1 $,
-\begin{equation}
-c_{i,t}+b_{i,t}=-\frac{U_{l,t}^{i}}{U_{c,t}^{i}}l_{i,t}+T_{t}+\frac{%
-p_tU_{c,t-1}^{i}}{\beta \mathbb{E}_{t-1}p_tU_{c,t}^{i}}b_{i,t-1}\ \forall i \geq 1 ,t \geq 1,  \label{affine implementability a}
-\end{equation}
-and %  $t=0$, we normalize $R_{-1,0}=P(s_0)\beta^{-1}$ to get,
-
-\begin{equation}
-\label{affine implementability a t=0}
-c_{i,0}+b_{i,0}=-\frac{U_{l,0}^{i}}{U_{c,0}^{i}}l_{i,0}+T_{0}+
-p_0 \beta^{-1}b_{i,-1}\ \forall i \geq 1.
-\end{equation}
-
-%\textbf{Anmol XXXXXX: here there is an issue about the ranges of $i$ and $t$.  It seems it is for $t \geq 1 $ because of the appearence
-%of $E_{t-1} (\cdot)$.  Let's talk about this. This issue appears recurrently. I'll flag them below.}
-\noindent For $I\geq 2$, we can use constraints (\ref{affine implementability
-a}) and (\ref{affine implementability
-a t=0}) for  $i=I$ to eliminate $T_{t}$ for $i < I$. Letting $\tilde{b}%
-_{i,t}\equiv b_{i,t}-b_{I,t}$, we can represent the implementability constraints
-as
-\begin{eqnarray}
-\label{affine implementability b}
-&&\left( c_{i,t}-c_{I,t}\right) +\tilde{b}_{i,t}\\
-&=&-\frac{U_{l,t}^{i}}{U_{c,t}^{i}}l_{i,t}+\frac{U^1_{l,t}}{U^1_{c,t}}l_{I,t} +\frac{p_tU_{c,t-1}^{i}}{\beta \mathbb{E}%
-_{t-1}p_tU_{c,t}^{i}}\tilde{b}_{i,t-1}\ \text{\rm for \ }i>1 \ \text{\rm and \ } t\geq 1,  \notag
-\end{eqnarray}
-%\textbf{Anmol XXXXX: the range of $t$.}
-so that  the planner's
-maximization problem involves only on the $I-1$ variables $\tilde{b}_{i,t-1}.$
-%The reduction of  the dimensionality from \ $I$ to $I-1$ is
-% a consequence of corollary \ref{corr: B does not matter} of theorem \ref{theorem: main}.
-
-
-
-
- Denote $Z^i_t=\left( c_{i,t}-c_{I,t}\right) +\tilde{b}_{i,t}+\frac{U_{l,t}^{i}}{U_{c,t}^{i}}l_{i,t}-\frac{U^I_{l,t}}{U^I_{c,t}}l_{I,t}$. The Ramsey problem is:\footnote{When $p_t \equiv 1$, so that the asset is risk-free, constraint \eqref{eq imp sum t=1}  requires that the conditional expectation at time $t$  on the right side be an exact function of information at time $t-1$.  This is the
- measurability condition that lies at the heart of  \citet{Aiyagari2002}.
-More generally,  condition \eqref{eq imp sum t=1} is inherited from the restriction that  only one  asset  is traded and
-that it has payoff  $p_t$.}
- \begin{equation}
-\max_{\{c_{i,t},l_{i,t},\tilde{b}_{i,t}\}_{i,t}}\mathbb{E}_{0}\sum_{i=1}^{I}\omega_i\sum_{t=0}^{\infty } \beta^t U^{i}\left( c_{i,t},l_{i,t}\right)  \label{govmt objective sequential}
-\end{equation}
-subject to
- %, by iterating on equation \eqref{affine implementability b} we get
- \begin{subequations}
- \begin{equation}
- \label{eq imp sum t=1}
-  \tilde{b}_{i,t-1}\frac{p_tU^i_{c,t-1}}{\mathbb{E}_{t-1}p_tU^i_{c,t}}=\mathbb{E}_t\sum^{\infty}_{k=t}\beta^{k-t} \left(\frac{U^i_{c,k}}{U^i_{c,t}}\right) Z^i_{k} \quad \forall t \geq 1,i<I
- \end{equation}
- \begin{equation}
- \label{eq imp sum t=0}
-  \tilde{b}_{i,-1}p_0=\mathbb{E}_{-1}\sum^{\infty}_{k=0}\beta^{k}\left(\frac{U^i_{c,k}}{U^i_{c,t}}\right) Z^i_{k} \quad \forall i < I
- \end{equation}
-\begin{equation}
- \frac{\mathbb{E}_tp_{t+1}U^i_{c,t+1}}{U^i_{c,t}}=\frac{\mathbb{E}_tp_{t+1}U^I_{c,t+1}}{U^I_{c,t}} \quad \forall t \geq 1,i<I
-\end{equation}
-\begin{equation}%\label{•}{eqn:feasiblity}
-\sum_{i=1}^{I}n_{i}c_{i}(s^t)+g\left( s_{t}\right) =\sum_{i=1}^{I}
-n_{i}\theta _{i}\left( s_{t}\right) l_{i}(s^t) \quad \forall t\geq0  \label{feasibility goods sequential}
-\end{equation}
-\begin{equation}
- \frac{U_{l,t}^{i}}{\theta _{i,t}U_{c,t}^{i}}=\frac{U_{l,t}^{I}}{\theta
-_{I,t}U_{c,t}^{I}} \quad \forall t\geq 0 ,i<I
-\end{equation}
-\begin{equation}
-\sum_{i<I}n_i\tilde{b}_{i,t} \text{ is bounded} \quad \forall t\geq 0
- \end{equation}
-
-\end{subequations}
-In section \ref{Sec: quasilinear},
- we exploit some simplifications that come with quasilinear utility, but we return to this more general formulation in sections \ref{Sec: more general economies} and %the numerical analysis for a calibrated version of the model in section
-  \ref{sec: numerical results}.
-
-
-
-%The next section characterizes the properties of optimal plans.
-
-
-
 \section{Quasilinear preferences}\label{Sec: quasilinear}
+
+
+The  general structure in Sec 3 has two difficulties: prices are party endogenous and $I$ agents makes it less transparent how along the Ramsey plan transfers are used to redistribute and smooth distortions. For this reason in this section we focus on the economy in which both of this forces are very transparent: i.e. quasi-linear economy (so that prices are exogenous) with two agents, one of whom cannot work (so that redistribution between rich and poor is very clear). We also assume iid shocks for simplicity. 
+
+
+\begin{assumption}
+\label{ass iid}
+IID shocks to expenditure: $g(s_t)$ is i.i.d over time
+\end{assumption}
+\begin{assumption}
+\label{ass quasilinear}
+Quasilinear preferences: $u(c,l)=c-\frac{l^{1+\gamma}}{1+\gamma}$
+\end{assumption}
+\begin{assumption}
+ $\theta_1>\theta_2=0$ \ {\rm  and} $c_{2,t}\geq 0.$
+\end{assumption}
+ %inducing curvature in the Ramsey planner's indirect utility function. \textbf{Anmol XXXXXX:
+%I added the previous dependent clause to the last sentence.}
+We use the freedom granted us by the Ricardian equivalence result summarized in theorem \ref{theorem: main} and corollary \ref{corr: B does not matter}
+of  section \ref{sec:Ricardian101} to  normalize the assets of the unproductive agent to zero throughout this section.  In light of the zero productivity of a type 2 agent,
+ this means that  $c_{2t} = T_t$.
+Requiring that $c_{2t} \geq 0$ is  an easy way to make transfers  costly
+to the Ramsey planner for some values of the Pareto weights. 
+
+
+
+A Ramsey planner solves
+%
+%\begin{equation}
+%  \label{eq-QLRA obj}
+%    V(B\_)=\max_{\{c_1(s),c_2(s),l_1(s),B(s)\}_s} \sum_{s}\pi(s)\omega \left(c_{1}(s)-\frac{l_{1}(s)^{1+\gamma}}{1+\gamma}\right)+(1-\omega)c_{2,t}
+%    
+%    
+%    \left\{c(s)-\frac{l(s)^{1+\gamma}}{1+\gamma}+\beta V(B(s)) \right\}
+%\end{equation}
+%where the maximization is subject to
+%   \begin{subequations}
+%   \label{sys- QLRA constraint}
+%    \begin{equation}
+%    \label{rep agent implementability constraint}
+%    c(s)-B(s)=l(s)^{1+\gamma}-\beta^{-1} P(s)B\_
+%    \end{equation}
+%\begin{equation}
+%  \label{eq-resoruces}
+%c(s)+g(s)\leq\theta l(s)
+%\end{equation}
+%\begin{equation}
+%  \label{ndl}
+%\underline{B}\leq B(s)\leq \overline{B}
+%\end{equation}
+%   \end{subequations}
+%
+%
+%
+[BELLMAN EQUATION]
+
+
+[LEMMA for THRESHOLD]
+
+
+After this I would say that first we consider the case when Pareto weight is sufficiently high. The reason why it is useful is because of the Lemma that states that if Pareto weight is above a certain treshold, $T_t = 0$ for all t (I would state that lemma formally). This case naturally ties to the last paragraph of Sec 3 that justifies our normalization: we are isomorphic to a representative agent economy with no lump sum transfers. I would beat this case to a pulp a-la current section 5.1 (also highlighting similarities with canonical representative agent model, but staying within our framework, connection to AMSS, why assuming $T_t >= 0$ is neither innocuous nor sensible, etc. After that I would do Section 5.2. for pareto weight below the treshold derived in Section 5.1.
+
 
 We specialize the section \ref{sec: Ramsey Plan} Ramsey problem by maintaining the following assumptions throughout  this
 section.\footnote{\citet{Aiyagari2002} assume quasilinear preferences in an important part of
@@ -973,6 +917,18 @@ IID shocks to expenditure: $g(s_t)$ is i.i.d over time
 \label{ass quasilinear}
 Quasilinear preferences: $u(c,l)=c-\frac{l^{1+\gamma}}{1+\gamma}$
 \end{assumption}
+\begin{assumption}
+ $\theta_1>\theta_2=0$ \ {\rm  and} $c_{2,t}\geq 0.$
+\end{assumption}
+ %inducing curvature in the Ramsey planner's indirect utility function. \textbf{Anmol XXXXXX:
+%I added the previous dependent clause to the last sentence.}
+We use the freedom granted us by the Ricardian equivalence result summarized in theorem \ref{theorem: main} and corollary \ref{corr: B does not matter}
+of  section \ref{sec:Ricardian101} to  normalize the assets of the unproductive agent to zero throughout this section.  In light of the zero productivity of a type 2 agent,
+ this means that  $c_{2t} = T_t$.
+Requiring that $c_{2t} \geq 0$ is  an easy way to make transfers  costly
+to the Ramsey planner for some values of the Pareto weights.
+
+
 \noindent With i.i.d shocks we can restrict our attention to  payoff matrices $\mathbb{P}$ that have identical rows denoted by a vector $P(s)$
 with a normalization  $\mathbb{E}P(s)=1$.
 
@@ -1322,14 +1278,134 @@ the Ramsey's planner attitude about  redistribution. Theorem \ref{thm heterogene
 
 \section{More general preferences}
 \label{Sec: more general economies}
-%The section \ref{sec:hetquasilinear} economy simplifies things along several dimensions: except for the constraint $c_{2,t} \geq 0$, there is no
-%curvature in the utility from consumption, shocks lack  persistence,  and there are only two agents.
+
+% We now focus on the characterization of optimal plans by applying  the primal approach.
+% This involves using household optimality conditions to obtain a set of restrictions on allocations chosen by the government to ensure that they are `implementable' as competitive equilibria. In the last section we describe a recursive formulation of the Ramsey plan.
+%We use the state  dimension reduction  from subsection \ref{sec:Ricardian101} to  formulate the Ramsey problem.
+%Following \citet{LucasJr.1983} and \citet{Aiyagari2002}, we use households' first-order necessary conditions to describe restrictions on competitive
+%equilibrium allocations.
 The quasilinearity of utilities maintained throughout  section \ref{Sec: quasilinear} set  the equilibrium  return on the asset to $\beta^{-1}P(s)$.
 Adding curvature to utility from consumption  makes the  return on the asset   endogenous even for a risk-free bond having a payoff vector $P(s)=1$.
 With such curvature, relative marginal utilities of consumption become state variables in a recursive representation of a Ramsey plan.
 We  present a pair of Bellman equations that express a recursive representation of the Ramsey problem that in section \ref{sec: Ramsey Plan}
  we formulated in a space of sequences. Here  and also in section  \ref{sec: numerical results}, we  use this Bellman equation to analyze
 several economies  with utility functions that are strictly concave in consumption.
+
+With natural borrowing limits for households, first-order necessary conditions for the  household's problem
+ are%
+\begin{equation}
+\left( 1-\tau _{t}\right) \theta _{i,t}U_{c,t}^{i}=-U_{l,t}^{i},
+\label{FOC consumption labor}
+\end{equation}%
+and%
+\begin{equation}
+U_{c,t}^{i}=\beta\mathbb{E}_{t}R_{t+1}U_{c,t+1}^{i}.  \label{FOC Euler}
+\end{equation}%
+To help characterize an equilibrium, we use
+
+\begin{theorem}
+\label{prop: affine eqm nec and suff}A sequence $\{ \left \{
+c_{i,t},l_{i,t},b_{i,t}\right \} _{i},R_{t},\tau _{t},T_{t}\}_t$ is part of
+a competitive equilibrium with affine taxes if and only if it satisfies (\ref{eqn:feasiblity}), (\ref{agent bc affine}), (\ref{FOC consumption labor}%
+), and (\ref{FOC Euler}) and $b_{i,t}$ is bounded for all $i$ and $t.$
+\end{theorem}
+\begin{proof}
+Necessity is obvious. In  appendix   \ref{appndx: affine eqm nec and stuff}, we use arguments of \cite{Magill1994} and \cite{Constantinides1996} to show that any $\left \{
+c_{i,t},l_{i,t},b_{i,t}\right \} _{i,t}$ that satisfies (\ref{agent bc
+affine}), (\ref{FOC consumption labor}), and (\ref{FOC Euler}) solves consumer $i$'s  problem. Equilibrium $\{B_{t}\}_t$ is determined by
+(\ref{feasibility bonds}) and constraint (\ref{govmt bc affine}) is then
+implied by Walras' Law
+\end{proof}
+
+By Theorem  \ref{prop: affine eqm nec and suff}, to find an optimal equilibrium
+we can choose $\{ \left \{ c_{i,t},l_{i,t},b_{i,t}\right \} _{i},R_{t},\tau
+_{t},T_{t}\}_{t}$ to maximize (\ref{govmt objective}) subject to (\ref{eqn:feasiblity}), (\ref{agent bc affine}), (\ref{FOC consumption labor}), and (\ref{FOC Euler}).
+% The last two constraints determine $\left \{ R_{t},\tau _{t}\right \}
+%_{t} $ and are not featured anywhere else in maximization, so the
+%allocations can be optimized over $\{\left \{
+%c_{i,t},l_{i,t},b_{i,t}\right \} _{i},,T_{t}\}_t$ which often simplifies
+%optimization.
+We  apply a first-order approach and follow steps similar to those taken by \cite{LucasJr.1983} and \citet{Aiyagari2002}.
+ Substituting consumers' first-order
+conditions (\ref{FOC consumption labor})\ and (\ref{FOC Euler})\ into the
+budget constraints (\ref{agent bc affine}) yields the implementability constraints % for  $t\geq 1 $,
+\begin{equation}
+c_{i,t}+b_{i,t}=-\frac{U_{l,t}^{i}}{U_{c,t}^{i}}l_{i,t}+T_{t}+\frac{%
+p_tU_{c,t-1}^{i}}{\beta \mathbb{E}_{t-1}p_tU_{c,t}^{i}}b_{i,t-1}\ \forall i \geq 1 ,t \geq 1,  \label{affine implementability a}
+\end{equation}
+and %  $t=0$, we normalize $R_{-1,0}=P(s_0)\beta^{-1}$ to get,
+
+\begin{equation}
+\label{affine implementability a t=0}
+c_{i,0}+b_{i,0}=-\frac{U_{l,0}^{i}}{U_{c,0}^{i}}l_{i,0}+T_{0}+
+p_0 \beta^{-1}b_{i,-1}\ \forall i \geq 1.
+\end{equation}
+
+%\textbf{Anmol XXXXXX: here there is an issue about the ranges of $i$ and $t$.  It seems it is for $t \geq 1 $ because of the appearence
+%of $E_{t-1} (\cdot)$.  Let's talk about this. This issue appears recurrently. I'll flag them below.}
+\noindent For $I\geq 2$, we can use constraints (\ref{affine implementability
+a}) and (\ref{affine implementability
+a t=0}) for  $i=I$ to eliminate $T_{t}$ for $i < I$. Letting $\tilde{b}%
+_{i,t}\equiv b_{i,t}-b_{I,t}$, we can represent the implementability constraints
+as
+\begin{eqnarray}
+\label{affine implementability b}
+&&\left( c_{i,t}-c_{I,t}\right) +\tilde{b}_{i,t}\\
+&=&-\frac{U_{l,t}^{i}}{U_{c,t}^{i}}l_{i,t}+\frac{U^1_{l,t}}{U^1_{c,t}}l_{I,t} +\frac{p_tU_{c,t-1}^{i}}{\beta \mathbb{E}%
+_{t-1}p_tU_{c,t}^{i}}\tilde{b}_{i,t-1}\ \text{\rm for \ }i>1 \ \text{\rm and \ } t\geq 1,  \notag
+\end{eqnarray}
+%\textbf{Anmol XXXXX: the range of $t$.}
+so that  the planner's
+maximization problem involves only on the $I-1$ variables $\tilde{b}_{i,t-1}.$
+%The reduction of  the dimensionality from \ $I$ to $I-1$ is
+% a consequence of corollary \ref{corr: B does not matter} of theorem \ref{theorem: main}.
+
+
+
+
+ Denote $Z^i_t=\left( c_{i,t}-c_{I,t}\right) +\tilde{b}_{i,t}+\frac{U_{l,t}^{i}}{U_{c,t}^{i}}l_{i,t}-\frac{U^I_{l,t}}{U^I_{c,t}}l_{I,t}$. The Ramsey problem is:\footnote{When $p_t \equiv 1$, so that the asset is risk-free, constraint \eqref{eq imp sum t=1}  requires that the conditional expectation at time $t$  on the right side be an exact function of information at time $t-1$.  This is the
+ measurability condition that lies at the heart of  \citet{Aiyagari2002}.
+More generally,  condition \eqref{eq imp sum t=1} is inherited from the restriction that  only one  asset  is traded and
+that it has payoff  $p_t$.}
+ \begin{equation}
+\max_{\{c_{i,t},l_{i,t},\tilde{b}_{i,t}\}_{i,t}}\mathbb{E}_{0}\sum_{i=1}^{I}\omega_i\sum_{t=0}^{\infty } \beta^t U^{i}\left( c_{i,t},l_{i,t}\right)  \label{govmt objective sequential}
+\end{equation}
+subject to
+ %, by iterating on equation \eqref{affine implementability b} we get
+ \begin{subequations}
+ \begin{equation}
+ \label{eq imp sum t=1}
+  \tilde{b}_{i,t-1}\frac{p_tU^i_{c,t-1}}{\mathbb{E}_{t-1}p_tU^i_{c,t}}=\mathbb{E}_t\sum^{\infty}_{k=t}\beta^{k-t} \left(\frac{U^i_{c,k}}{U^i_{c,t}}\right) Z^i_{k} \quad \forall t \geq 1,i<I
+ \end{equation}
+ \begin{equation}
+ \label{eq imp sum t=0}
+  \tilde{b}_{i,-1}p_0=\mathbb{E}_{-1}\sum^{\infty}_{k=0}\beta^{k}\left(\frac{U^i_{c,k}}{U^i_{c,t}}\right) Z^i_{k} \quad \forall i < I
+ \end{equation}
+\begin{equation}
+ \frac{\mathbb{E}_tp_{t+1}U^i_{c,t+1}}{U^i_{c,t}}=\frac{\mathbb{E}_tp_{t+1}U^I_{c,t+1}}{U^I_{c,t}} \quad \forall t \geq 1,i<I
+\end{equation}
+\begin{equation}%\label{•}{eqn:feasiblity}
+\sum_{i=1}^{I}n_{i}c_{i}(s^t)+g\left( s_{t}\right) =\sum_{i=1}^{I}
+n_{i}\theta _{i}\left( s_{t}\right) l_{i}(s^t) \quad \forall t\geq0  \label{feasibility goods sequential}
+\end{equation}
+\begin{equation}
+ \frac{U_{l,t}^{i}}{\theta _{i,t}U_{c,t}^{i}}=\frac{U_{l,t}^{I}}{\theta
+_{I,t}U_{c,t}^{I}} \quad \forall t\geq 0 ,i<I
+\end{equation}
+\begin{equation}
+\sum_{i<I}n_i\tilde{b}_{i,t} \text{ is bounded} \quad \forall t\geq 0
+ \end{equation}
+
+\end{subequations}
+
+
+
+%The next section characterizes the properties of optimal plans.
+
+
+
+%The section \ref{sec:hetquasilinear} economy simplifies things along several dimensions: except for the constraint $c_{2,t} \geq 0$, there is no
+%curvature in the utility from consumption, shocks lack  persistence,  and there are only two agents.
 
 
 %
