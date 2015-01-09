@@ -269,7 +269,7 @@ the proportional labor  tax rate, transfers, and asset purchases in response to 
 Section \ref{Sec: environment} sets out  preferences and possibilities that define the economic environment.
 Section \ref{sec:Ricardian101}
 describes a  Ricardian property for our environment that we subsequently exploit in concisely formulating the Ramsey problem
-in section \ref{sec: Ramsey Plan}.
+in section \ref{Sec: more general economies}.
 Net asset positions, by which we mean assets of individuals minus assets of some benchmark agent affect the set of allocations that can be implemented
 in competitive equilibria with a proportional labor tax and transfers.
 This insight reduces the dimension of the state needed to characterize a Ramsey plan recursively. It also justifies a normalization that allows us to interpret government debt and transfers separately. We do this by setting asset holdings of the least productive agent to be zero, and back out transfers as a gap between the consumption and after tax labor income of this agent. 
@@ -3079,7 +3079,7 @@ x(s) = \frac{1+\rho[l_1(\rho,s)^2-1]}{\frac{P(s)/c_2(\rho,s)}{\mathbb{E}%
 s independent of $s$.
 
 The following lemma, which orders consumption and labor across states, will
-be useful in proving the parts of theorem \ref{prop: long run forces}.  As a notational aside we
+be useful in proving the parts of theorem \ref{thm long run forces}.  As a notational aside we
 will often use $\theta_{1,l}$ and $\theta_{1,h}$ to refer to $%
 \theta_{1}(s_l) $ and $\theta_{1}(s_h)$ respectively. Where $s_l$ refers to
 the low TFP state and $s_h$ refers to the high TFP state.
@@ -3538,9 +3538,9 @@ We  describe what $\left(y_{i},Y,z_{i}\right)$ and conditions \eqref{individual 
 \item planner's aggregate choice variables		$Y = (\tau_l,T,\alpha,\xi,\gamma_-)$,
 \end{itemize}
 
-The objects listed above are defined now using modifications of the Bellman equation for $t\geq 1$ that we spelled out in problem \eqref{eq:BM2} in section \ref{sec: two bellman equation}. For convenience in applying our algorithm, we rewrote the Bellman equation.
+The objects listed above are defined now using modifications of the Bellman equation for $t\geq 1$ that we spelled out in problem \eqref{eq:BM2} in section \ref{Sec: more general economies}. For convenience in applying our algorithm, we rewrote the Bellman equation.
 %Two choices we make are worth noting: firstly we express the problem \eqref{eq:BM2} in section \ref{sec: two bellman equation} in a slightly different manner. Second,  the solutions to $\left(F,G\right)$ in our case have multiple recursive representations in particular with respect to what constitutes as the set of sufficient state variables. We make choices that turn out to be convenient for applying the perturbation method.
- Let $x\_=U^i_c\_b_{i}$ and $m^i\_\propto \frac{1}{U^i_{c}}$ with $\sum_{i}m^i=1$. Note that Ricardian equivalence implies that we can normalize $\sum_{i}\frac{x^i\_}{U^i_c\_}=0$. Thus, the  dimension of the state variables appearing in our modified  Bellman equation is also $2I-2$, as in problem \eqref{eq:BM2} in section \ref{sec: Ramsey Plan}. However, by not normalizing with respect to some arbitrary agent's asset holdings (such as $i=1$), we attain a symmetry that turns out to be convenient.\footnote{This also makes it natural to extend the algorithm to the case with a continuum of agents.}
+ Let $x\_=U^i_c\_b_{i}$ and $m^i\_\propto \frac{1}{U^i_{c}}$ with $\sum_{i}m^i=1$. Note that Ricardian equivalence implies that we can normalize $\sum_{i}\frac{x^i\_}{U^i_c\_}=0$. Thus, the  dimension of the state variables appearing in our modified  Bellman equation is also $2I-2$, as in problem \eqref{eq:BM2} in section \ref{Sec: more general economies}. However, by not normalizing with respect to some arbitrary agent's asset holdings (such as $i=1$), we attain a symmetry that turns out to be convenient.\footnote{This also makes it natural to extend the algorithm to the case with a continuum of agents.}
 
 
 
@@ -3570,7 +3570,7 @@ Satisfying equation \eqref{m def}  amounts to imposing the definition of $m^i(s)
 
 \[\frac{U^i_c(s\_)}{U^j_c(s\_)}=\frac{\mathbb{E}P U_c^i}{\mathbb{E}P U_c^j}.\]
 
-\noindent Thus, we see that  equations \eqref{m def} and \eqref{mod asset pricing equation} correspond to equations \eqref{eq:BM2_rhoprime} and \eqref{eq:BM2_Bonds_cons} of the formulation in the \ref{sec: two bellman equation}.
+\noindent Thus, we see that  equations \eqref{m def} and \eqref{mod asset pricing equation} correspond to equations \eqref{eq:BM2_rhoprime} and \eqref{eq:BM2_Bonds_cons} of the formulation in section \ref{Sec: more general economies}.
 %\textbf{Anmol XXXXX: let's discuss the above and below to make sure it makes sense.  E.G, the presence
 %of $\gamma_-$.  }
 $\left(F,G\right)$  in \eqref{individual const} and \eqref{aggregate const} become the FOCs of problem \eqref{mod bellman equation} and equations \eqref{mod imp} - \eqref{normalization m}. Solutions to $\left(F,G\right)$ in our model have multiple recursive representations.
