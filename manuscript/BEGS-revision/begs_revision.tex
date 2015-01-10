@@ -824,21 +824,9 @@ impose.}
 %%_{i},B_{t}^{\ast }\right\} _{t}$
 %contain some information that it is convenient to eliminate to concisely  formulate the Ramsey problem.
 
-Throughout this paper we avail ourselves of Theorem \ref{theorem: main} to impose a normalization on  asset profiles:
-%shows that many  transfer
-%sequences $\left\{ T_{t}\right\} _{t}$ and asset profiles $\left\{
-%b_{i,t},B_{t}\right\} _{i,t}$  support the same  equilibrium allocation.
-%As such we use a normalization to define the notion of \emph{public debt} for our setting.
-we assume that productivities are ordered as  $\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and set $b_{I,t}=0$. With this normalization we can recover canonical representative agent incomplete market sets up with linear taxes and debt as in \cite{Chari1994},\cite{Aiyagari2002} if government does not care about redistribution, as explained in more details in \ref{Sec: quasilinear}. This allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as
-public debt and limits on $\sum_{i<I}n_ib_{i,t}$ are counterparts  to  debt limits in a representative agent economy. 
-% \textbf{Anmol XXXXXX: 1.  I am not sure what the last sentence means and think it could be disposed of or else should be sharpened.
-% 2.  We should decide on the ```ordering'' of $\theta_i$'s soon and set them for the entire paper.}
-%
-% %\color{black}{Tom and David XXXX: Lets go with the ordering where Agent N is the least productive. This is consistent with our theorems. I will change the numerical section to reflect this.   }
-%
-% \color{black}{Tom and David XXXX: Regarding the debt limit, what I had in mind was connecting to the fact that we are imposing debt limits on $B_t-b_{N,t}$. We mentioned that we impose limits on this object hinting at Ricardian equivalence when we setup the problem. }
 
-\color{black}
+The Ricardian equivlance theorem  seems to send a message that the level of government assets do not matter for welfare. However, a correct interpretation of the result in Theorem \ref{theorem: main} is that public debt and transfers are not separately pinned down by a competitive equilibrium allocation. As such, throughout the paper we will impose a normalization on  asset profiles: we assume that productivities are ordered as  $\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and set $b_{I,t}=0$. This normalization allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as ``public debt''.  We justify this normalization by recovering a canonical representative agent economy with linear taxes as in \cite{Chari1994}, \cite{Aiyagari2002} when Pareto weights are such that the government does not care enough about redistribution. \footnote{This is explained more formally in a setting with two types of agents with preferences that are linear in consumption in section \ref{Sec: quasilinear}}. Limits on $\sum_{i<I}n_ib_{i,t}$ will be counterparts  to  debt limits in a representative agent economy. 
+
 
 \section{Quasilinear preferences}\label{Sec: quasilinear}
 
@@ -902,7 +890,7 @@ where the maximization is subject to
    \begin{subequations}
     \begin{equation}
     \label{implementability constraint}
-   c_1(s)-c_2(s)-n^{-1}B(s)=l_1(s)^{1+\gamma}+n^{-1}\beta^{-1} P(s)B\_
+   c_1(s)-c_2(s)-n^{-1}B(s)=l_1(s)^{1+\gamma}-n^{-1}\beta^{-1} P(s)B\_
     \end{equation}
  \begin{equation}
   \label{eq-resoruces}
@@ -919,17 +907,17 @@ c_2(s)\geq0
 \end{subequations}   
 
 
-We will proceed our characterization of the Ramsey plan in two parts. First we consider the case when the Pareto weight of the productive agent is high enough; this is useful because of Lemma \ref{lemma threshold} below,
+We will proceed our characterization of the Ramsey plan in two parts. First we consider the case when the Pareto weight of the productive agent is higher than a threshold $\bar{\omega}$ defined below in lemma \ref{lemma threshold}.  Here the Ramsey plan features zero transfers and the allocation corresponds to a representative agent economy where the Ramsey planner can only set labor taxes and trade assets with the household.
+  
+
 \begin{lemma}
 \label{lemma threshold}
 Assume that $n<\frac{\gamma}{1+\gamma}$, if $\omega\geq n \left(\frac{1+\gamma}{\gamma}\right)$ then $T_t=0 \quad \forall t\geq0$.  
 
 \end{lemma}
 
-For a Pareto weight on the productive agent above a threshold $\bar{\omega}=n\left(\frac{1+\gamma}{\gamma}\right)$ the Ramsey  planner chooses always to set transfers to zero.
-They are just too costly.      Positive  transfers  entail subsidizing the unproductive type 2 agents
-whose consumption he values too little. The $T_t = 0$ outcome  makes  the Ramsey  plan
-in the two-type of agents economy be  identical to the Ramsey plan for the representative agent economy with no lump sum transfers. It also justifies our normalization where we can interpret $-B_t$ as public debt. We characterize the dynamics of debt and taxes for this case and then discuss what happens when the Pareto weight of the productive agent is low. 
+For a Pareto weight on the productive agent above a threshold $\bar{\omega}=n\left(\frac{1+\gamma}{\gamma}\right)$  using transfers is just too costly for the Ramsey planner. Positive  transfers  entail subsidizing the unproductive type 2 agents
+whose consumption he values too little. Besides making the Ramsey plan in the two-type of agents economy identical to the representative agent economy with no lump sum transfers, lemma \ref{lemma threshold} also justifies our normalization where we interpret $-B_t$ as public debt. We characterize the dynamics of debt and taxes for this case and then discuss what happens when the Pareto weight of the productive agent is low. 
   
 \subsubsection{Representative agent economy with no transfers}
 The key issue in this section is how market incompleteness, as captured by the structure of payoff on the asset $P(s)$,  impedes  tax-smoothing  in a joint ergodic distribution for the tax rate and government debt. The representative agent  economy  interpretation extends and unifies  results from the complete markets economy of \cite{LucasJr.1983} and the risk-free-bond-only economy of  \citep{Aiyagari2002}. 
@@ -1414,7 +1402,7 @@ The multiplier on the implementability constraint for $i$ can be interpreted as 
 agents to trade (the second term).
 
 At a steady state, outcomes resemble those in  the complete market economy of \citet{Wer07a}.
-The tax rate  and transfers both depend only on the current realization of shock $s_t$.\footnote{However we note that the steady state distribution of assets is endogenous, and depends on the technology and preference parameters, as against in \citet{Wer07a} where it is pinned down by the initial distribution of assets.}
+The tax rate  and transfers both depend only on the current realization of shock $s_t$.\footnote{However note that the distribution of assets in the steady state for us is endogenous, it only depends on the technology and preference parameters, as against in \citet{Wer07a} where it is pinned down by the initial distribution of assets.}
 %Furthermore,
 Arguments of \citeauthor{Wer07a} can be adapted  to show that the tax rate is
 constant when preferences have the CES form $c^{1-\sigma}/(1-\sigma) - l^{1+\gamma}/(1-\gamma) $,  and also that fluctuations in the tax rate
