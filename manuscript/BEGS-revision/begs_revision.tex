@@ -205,10 +205,13 @@ comments.}}}
 
 This paper models how transfers, a tax rate on labor income, and  the distribution of government debt should
 respond to aggregate shocks when markets are incomplete. A planner sets a lump sum transfer and a linear tax on labor income
-in an economy with heterogeneous agents, aggregate uncertainty, and a single asset with a possibly risky payoff. Limits to redistribution coming from incomplete  tax instruments and limits to hedging coming from incomplete  asset markets affect optimal policies.
-Two forces shape long-run outcomes: the planner's desire to minimize the welfare cost of fluctuating transfers, which calls for a negative correlation between
+in an economy with heterogeneous agents, aggregate uncertainty, and a single asset with a possibly risky payoff. Limits 
+to redistribution coming from incomplete  tax instruments and limits to hedging coming from incomplete  asset markets affect optimal policies.
+Two forces shape long-run outcomes: the planner's desire to minimize the welfare cost of fluctuating transfers, which calls for a negative
+correlation between
 agents' assets and their skills; and the planner's desire to use fluctuations in
-the return on the traded asset to compensate for missing state-contingent securities.  In a multi-agent model calibrated to match facts about  US booms and recessions,
+the return on the traded asset to compensate for missing state-contingent securities.  In a multi-agent model calibrated to match facts about 
+US booms and recessions,
 the planner's preferences about distribution  make  policies over business cycle frequencies  differ markedly from
 Ramsey plans for representative agent  models.
 
@@ -268,11 +271,14 @@ the proportional labor  tax rate, transfers, and asset purchases in response to 
 
 Section \ref{Sec: environment} sets out  preferences and possibilities that define the economic environment.
 Section \ref{sec:Ricardian101}
-describes a  Ricardian property for our environment that we subsequently exploit in concisely formulating the Ramsey problem
-in section \ref{Sec: more general economies}.
-Net asset positions, by which we mean assets of individuals minus assets of some benchmark agent affect the set of allocations that can be implemented
-in competitive equilibria with a proportional labor tax and transfers.
-This insight reduces the dimension of the state needed to characterize a Ramsey plan recursively. It also justifies a normalization that allows us to interpret government debt and transfers separately. We do this by setting asset holdings of the least productive agent to be zero, and back out transfers as a gap between the consumption and after tax labor income of this agent. 
+describes a  Ricardian property for our environment that we  exploit in concisely formulating the Ramsey problem
+in section \ref{Sec: more general economies}. By a vector of individuals' net asset positions we mean  their assets minus 
+the assets held be a particular benchmark agent. The vector of net asset positions  affects the set of allocations that can be implemented
+in competitive equilibria with affine taxes.
+The  insight that net and not gross asset positions matter reduces the dimension of the state needed 
+to describe a Ramsey plan recursively. It also provides a way for us to separate the roles of  government debt and transfers despite
+the Ricardian property.  We do this by setting the asset holdings of the least productive agent always  to  zero and than backing transfers 
+out from the difference  between this agent's  consumption and  his after tax labor income. 
 
 
 
@@ -281,7 +287,7 @@ A Ramsey plan induces an ergodic distribution of transfers,   the labor tax rate
 %The ergodic joint distribution is
   determined by interactions between
 a) the government's  ability to hedge aggregate shocks by taking advantage of fluctuations in  the return on the asset it trades;
-and b) the government's preferences about  redistribution that affect how costly it is to, alternatively, use fluctuations in transfers to hedge these shocks.
+and b) the government's preferences about  redistribution that affect how costly it is to use fluctuations in transfers to hedge those shocks.
 The analysis in sections \ref{Sec: quasilinear}, \ref{Sec: more general economies}, and \ref{sec: numerical results}
 shows that these interactions  shape  the ergodic distribution of government debt in the following ways.
 If equilibrium outcomes make the  return on the asset {\em low} when the net-of interest government deficit is high,
@@ -340,7 +346,7 @@ Consequently it relies more on transfers and has less cause to accumulate assets
  In section \ref{Sec: more general economies},
 we study economies that are more general in terms of their  heterogeneity, preferences, and shock structures.  We formulate the Ramsey problem recursively in terms of two Bellman equation,
 one for time $0$ and another for times $t\geq 1$.  That these Bellman equations have different state variables expresses the time inconsistency
-of our Ramsey plans, which as usual attribute to the time $0$ Ramsey planner the ability to commit to an intertemporal plan.
+of  plans that  as usual attribute to the  Ramsey planner the ability to commit to an intertemporal plan at time $0$.
 Subsections \ref{sec:2complete} and \ref{sec: 2 agent example}   derive conditions under which the planner can eventually
 achieve complete hedging, i.e., both constant labor tax rate and consumption shares even when the return on the asset is endogenous.
 
@@ -364,8 +370,15 @@ These outcomes differ both qualitatively and quantitatively from those in either
 of our model in which a  recession is modelled as a pure TFP shock that leaves the distribution of skills unchanged.
 
 
-We obtain our main results using two methodological contributions, which we believe will be useful in our settings as well. First, for the quasilinear preferences studied in section \ref{Sec: quasilinear}, we obtain sharp characterizations of the ergodic distribution of debt and taxes by approximating transition dynamics around economies that permit perfect fiscal hedging. This approach also enabled a local stability analysis for economies with the more general preferences of section \ref{sec:stability}. Second, quantitative applications as ambitious as those in our section \ref{sec: numerical results} are made possible by taking a sequence of polynomial approximations about steady states of a sequence of deterministic economies and evaluating the
-polynomials at a current distribution of idiosyncratic state variables of the incomplete markets economy. This approach allows us to study transition paths of the optimal allocation that express the dynamics of the joint distribution of individual wealths and past consumptions, a high dimension endogenous state vector. Both of these contributions build on ideas developed in \cite{Evans2014} 
+Two technical contributions facilitate our analysis. First, for the quasilinear preferences studied in section \ref{Sec: quasilinear}, 
+we obtain sharp characterizations of the ergodic distribution of debt and taxes by approximating transition dynamics around economies that
+permit perfect fiscal hedging. This approach also enables a local stability analysis for economies with the more general
+preferences of section \ref{sec:stability}. Second, quantitative applications as ambitious as those in our section \ref{sec: numerical results}
+are made possible by taking a sequence of polynomial approximations about steady states of a sequence of deterministic economies and evaluating the
+polynomials at a current distribution of idiosyncratic state variables of the incomplete markets economy. This approach allows us to study transition paths of the optimal allocation
+that express the dynamics of the joint distribution of individual wealths and past consumptions, a high dimensional
+endogenous state vector. These technical contributions, which build on ideas developed in \cite{Evans2014}, will be useful in many other settings 
+with heterogeneous agents and aggregate risk. 
 
 
 Section \ref{sec:concluding} offers concluding remarks.  
@@ -720,6 +733,8 @@ equilibrium given $\left( \left \{ \hat{b}_{i,-1}\right \} _{i},\hat{B}%
 _{-1}\right) $.
 \end{theorem}
 
+
+
 We relegate the proof to appendix \ref{appndx: thm RE}. In the spirit of \citet{Barro1974}, we interpret Theorem \ref{theorem: main} as  asserting a type of  Ricardian equivalence.
 Similar results  hold in more general environments. For example, we could allow
 agents to trade all conceivable  Arrow securities and still show that  equilibrium allocations depend only on agents' net assets positions.
@@ -774,7 +789,7 @@ b_{i,-1}^{\prime }-b_{1,-1}^{\prime }=b_{i,-1}^{\prime \prime
 \end{corollary}
 
 Thus, total government debt is not what matters, who owns it does.
-To  illustrate this point,
+To  illustrate,
 % and to
 % appreciate how  Ricardian irrelevance affects optimal equilibria,
 imagine an increase an
@@ -825,14 +840,26 @@ impose.}
 %contain some information that it is convenient to eliminate to concisely  formulate the Ramsey problem.
 
 
-The Ricardian equivlance theorem  seems to send a message that the level of government assets do not matter for welfare. However, a correct interpretation of the result in Theorem \ref{theorem: main} is that public debt and transfers are not separately pinned down by a competitive equilibrium allocation. As such, throughout the paper we will impose a normalization on  asset profiles: we assume that productivities are ordered as  $\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and set $b_{I,t}=0$. This normalization allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as ``public debt''.  We justify this normalization by recovering a canonical representative agent economy with linear taxes as in \cite{Chari1994}, \cite{Aiyagari2002} when Pareto weights are such that the government does not care enough about redistribution. \footnote{This is explained more formally in a setting with two types of agents with preferences that are linear in consumption in section \ref{Sec: quasilinear}}. Limits on $\sum_{i<I}n_ib_{i,t}$ will be counterparts  to  debt limits in a representative agent economy. 
+The Ricardian equivalance theorem  \ref{theorem: main} seems to
+send a message that the level of government assets itself does not affect welfare. However, a 
+better  interpretation is that public debt and transfers are 
+not  pinned down separately within a competitive equilibrium. To acknowledge this situation,
+throughout the paper  we assume that productivities are ordered as 
+$\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and then set $b_{I,t}=0$.
+Theorem   \ref{theorem: main} gives us the freedom to set $b_{I,t}$ in this way.  Doing so 
+allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as ``public debt''.  
+Limits on $\sum_{i<I}n_ib_{i,t}$ now  become  counterparts  to what would be 
+debt limits in a representative agent economy. 
+
 
 
 \section{Quasilinear preferences}\label{Sec: quasilinear}
 
 In our general   section \ref{Sec: environment} setting, the endogeneity of the return on the single asset and the multiplicity $I$ of types of agents makes it
-difficult to parse the forces that govern how  transfers are optimally used to smooth tax rate distortions and to redistribute across people. 
-In this section, we analyze a special case that helps us isolate key  forces. We assume two types of agents who have one-period utility functions that are quasi-linear in consumption. This  makes the return on the asset exogenous. It in turn allows us to focus on how
+difficult to parse the forces that govern how  transfers should be used to smooth tax rate distortions and to redistribute across people. 
+In this section, we analyze a special case that helps us isolate key  forces. We assume two types of agents who have one-period utility 
+functions that are quasi-linear in consumption. 
+This  makes the return on the asset exogenous and allows us to focus on how
 the comovement between returns and aggregate risk affects how transfers are used to smooth tax distortions and to redistribute.
 
 
@@ -848,13 +875,14 @@ Quasilinear preferences: $u(c,l)=c-\frac{l^{1+\gamma}}{1+\gamma}$
 \label{ass iid}
 IID shocks to expenditure: $g(s_t)$ is i.i.d over time
 \end{assumption}
-Assuming one type of agent who cannot work makes the  redistribution between rich and poor transparent, and i.i.d shocks help with analytical tractability.  With i.i.d shocks we can restrict our attention to  payoff matrices $\mathbb{P}$ that have identical rows denoted by a vector $P(s)$ with a normalization  $\mathbb{E}P(s)=1$. At interior solutions, the first-order conditions for the household's problem for $l_{1,t}$ and $b_{i,t}$ imply that
+Assuming one type of agent who cannot work makes  redistributions between rich and poor transparent, and i.i.d shocks help with analytical tractability.  With i.i.d shocks we can restrict our attention to  payoff matrices $\mathbb{P}$ that have identical rows denoted by a vector $P(s)$ with a normalization  $\mathbb{E}P(s)=1$. At interior solutions, the first-order conditions for the household's problem for $l_{1,t}$ and $b_{i,t}$ imply that
 \begin{eqnarray*}
 l_{1,t}^\gamma & = &(1-\tau_t) \theta \cr
 R_t & = & \frac{P(s_t)}{\beta},
 \end{eqnarray*}
-where we set  $R_{0}=\beta^{-1} P(s_0)$. Substituting these into the  budget constraint \eqref{agent bc affine} gives %, the implementability constraints become
- 
+where we set  $R_{0}=\beta^{-1} P(s_0)$.
+Substituting these into the  budget constraint \eqref{agent bc affine} gives %, the implementability constraints become
+
  \begin{subequations}
  \begin{equation} \label{budget consts substitution agent 1} c_{1,t} + b_{1,t} = l_{1,t}^{1+\gamma} + \frac{P(s_t)}{\beta} b_{1,t-1}+T_t, \quad t \geq 0.
  \end{equation}
@@ -867,22 +895,28 @@ and get
  \begin{equation} \label{implementability constraint ql} c_{1,t} -c_{2,t} + b_{1,t}-b_{2,t} = l_{1,t}^{1+\gamma} + \frac{P(s_t)}{\beta} [b_{1,t-1}-b_{2,t-1}], \quad t \geq 0.
  \end{equation}
  
- Equation \eqref{implementability constraint ql} presents a recursive version of the implementability constraints appropriate for the quasilinear setting. We next use the Ricardian equivalence result summarized in theorem \ref{theorem: main} and corollary \ref{corr: B does not matter}
-of  section \ref{sec:Ricardian101} to  normalize the assets of the unproductive agent, $b_{2,t}$  to zero\footnote{ We will adhere to this normalization throughout this section}.  This allows us to calculate transfers as $T_t=c_{2,t}$. Our last assumption is to impose a non-negativity constraint on the consumption of the unproductive agent. Requiring that $c_{2t} \geq 0$ is  an easy way to make transfers  costly
-to the Ramsey planner for some values of the Pareto weights. \footnote{In absence of this constraint, the quasi linear case has a trivial solution where the Ramsey plan has constant taxes and asset holdings for all $t\geq0$.} 
-
+ Equation \eqref{implementability constraint ql} presents a recursive version of the implementability constraints appropriate for the quasilinear setting.
+ As promised in subsection \ref{sec:Ricardian101},
+ we use the freedom offered us by the Ricardian theorem \ref{theorem: main} and corollary \ref{corr: B does not matter}
+of  section  to  set the assets $b_{2,t}$ of the unproductive agent  always to
+zero. This makes the asset market clearing condition imply  that   $nb_{1,t} = -B_t$ and
+%\footnote{We will adhere to this normalization throughout this section}. 
+also implies that  transfers  $T_t=c_{2,t}$. Next we make
 \begin{assumption}
 \label{ass non negativity}
 $c_{2,t}\geq0$
 \end{assumption}
 
+ 
 
-\noindent The asset market clearing condition implies that   $nb_{1,t} = -B_t$. 
+ Requiring that $c_{2t} \geq 0$ is  an easy way to make transfers too   costly
+to a Ramsey planner who cares too little about the unproductive agent.\footnote{In the absence of the constraint $c_{2,t}\geq0$,
+with quasi-linear preferences the Ramsey plan sets constant a constant tax rate and constant asset holdings for all $t\geq0$.} 
 
-\noindent Let $(\omega,n) \in [0,1] \times [0,1]$ be the Pareto weight and mass assigned to the  productive type $1$ agent and $V(B\_)$ be the value of the Ramsey plan with initial government assets $B\_$.
-Then the Bellman equation for the Ramsey planner
-is: 
 
+\noindent Let $(\omega,n) \in [0,1] \times [0,1]$ be the Pareto weight and mass assigned to the  productive type $1$ agent. Let $V(B\_)$ 
+be the value of the Ramsey plan for initial government assets $B\_$.
+It satisfies the Bellman equation  
 
 \begin{equation}
 V(B\_)=\max_{\{c_1(s),c_2(s),l_1(s),B(s)\}_s} \sum_{s}\pi(s)\left\{\omega \left(c_{1}(s)-\frac{l_{1}(s)^{1+\gamma}}{1+\gamma}\right)+(1-\omega)c_{2(s)}   +\beta V(B(s))    \right\} \end{equation}
@@ -907,7 +941,12 @@ c_2(s)\geq0
 \end{subequations}   
 
 
-We will proceed our characterization of the Ramsey plan in two parts. First we consider the case when the Pareto weight of the productive agent is higher than a threshold $\bar{\omega}$ defined below in Lemma \ref{lemma threshold}.  Here the Ramsey plan features zero transfers and the allocation corresponds to a representative agent economy where the planner can only set labor taxes and trade assets with the household.
+We will  characterize of a Ramsey plan in two steps. We begin by studying a case  in which the Pareto weight attached to 
+the productive agent is sufficiently high that the Ramsey planner chooses to set transfers to zero always.
+%higher than a threshold $\bar{\omega}$ defined below in Lemma \ref{lemma threshold}.
+This makes the  Ramsey outcomes identical to those for  an  economy in which 
+ a Ramsey planner  is restricted to use a linear tax schedule (he cannot use transfers) and in which there is a representative
+ agent whose allocation equals the allocation to the productive agent in our economy. 
   
 
 \begin{lemma}
@@ -916,11 +955,23 @@ Assume that $n<\frac{\gamma}{1+\gamma}$, if $\omega\geq n \left(\frac{1+\gamma}{
 
 \end{lemma}
 
-For a Pareto weight on the productive agent above a threshold $\bar{\omega}=n\left(\frac{1+\gamma}{\gamma}\right)$  using transfers is just too costly for the planner. Positive  transfers  entail subsidizing the unproductive type 2 agents
-whose consumption he values too little. Besides making the Ramsey plan in the two-type of agents economy identical to the representative agent economy with no lump sum transfers, Lemma \ref{lemma threshold} also justifies our normalization where we interpret $-B_t$ as public debt. We characterize the dynamics of debt and taxes for this case and then discuss what happens when the Pareto weight of the productive agent is low. 
-  
+For a Pareto weight on the productive agent above  $\bar{\omega}=n\left(\frac{1+\gamma}{\gamma}\right)$,
+using transfers is just too costly for the planner because positive  transfers   subsidize the unproductive type 2 agent
+whose  welfare the planner  values too little. Besides making the Ramsey plan in the
+two-type of agents economy identical to that for  representative agent economy with no lump sum transfers, 
+Lemma \ref{lemma threshold} also justifies our normalization where we interpret $-B_t$ as public debt.  
+\textbf{Anmol XXXXX:
+I don't understand the part about ``also justifies'' -- didn't we impose everything we need to get this with our without the lemma?}
+We shall now characterize the dynamics of debt and taxes for such a $T_t \equiv 0$ representative agent economy
+before turning to the case in which a lower Pareto weight attached to productive gent induces the Ramsey planner to use positive transfers.
+ 
+
 \subsubsection{Representative agent economy with no transfers}
-The key issue in this section is how market incompleteness, as captured by the structure of payoff on the asset $P(s)$,  impedes  tax-smoothing  in a joint ergodic distribution for the tax rate and government debt. The representative agent  economy  interpretation extends and unifies  results from the complete markets economy of \cite{LucasJr.1983} and the risk-free-bond-only economy of  \citep{Aiyagari2002}. 
+The key force at play here is how market incompleteness, as captured by the structure of payoff on the asset $P(s)$, 
+impedes  tax-smoothing  in a joint ergodic distribution for the tax rate and government debt.
+Our analysis here  extends and unifies  insights that  emerged earlier analyses of  the complete markets economy of \cite{LucasJr.1983} and 
+of the risk-free-bond-only economy of  \citep{Aiyagari2002}, both of which also had a representative agent and a government prohibited
+from using lump sum taxes. 
 
 To organize analytical results in theorems \ref{thm: rep agent general theorem} and \ref{thm: rep agent linear policies}, it is useful to  collect some  $P(s)$ vectors that are perfectly correlated with expenditure shocks $g(s)$ in the
 following  set %of payoffs
@@ -972,7 +1023,7 @@ Part 1 of theorem \ref{thm: rep agent general theorem}  establishes that when th
 asset sequences recurrently revisit  small neighborhoods of  any arbitrary lower and upper bounds on government assets.
 Because the labor tax rate is decreasing in government assets, it varies too. These outcomes contrast sharply with those   in a corresponding complete market benchmark
 like \citeauthor{LucasJr.1983}'s, where both debt and tax rates would be constant  sequences,  and with those in the incomplete markets economy of  \citeauthor{Aiyagari2002},
-  where government assets approach levels that allow the  limiting tax rate to be zero and the tail allocation to be first-best.
+  where government assets would approach levels that allow the  limiting tax rate to be zero and the tail allocation to be first-best.
 
 With more structure on the payoff vector, part 2 of  theorem \ref{thm: rep agent general theorem} shows that there is an  inward drift to government assets:
 the sequence of Lagrange multipliers on the sequence of implementability constraints forms a sub (or super) martingale in  regions with low (or high) assets.
@@ -1068,12 +1119,16 @@ exogenously alter  the covariance of $P(s)$ with $g(s)$. \footnote{For the purpo
 
 \subsubsection{Two agent quasilinear case}
 
-The previous section worked out in detail the case where the Pareto weight on the productive type 1 agent where high enough and as such transfers were not used to hedge aggregate shocks. Theorem \ref{thm heterogeneous agents} now completes the characterization by describing outcomes when  the Pareto weight on the productive agent are low and transfers are in part effective in hedging. 
+The previous subsection described a Pareto plan in  the case where the Pareto weight on the productive type 1 agent
+was so high that the Ramsey planner chose not to use  transfers to hedge aggregate shocks. 
+Theorem \ref{thm heterogeneous agents} now  describing a Ramsey plan when  the Pareto weight attached to  the productive agent are lower,
+inducing the planner to use transfers to hedge those shocks. 
  
  
 \begin{theorem}
 \label{thm heterogeneous agents}
-Let $(\omega,n) \in [0,1] \times [0,1]$ be the Pareto weight and mass assigned to the  productive type $1$ agent.  Assume that $n<\frac{\gamma}{1+\gamma}$.
+%Let $(\omega,n) \in [0,1] \times [0,1]$ be the Pareto weight and mass assigned to the  productive type $1$ agent.
+  Assume again that $n<\frac{\gamma}{1+\gamma}$.
 The optimal tax rate, transfer, and government asset policies $\{\tau_t,T_t,B_t\}_t$ are characterized as follows:
 
 
@@ -1118,22 +1173,29 @@ We relegate the proof to appendix \ref{apndx: proof heterogeneous agent}.
 
 \color{black}
 %\textbf{Anmol and Tom:  I want to discuss some of the sentences in the next two paragraphs and seek clarification.}
- Part 1 simply summarizes the representative agent case for completeness. Things change in part 2  of Theorem \ref{thm heterogeneous agents} with a more progressive  $\omega<\bar{\omega}$ Ramsey planner.
-Fluctuating transfers  now become a useful  tool to  hedge aggregate shocks.
+ Part 1 simply reiterates the  findings for high $\omega$ from the previous subsection.
+ Things change in part 2  of Theorem \ref{thm heterogeneous agents} with a more progressive  $\omega<\bar{\omega}$ Ramsey planner.
+The planner now uses fluctuating transfers  to help hedge aggregate shocks.
  %as the costs are typically lower depend jointly on Pareto weights and the distribution of assets across the agents, or equivalently the level of government assets $B_t$ (under our normalization that the unproductive agent has zero assets).
   If the government begins with enough assets (as in part 2.a of  Theorem \ref{thm heterogeneous agents}),
    the planner
   chooses an interior allocation in which {\em all} fluctuations in net-of interest deficits are always financed by fluctuating transfers $T_t$.
    Here  the tax rate is  constant and government assets remain at their initial level where %. At this initial  level government assets,
     the marginal welfare costs of labor taxes are equated
- to the marginal welfare costs of transfers. Part 2.b describes a setting in which  government assets too low (and $P(s)\not \in \mathcal{P}^*$) to validate the part 2.a outcome.  Here the planner eventually accumulates government  assets until they reach the threshold $\mathcal{B}(\omega)$
+ to the marginal welfare costs of transfers. Part 2.b describes a setting in which  government assets are initially
+ too low (and $P(s)\not \in \mathcal{P}^*$) to validate the part 2.a outcome.  Here the planner eventually accumulates government  assets until they reach the threshold $\mathcal{B}(\omega)$
  %.  At this level,
-at which the welfare  costs of transfers are  low enough that the government  can  keep the tax rate constant.
-The government's decision under the conditions of part 2  to accumulate enough  assets so that
- eventually it can use earnings on its assets together with fluctuating positive  transfers to hedge fiscal shocks is reminiscent of outcomes in the \cite{Aiyagari2002} economy. There, with a representative agent and non-negativity constraints on transfers, the planner
-accumulated enough assets so that it could finance shocks with zero distortionary labor taxes while costlessly using transfers
-to dispose of excess earnings on its asset holdings. With multiple agents, fluctuating transfers can may bring welfare costs that  depend on
-the Ramsey's planner attitude about  redistribution. Theorem \ref{thm heterogeneous agents} describes how Pareto weights that  make the planner care more about the unproductive agent lower the marginal welfare costs of collecting revenue from labor taxes paid by the productive agent. The planner thus increases the labor tax rate, lowering the threshold level of assets that are required to finance all shocks by transfers. Thus a more redistributive planner relies more on transfers and consequently has less cause to accumulate assets to hedge aggregate shocks.
+at which the welfare  costs of transfers are  low enough to induce the planner to keep the tax rate constant.
+The planner's choice under the conditions of part 2  to accumulate enough government assets so that
+ eventually the government can use earnings on its assets together with fluctuating positive  transfers to hedge fiscal shocks is reminiscent of outcomes in the \cite{Aiyagari2002} economy. There, with a representative agent and non-negativity constraints on transfers, the planner
+accumulated enough assets to finance shocks with zero distortionary labor taxes while costlessly using transfers
+to dispose of any excess earnings on its asset holdings. With multiple agents, fluctuating transfers  may bring welfare costs that  depend on
+the Ramsey's planner attitude about  redistribution. Theorem \ref{thm heterogeneous agents} describes how Pareto weights that  indicate
+that the planner cares more about the unproductive agent 
+lower the marginal welfare costs of collecting revenue from labor taxes paid by the productive agent. This induces
+the planner to increase the labor tax rate,
+lowering the threshold level of assets that are required to finance all shocks by transfers. In this way,
+a more redistributive planner relies more on transfers and consequently is less motivated  to accumulate assets to hedge aggregate shocks.
 
 \color{black}
 
@@ -1146,7 +1208,10 @@ the Ramsey's planner attitude about  redistribution. Theorem \ref{thm heterogene
 %Following \citet{LucasJr.1983} and \citet{Aiyagari2002}, we use households' first-order necessary conditions to describe restrictions on competitive
 %equilibrium allocations.
 The quasilinearity of utilities maintained throughout  section \ref{Sec: quasilinear} set  the equilibrium  return on the asset to $\beta^{-1}P(s)$.
-Adding curvature to utility from consumption  makes the  return on the asset   endogenous even for a risk-free bond having a payoff vector $P(s)=1$. We begin with a pair of Bellman equations that formulate the  Ramsey plan recursively, with relative marginal utilities of consumption as state variables. Here  and also in section  \ref{sec: numerical results}, we  use these Bellman equations to analyze several economies  with utility functions that are strictly concave in consumption.
+Adding curvature to utility from consumption  makes the  return on the asset   endogenous even for a risk-free bond having a payoff vector $P(s)=1$. 
+We begin with a pair of Bellman equations that formulate the  Ramsey plan recursively.  Relative marginal utilities of consumption
+now appear as state variables in one of our two Bellman equations. Here  and also in section  \ref{sec: numerical results}, we  use
+these Bellman equations to analyze several economies  with one-period utility functions that are strictly concave in consumption.
 
 With natural borrowing limits for households, first-order necessary conditions for the  household's problem
  are%
@@ -1876,6 +1941,8 @@ constraint}), $\{ b_{i,t} \}_{i,t}$ are bounded,
 and constraints (\ref{feasibility goods}), (\ref{govmt bc affine})\ and (\ref%
 {feasibility bonds})\ are satisfied.
 \end{definition}
+
+\textbf{Anmol XXXXX: a missing reference number -- see the ???? in the pdf version here.}
 
 We can define an \emph{optimal} competitive equilibrium with exogenous borrowing
 constraints by extending Definition \ref{Def: optimal CE affine}.
@@ -3348,7 +3415,7 @@ Given the linearized policy rules it is then possible to evaluate the local stab
 
 This linearization can be used to construct the bordered hessian of the problem (\ref{eq:ss-obj}) at the steady state. We can then apply second order tests to verify that the first order necessary conditions are sufficient.
 %The code for computing the Bellman equations, steady states and the linearized policies is available at https://github.com/dgevans/Golosov-Sargent.git
-\subsection{Proof for Theorem \ref{thm: localstability}}
+\subsection{Proof of Theorem \ref{thm: localstability}}
 \label{apndx: stability}
  \begin{proof}
 
