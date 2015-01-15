@@ -424,10 +424,6 @@ Section \ref{sec:concluding} offers concluding remarks.
 \textbf{Anmol and Mike: this subsection has just been cut and pasted from a long ago version. I don't like literature review sections, but
 I think we need one for strategic reasons if only to help an editor get us fair referees.}
 
-Our paper extends both \citet{Barro1974}, which showed Ricardian equivalence in a representative agent economy with lump sum taxes,
-and \citet{Barro1979}, which studied  optimal taxation  when lump sum taxes are ruled out. In our environment with incomplete markets and heterogeneous workers,
-both forces discovered by Barro play large roles.  But the distributive motives that we include alter optimal policies.
-
  A large  literature on Ramsey problems  exogenously restricts transfers in the context of representative agent, general equilibrium models.
   \citet{LucasJr.1983}, \citet{Chari1994},  and \citet{Aiyagari2002} (henceforth called  AMSS)
  %\textbf{Anmol XXXXX: let's decide on whether or not
@@ -456,6 +452,15 @@ is that when  agent's asset holdings are perfectly observable, the distribution 
 agents is irrelevant and an optimal allocation can be achieved purely through
 taxation (see, e.g. \citet{Bassetto2004}).  In the previous version of the paper we showed that a mechanism design version of the model with unobservable assets generates some of the similar predictions to the model with affine taxes that we study, in particular, the relevance of net assets and history dependence of taxes. We leave further analysis along this
 direction to the  future.}
+
+Some of our results in section \ref{Sec: quasilinear}  are related to \citet{Angeletos}, \citet{Buera_Nicolini}, and \citet{Shin2007}. These papers show that a Ramsey allocation with complete markets (for some initial debt level) as in \citet{LucasJr.1983}, can be supported in a setting with non-contingent debts of rich enough maturities. In contrast, we characterize properties of payoffs that cause the optimal plan with incomplete markets to  eventually converge to a  complete markets allocation. For us the limiting allocation depends on  primitive parameters and not the initial debt level. We use this result to build tools that allow us to say more about the ergodic distribution of debt and taxes in economies where perfect spanning is infeasible even in the limit.
+
+In a setting with self-interested politicians who issue debt and tax capital in absence of commitment, \citet{AA2011} find conditions under which optimal allocations feature no tax distortions in the limit. Our eventual spanning results have a similar flavor where we show cases where fluctuations in taxes rates are absent in the limit although the level may not be zero. Also for (a deterministic) setting with linear utility, their paper characterizes speeds of convergence of debt and tax rates in the neighbourhood of steady states and how like political economy frictions can slow down convergence. In section \ref{Sec: quasilinear} with utility linear in consumption, we too characterize the speed of convergence in terms of the covariance structure of the payoffs and aggregate shocks.  
+
+
+Our paper extends both \citet{Barro1974}, which showed Ricardian equivalence in a representative agent economy with lump sum taxes,
+and \citet{Barro1979}, which studied  optimal taxation  when lump sum taxes are ruled out. In our environment with incomplete markets and heterogeneous workers,
+both forces discovered by Barro play large roles.  But the distributive motives that we include alter optimal policies.
 
 Several other papers impute distributive concerns to a Ramsey planner.
 Three papers  most closely related to ours are \citet{Bassetto1999}, \citet{shin2006ramsey}, and \citet{Wer07a}. Like us, those authors allow heterogeneity and study
@@ -957,11 +962,11 @@ Assume that $n<\frac{\gamma}{1+\gamma}$, if $\omega\geq n \left(\frac{1+\gamma}{
 
 For a Pareto weight on the productive agent above  $\bar{\omega}=n\left(\frac{1+\gamma}{\gamma}\right)$,
 using transfers is just too costly for the planner because positive  transfers   subsidize the unproductive type 2 agent
-whose  welfare the planner  values too little. Besides making the Ramsey plan in the
+whose  welfare the planner  values too little. By making the Ramsey plan in the
 two-type of agents economy identical to that for  representative agent economy with no lump sum transfers, 
 Lemma \ref{lemma threshold} also justifies our normalization where we interpret $-B_t$ as public debt.  
-\textbf{Anmol XXXXX:
-I don't understand the part about ``also justifies'' -- didn't we impose everything we need to get this with our without the lemma?}
+%\textbf{Anmol XXXXX:
+%I don't understand the part about ``also justifies'' -- didn't we impose everything we need to get this with our without the lemma?}
 We shall now characterize the dynamics of debt and taxes for such a $T_t \equiv 0$ representative agent economy
 before turning to the case in which a lower Pareto weight attached to productive gent induces the Ramsey planner to use positive transfers.
  
@@ -1761,7 +1766,7 @@ $g$ & .13 \%&Average pre-transfer expenditure- output ratio of 12 \% \\\hline
 
 \subsection{Long run outcomes}\label{sec:longrunsimul}
 Figure \ref{fig:long_simulation} simulations of  2000 periods for the government debt to output ratio, the labor tax rate,  and the transfers to output ratio
-for three values of $\chi \in \{-1.0,-0.06,1.0\}$ in red, black, and blue, respectively. The three simulations start from the  same initial conditions and
+for three values of $\chi \in \{-1.0,-0.06,1.0\}$ in dashed , bold, and dotted, respectively. The three simulations start from the  same initial conditions and
 all share the same sequence of underlying shocks.
 
  {
@@ -1769,16 +1774,16 @@ all share the same sequence of underlying shocks.
   \label{fig:long_simulation}
     \centering
     \includegraphics[width = 0.9\textwidth]{cesplots/long_simulation_debt.png}
-    \caption{The red, black and blue lines plot simulations for a common sequence of shocks for values of $\chi=-1.0,-0.06,1.0$ respectively}
+    \caption{The dashed, bold and dotted lines plot simulations for a common sequence of shocks for values of $\chi=-1.0,-0.06,1.0$ respectively}
   \end{figure}
 
 }
 
-Two features emerge.   Different values $\chi$ give rise to different locations of the long-run marginal distribution of government assets and also to different  rates  of convergence
+Two features emerge. Different values $\chi$ give rise to different locations of the long-run marginal distribution of government assets and also to different  rates  of convergence
 to that long-run distribution.
 A sufficiently positive $\chi$ generates lower payoffs in recessions relative to booms. In line with assertions of  theorems \ref{thm: rep agent general theorem} and  \ref{thm long run forces},
-we see from the blue line  that  the government does not repay its initial debt during these 2000 periods. On the other
-hand, under the benchmark $\chi$  (black line) or  when $\chi$ is negative (red line), the government accumulates assets.
+we see from the dotted line  that  the government does not repay its initial debt during these 2000 periods. On the other
+hand, under the benchmark $\chi$  (bold line) or  when $\chi$ is negative (dashed line), the government accumulates assets.
 
 In order to get a clearer picture of the speed of convergence, we plot  paths of the conditional means for debt and the  tax rate in figure \ref{fig:speed_of_convergence}.
 To explain how we generated these plots, let $B(s_{t+1},\bm x_t, \bm \rho_t)$ be the Ramsey decision rules
@@ -1793,7 +1798,7 @@ B^{cm}_{t+1}=\mathbb{E}B(s_{t+1},\bm x^{cm}_t,\bm \rho^{cm}_{t})
  \end{equation}
 \end{subequations}
 Note how these conditional mean  paths smooth the high frequency movements in the dynamics of the state variables but retain the low frequency drifts.
- As before,  different lines correspond to  different values of $\chi$ between $-1.0$ and $1.0$ with the blue (red) lines representing positive (negative) values of $\chi$.
+ As before,  different lines correspond to  different values of $\chi$ between $-1.0$ and $1.0$ with the bold (dashed) lines representing positive (negative) values of $\chi$.
  Thicker  lines depict outcomes associated with larger values of $\chi$. The figure  shows that the speed of convergence is increasing and the magnitude of the limiting assets in decreasing
  in the strength of correlation between productivities and payoffs. This pattern  confirms the approximation results characterized in Theorem \ref{thm: rep agent linear policies}.
 
@@ -1802,7 +1807,7 @@ Note how these conditional mean  paths smooth the high frequency movements in th
   \label{fig:speed_of_convergence}
     \centering
     \includegraphics[width = .9\textwidth]{cesplots/speed_of_convergence.png}
-    \caption{The plot shows conditional mean paths for different values of $\chi$. The red (blue) lines have $\chi<0$ ($\chi>0$). The thicker lines represent larger values.}
+    \caption{The plot shows conditional mean paths for different values of $\chi$. The dashed (blue) lines have $\chi<0$ ($\chi>0$). The thicker lines represent larger values. The dotted line have $\chi=-0.06$}
   \end{figure}
 
 }
@@ -1938,11 +1943,9 @@ c_{i,t},l_{i,t},b_{i,t}\right \} _{i},B_{t},R_{t}\}_{t} $ such that $%
 \{ c_{i,t},l_{i,t},b_{i,t}\right \} _{i,t}$ maximizes (\ref{utility
 lifetime})\ subject to (\ref{agent bc affine}) and (\ref{borrowing
 constraint}), $\{ b_{i,t} \}_{i,t}$ are bounded,
-and constraints (\ref{feasibility goods}), (\ref{govmt bc affine})\ and (\ref%
+and constraints (\ref{eqn:feasiblity}), (\ref{govmt bc affine})\ and (\ref%
 {feasibility bonds})\ are satisfied.
 \end{definition}
-
-\textbf{Anmol XXXXX: a missing reference number -- see the ???? in the pdf version here.}
 
 We can define an \emph{optimal} competitive equilibrium with exogenous borrowing
 constraints by extending Definition \ref{Def: optimal CE affine}.
