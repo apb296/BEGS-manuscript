@@ -1807,7 +1807,7 @@ Note how these conditional mean  paths smooth the high frequency movements in th
   \label{fig:speed_of_convergence}
     \centering
     \includegraphics[width = .9\textwidth]{cesplots/speed_of_convergence.png}
-    \caption{The plot shows conditional mean paths for different values of $\chi$. The dashed (blue) lines have $\chi<0$ ($\chi>0$). The thicker lines represent larger values. The dotted line have $\chi=-0.06$}
+    \caption{The plot shows conditional mean paths for different values of $\chi$. The dashed (solid) lines have $\chi<0$ ($\chi>0$). The thicker lines represent larger values. The dotted line have $\chi=-0.06$}
   \end{figure}
 
 }
@@ -2010,46 +2010,58 @@ policies to  affect the  interest rate, it affects constrained and unconstrained
  differently.  By facilitating
 redistribution, this can improve welfare. %In the next several paragraphs, we will formalize this
 %intuition.
-We next construct an example without any
-shocks in which the government can achieve higher welfare by using borrowing
-constraints to improve its ability to redistribute.
-In this section we construct an example in which the government can achieve
-higher welfare in the economy with ad-hoc borrowing limits. We restrict ourselves to a deterministic economy with $g_t=0$, $\beta_t=\beta$ and $I=2$.  Further the utility function over consumption and labor supply $U(c,l)$ is separable in the arguments and satisfies the Inada conditions. The  planners problem can then be written as the following sequence problem
+
+We next construct an example in which the government can achieve
+higher welfare in the economy with ad-hoc borrowing limits. For this example, we impose $g_t=0$, $P(s_t)=1$, $\theta_{i,t}=\theta_i$ and work with $I=2$.  Further the utility function over consumption and labor supply $U(c,l)$ is separable in the arguments and satisfies the Inada conditions. Slightly different from section \ref{Sec: environment}, we write the budget constraints of the agents in with prices $q_t$ rather than returns $R_{t-1}$, As will be clear, this modification turns out to be convenient for this simple example. Thus the budget constraints \ref{agent bc affine} are modified to,
+
 \begin{equation}
-	\max_{\{c_{i,t},l_{i,t},b_{i,t},R_t\}_t} \sum_{t=0}^\infty\beta^t\left[\alpha_1U(c_{1,t},l_{1,t}) +\alpha_2 U(c_{2,t},l_{2,t})\right]\label{eq.A_obj}
+\label{agent bc modified}
+c_{i,t}+q_tb_{i,t}=(1-\tau_t)l_{i,t}\theta_{i}+b_{i,t-1}+T_t
+\end{equation}
+
+
+The  planners problem can then be written as the following sequence problem
+\begin{equation}
+	\max_{\{c_{i,t},l_{i,t},b_{i,t},R_t\}_t} \sum_{t=0}^\infty\beta^t\left[\omega_1U(c_{1,t},l_{1,t}) +\omega_2 U(c_{2,t},l_{2,t})\right]\label{eq.A_obj}
 \end{equation}subject to
 \begin{subequations}
 \begin{align}
-	c_{2,t}+\frac{U_{l2,t}l_{2,t}}{U_{c2,t}}-\left(c_{1,t}+\frac{U_{l1,t}l_{1,t}}{U_{c1,t}}\right) +\frac{1}{R_t}\left( b_{2,t}-b_{1,t}\right)  = b_{2,t-1}-b_{1,t-1}\label{eq.A_imp}\\
+	c_{2,t}+\frac{U_{l2,t}l_{2,t}}{U_{c2,t}}-\left(c_{1,t}+\frac{U_{l1,t}l_{1,t}}{U_{c1,t}}\right) +q_t\left( b_{2,t}-b_{1,t}\right)  = b_{2,t-1}-b_{1,t-1}\label{eq.A_imp}\\
 	\frac{U_{l1,t}}{\theta_1U_{c1,t}} = \frac{U_{l2,t}}{\theta_2 U_{c2,t}}\label{eq.A_wage}\\
 	c_{1,t}+c_{2,t} \leq \theta_1 l_{1,t}+\theta_2 l_{2,t}\label{eq.A_feas}\\
-	\left(\frac{U_{ci,t}}{U_{ci,t+1}}-\beta R_t\right)(b_{i,t}-\underline b_i) = 0\label{eq.A_slack}\\
-	\frac{U_{ci,t}}{U_{ci,t+1}} \geq \beta R_t\label{eq.A_euler}\\
+	\left(\frac{U_{ci,t}}{U_{ci,t+1}}-\beta q^{-1}_t\right)(b_{i,t}-\underline b_i) = 0\label{eq.A_slack}\\
+	\frac{U_{ci,t}}{U_{ci,t+1}} \geq \beta q_t^{-1}\label{eq.A_euler}\\
 	b_{i,t}\geq \underline b_i
 \end{align}
-\end{subequations}  Where $\underline b_i$ is the exogenous borrowing constraint for agent i.  We obtain equation \eqref{eq.A_imp} by eliminating transfers from the budget equations of the households and using the optimality for labor supply decision. Equations \eqref{eq.A_slack} and \eqref{eq.A_euler} capture the inter-temporal optimality conditions modified for possbily binding constraints.
+\end{subequations}  Where $\underline b_i$ is the exogenous borrowing constraint for agent $i$.  We obtain equation \eqref{eq.A_imp} by eliminating transfers $T_t$ from the budget equations, equation eqref{agent bc modified} of the households and using the optimality for labor supply decision. 
+\[(1-\tau_t)\theta_i=-\frac{U_{li,t}}{U_{ci,t}}\]
 
-Let $c^{fb}_i$ and $l^{fb}_i$ be the allocation that solves the first best problem, that is maximizing equation \eqref{eq.A_obj} subject to \eqref{eq.A_feas}, and define
+Equations \eqref{eq.A_slack} and \eqref{eq.A_euler} are the first order conditions of the households with respect to savings $b_{i,t}$, modified for possibly binding constraints.
+
+Let $c^{fb}_i$ and $l^{fb}_i$ be the allocation that solves maximizing equation \eqref{eq.A_obj} subject to \eqref{eq.A_feas}, and define
 \begin{equation}
 	Z^{fb}  = c_{2}^{fb}+\frac{U_{l2}^{fb}l_{2}^{fb}}{U_{c2}^{fb}}-\left(c_{1}^{fb}+\frac{U_{l1}^{fb}l_{1}^{fb}}{U_{c1}^{fb}}\right)
 \end{equation}and
 \begin{equation}
 	\tilde b_2^{fb} = \frac{Z^{fb}}{\frac1\beta -1}
-\end{equation}  We will assume that the exogenous borrowing constraints satisfy $\underline b_2 = \underline b_1 + \tilde b_2^{fb}$.  We then have the following lemma
+\end{equation}  
+
+
+We will refer to this allocation as the first best allocation and assume that the exogenous borrowing constraints satisfy $\underline b_2 = \underline b_1 + \tilde b_2^{fb}$.  The next lemma shows that there are choices for initial asset holdings $\{b_{i,-1}\}$ such that the planner can implement the first best allocation if only if the borrowing constraints are imposed.
 
 \begin{lemma}  If $\tilde b_2^{fb}>(<)0$ and $b_{2,-1}-b_{1,-1} > (<) \tilde b_2^{fb}$ then the planner can implement the first best.
 \end{lemma}
 \begin{proof}
-We will consider the candidate allocation where $c_{i,t} = c^{fb}_i$, $l_{i,t} = l^{fb}_i$, $b_{i,t} = \underline b_i$ and interest rates are given by $R_t = \frac 1{\beta}$ for $t\geq 1$.  It should be clear then that equations \eqref{eq.A_wage} and \eqref{eq.A_feas} are satisfied as a property of the first best allocation.  Equation \eqref{eq.A_slack} is trivially satisfied since the agents are at their borrowing constraints.  For $t\geq 1$ equations \eqref{eq.A_imp} and \eqref{eq.A_euler} are both satisfied by the choice of $R_t = \frac1\beta$ and the first best allocations.  It remains to check that equation \eqref{eq.A_imp} is satisfied at time $t=0$ for an interest rate $R_0 <\frac1\beta$.  At time zero the constraint is give by
+We will consider the candidate allocation where $c_{i,t} = c^{fb}_i$, $l_{i,t} = l^{fb}_i$, $b_{i,t} = \underline b_i$ and interest rates are given by $q_t = \beta$ for $t\geq 1$.  It should be clear then that equations \eqref{eq.A_wage} and \eqref{eq.A_feas} are satisfied as a property of the first best allocation.  Equation \eqref{eq.A_slack} is trivially satisfied since the agents are at their borrowing constraints.  For $t\geq 1$ equations \eqref{eq.A_imp} and \eqref{eq.A_euler} are both satisfied by the choice of $q_{t} = \beta$ and the first best allocations.  It remains to check that equation \eqref{eq.A_imp} is satisfied at time $t=0$ for an interest rate $q_0 > \beta$.  At time zero the constraint is give by
 \begin{equation}
-	Z^{fb} + \frac 1{R_0} \tilde b^{fb}_2 = b_{2,-1}-b_{1,-1}
+	Z^{fb} + q_0 \tilde b^{fb}_2 = b_{2,-1}-b_{1,-1}
 \end{equation}  The assumption that $b_{2,-1}-b_{1,-1} > (<) \tilde b_2^{fb}$ if  $\tilde b_2^{fb}>(<)0$ then implies that
 \[
-	R_ 0 = \frac{\tilde b^{fb}_2}{b_{2,-1}-b_{1,-1}- Z^{fb}} <\frac 1\beta
+	q_0 = \frac{\tilde b^{fb}_2}{b_{2,-1}-b_{1,-1}- Z^{fb}} >\beta
 \] as desired.
 \end{proof}
 
-This will improve upon the planners problem without exogenous borrowing constraints, as first best can only be achieved in this scenario when $b_{2,-1}-b_{1,-1} = \tilde b_2^{fb}$.
+This will strictly improve upon the planners problem without exogenous borrowing constraints. The reason is that without borrowing constraints $q_t=\beta$ and consequently the first best allocation  can be achieved only if $b_{2,-1}-b_{1,-1} = \tilde b_2^{fb}$.
 
 
 \newpage
@@ -2085,114 +2097,11 @@ This will improve upon the planners problem without exogenous borrowing constrai
  \end{proof}
 \newpage
 
-\subsection{Proof of Theorem \ref{prop: affine eqm nec and suff}}
-\label{appndx: affine eqm nec and stuff}
-\smallskip
-
-We prove a slight more general version of our result. Consider an infinite
-horizon, incomplete markets economy in which an agent maximizes utility
-function $U:\mathbb{R}_{+}^{n}\rightarrow \mathbb{R}$ subject to an infinite
-sequence of budget constraints. We assume that $U$ is concave and
-differentiable. Let $\mathbf{x}(s^t)$ be a vector of $n$ goods and let $%
-\mathbf{p}(s^{t})$ be a price vector in state $s^{t}$ with $p_{i}(s^{t})$
-denoting the price of good $i.$ We use a normalization $p_{1}\left(
-s^{t}\right) =1$ for all $s^{t}.$
-Let $b(s^{t})$ be the agent's asset holdings, and let $\mathbf{e}\left(
-s^{t}\right) $ be a stochastic vector of endowments.
-
-\textbf{Consumer maximization problem}
-
-\begin{equation}
-\max_{\mathbf{x}_{t},b_{t}}\sum_{t=0}^{\infty }\beta ^{t}\Pr \left(
-s^{t}\right) U(\mathbf{x}\left( s^{t}\right) )
-\label{Tech appendix: consumer maximization}
-\end{equation}%
-subject to%
-\begin{equation}
-\label{Tech appendix: budget constraint}
-\mathbf{p}\left( s^{t}\right) \mathbf{x}\left( s^{t}\right) +q(s^{t})b\left(
-s^{t}\right) =\mathbf{p}\left( s^{t}\right) \mathbf{e}\left( s^{t}\right)
-+P(s_t)b\left( s^{t-1}\right)
-\end{equation}%
-and $\left \{ b\left( s^{t}\right) \right \} $ is bounded and $\left \{
-q(s^{t})\right \} $ is the price of the risk-free bond.
-
-The Euler conditions are%
-\begin{eqnarray}
-\mathbf{U}_{x}(s^{t}) &=&U_{1}(s^{t})\mathbf{p}(s^{t})
-\label{Tech appendix: Euler} \\
-\Pr \left( s^{t}\right) U_{1}\left( s^{t}\right) q(s^{t}) &=&\beta
-\sum_{s^{t+1}>s^{t}}\Pr \left( s^{t+1}\right) U_{1}\left( s^{t+1}\right) .
-\notag
-\end{eqnarray}
-
-\begin{theorem}
-
-\smallskip Consider an allocation $\left \{ \mathbf{x}_{t},b_{t}\right \} $
-that satisfies (\ref{Tech appendix: budget constraint}), (\ref{Tech
-appendix: Euler}) and $\left \{ b_{t}\right \} _{t}$ is bounded. Then $%
-\left
-\{ \mathbf{x}_{t},b_{t}\right \} $ is a solution to (\ref{Tech
-appendix: consumer maximization}).
-
-\end{theorem}
-\begin{proof}
-The proof follows closely Constantinides and Duffie (1996). Suppose there is
-another budget feasible allocation $\mathbf{x}+\mathbf{h}$ that maximizes (%
-\ref{Tech appendix: consumer maximization}). Since $U$ is strictly concave,
-\begin{eqnarray}
-&&\mathbb{E}_{0}\sum_{t=0}^{\infty }\beta ^{t}U(\mathbf{x}_{t}+\mathbf{h}%
-_{t})-\mathbb{E}_{0}\sum_{t=0}^{\infty }\beta ^{t}U(\mathbf{x}_{t})
-\label{Tech appendix: gain from h} \\
-&\leq &\mathbb{E}_{0}\sum_{t=0}^{\infty }\beta ^{t}\mathbf{U}_{x}(\mathbf{x}%
-_{t})\mathbf{h}_{t}  \notag
-\end{eqnarray}
-
-To attain $\mathbf{x}+\mathbf{h}$, the agent must deviate by $\varphi _{t}$
-from his original portfolio $b_{t}$ such that $\left\{ \varphi _{t}\right\}
-_{t}$ is bounded$,$ $\varphi _{-1}=0$ and
-\begin{equation*}
-\mathbf{p}(s^{t})\mathbf{h}\left( s^{t}\right) =P(s_t)\varphi
-(s^{t-1})-q(s^{t})\varphi (s^{t})
-\end{equation*}%
-Multiply by $\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})$ to get:%
-\begin{eqnarray*}
-\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})\mathbf{p}(s^{t})\mathbf{h}%
-\left( s^{t}\right)  &=&\beta ^{t}\Pr \left( s^{t}\right)
-U_{1}(s^{t})\varphi (s^{t-1})-q(s^{t})\beta ^{t}\Pr \left( s^{t}\right)
-U_{1}(s^{t})\varphi (s^{t}) \\
-&=&\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})\varphi (s^{t-1})-\beta
-^{t+1}\sum_{s^{t+1}>s^{t}}\Pr \left( s^{t+1}\right) U_{1}\left(
-s^{t+1}\right) \varphi (s^{t})
-\end{eqnarray*}%
-where we used the second part of (\ref{Tech appendix: Euler}) in the second
-equality. Sum over the first $T$ periods and use the first part of (\ref%
-{Tech appendix: Euler}) to eliminate $\mathbf{U}_{x}(\mathbf{x}%
-_{t})=U_{1}(s^{t})\mathbf{p}(s^{t})$%
-\begin{equation*}
-\sum_{t=0}^{T}\beta ^{t}\Pr \left( s^{t}\right) \mathbf{U}_{x}(\mathbf{x}%
-_{t})\mathbf{h}\left( s^{t}\right) =-\sum_{s^{T+1}>s^{T}}\beta ^{T+1}\Pr
-\left( s^{T+1}\right) U_{1}\left( s^{T+1}\right) \varphi (s^{T}).
-\end{equation*}%
-Since $\left\{ \varphi _{t}\right\} _{t}$ is bounded there must exist $\bar{%
-\varphi}$ s.t. $|\varphi _{t}|\leq \bar{\varphi}$ for all $t$. By Theorem
-5.2 of Magill and Quinzii (1994), this equilibrium with debt constraints
-implies a transversality condition on the right hand side of the last
-equation, so by transitivity we have%
-\begin{equation*}
-\lim_{T\rightarrow \infty }\sum_{t=0}^{T}\beta ^{t}\Pr \left( s^{t}\right)
-\mathbf{U}_{x}(\mathbf{x}_{t})\mathbf{h}\left( s^{t}\right) =0.
-\end{equation*}%
-Substitute this into (\ref{Tech appendix: gain from h}) to show that $%
-\mathbf{h}$ does not improve utility of consumer.
-\end{proof}
-\newpage
-
 \subsection{Proof of Theorem \protect\ref{thm: rep agent general theorem}}
 
 
 \begin{proof}
-The optimal Ramsey plan solves the following Bellman equation. Let $V(b\_)$ be the maximum ex-ante value the government can achieve with debt $b\_$.
+Let $b=-n^{-1}B$, the optimal Ramsey plan for the representative agent -no transfers case solves the following Bellman equation. Let $V(b\_)$ be the maximum ex-ante value the government can achieve with debt $b\_$.
 
 \begin{equation}
   \label{eq-QLRA obj}
@@ -2224,97 +2133,97 @@ Let $\bar{b}=-\underline{B}$
 %Let $\mu(s)\pi(s),\phi(s)\pi(s)$ be the Lagrange multipliers on the respective constraints.
 
 Let $\mu(s),\phi(s),\underline{\kappa}(s),\overline \kappa(s) $ be the Lagrange multipliers on the respective constraints.
+
+
 \noindent {Part 1 of Theorem \textbf{\ref{thm: rep agent general theorem}}}
 
 \begin{lemma}
 There exists  a $\overline{b}$ such that $b_t\leq\overline{b}$. This is the natural debt limit for the government.
 \end{lemma}
+
 \begin{proof}
-As we drive $\mu$ to $-\infty$, the tax rate approaches a maximum limit, $\bar{\tau}=\frac{\gamma}{1+\gamma}$. In state $s$, the government surplus,
+
+The FOC with respect to $l(s)$ can be rearranged to get 
+\[
+	l(s)^\gamma = \frac{\mu(s)-1}{(1+\gamma)\mu(s) - 1} = 1-\tau(\mu(s)),
+\]
+As we drive $\mu(s)$ to $-\infty$, the tax rate approaches a maximum limit, $\bar{\tau}=\frac{\gamma}{1+\gamma}$. In state $s$, the government surplus,
 \[
   S(s,\tau) = \theta^\frac\gamma{1+\gamma}(1-\tau)^\frac1\gamma\tau - g(s),
-\]  which  is  maximized at $\tau = \frac\gamma{1+\gamma}$ when $(1-\tau)^\frac1\gamma\tau$ is also maximized. This would impose a natural borrowing limit for the government.
+\]  which  is  maximized at $\tau = \frac\gamma{1+\gamma}$ when $(1-\tau)^\frac1\gamma\tau$ is also maximized. This imposes a natural borrowing limit for the government.
 
 \end{proof}
 
-From now we assume that $\overline{b}$ represents the natural borrowing limit. We begin with some useful lemmas
-
-let $L\equiv l^{1+\gamma }$, to make this problem convex,
+From now we assume that $\overline{b}$ represents the natural borrowing limit. Transform the variable $l$ such that $L\equiv l^{1+\gamma }$. We will recast the maximization problem using $L$ and show that the problem is convex.
 
 Substitute for $c\left( s\right) $%
 \[
 V\left( b\_\right) =\max_{L(s),b(s)}\sum_{s\in S}\pi \left(
-s\right) \left[ \frac{1}{1+\gamma }L\left( s\right) +\frac{1}{\beta }%
+s\right) \left[ \frac{\gamma}{1+\gamma }L\left( s\right) +\frac{1}{\beta }%
 P\left( s\right) b\_-b\left( s\right) +\beta V\left( b\left( s\right)
 \right) \right]
 \]%
 s.t.%
 \begin{eqnarray*}
 \frac{1}{\beta }P\left( s\right) b-b\left( s\right) +g\left( s\right) &\leq
-&\theta L^{\frac{1}{1+\gamma} }\left( s\right) -L\left( s\right) \\
-b\left( s\right) &\leq &\bar{b} \\
+&\theta L\left( s\right)^{\frac{1}{1+\gamma} } -L\left( s\right) \\
+\underline{b}\leq b\left( s\right) &\leq &\bar{b} \\
 L\left( s\right) &\geq &0.
 \end{eqnarray*}
 
 \begin{lemma}
-\smallskip $V\left( b\right) $ is stictly concave, continuous,
-differentiable and $V\left( b\right) <\beta ^{-1}$ for all $%
-b<\bar{b}.$ The feasibility constraint binds for all $b\in (-\infty ,\bar{b}%
-],\ s\in S$ and $\left( L^{\ast }\left( s\right) \right) ^{1-\frac{1}{1+\gamma} }\geq
-\frac{1}{1+\gamma} .\footnote{
+\smallskip $V\left( b\_\right) $ is stictly concave, continuous,
+differentiable. The feasibility constraint binds for all $b\_\in (\underline{b} ,\bar{b}%
+],\ s\in S$ and $\left( L^{\ast }\left( s\right) \right) ^{\frac{\gamma}{1+\gamma} }\geq\frac{1}{1+\gamma}$ .
+
+\footnote{
 This last condition simply means that we do not tax to the right of the peak
 of the Laffer curve. The revenue maximizing tax is $1-\bar{\tau}=\frac{1}{%
 1+\gamma }.$ At the same time $1-\tau =l^{\gamma}$ so if taxes are always
 to the left of the peak, $\frac{1}{1+\gamma }\leq l^{\gamma }=\left(
-L^{\frac{1}{1+\gamma} }\right) ^{\gamma}=L^{1-\frac{1}{1+\gamma} }$.}$
+L^{\frac{1}{1+\gamma} }\right)^{\gamma}=L^{\frac{\gamma}{1+\gamma} }$.}
 \end{lemma}
 
 \begin{proof}
 \smallskip \textit{Concavity}
 
-$V\left( b\right) $ is concave because we maximize linear objective
+$V\left( b\_\right) $ is concave because we maximize linear objective
 function over convex set.
 
 \textit{Binding feasibility}
 
-Suppose that feasibility does not bind for some $b,s.$ Then the optimal $%
+Suppose that feasibility does not bind for some $b\_,s.$ Then the optimal $%
 L\left( s\right) $ solve $\max_{L\left( s\right) \geq 0}\pi \left( s\right)
 \frac{\gamma}{1+\gamma }L\left( s\right) $ which sets $L\left( s\right)
-=\infty .$ This violates feasility for any finite $b,b\left( s\right) .$
+=\infty .$ This violates feasility for any finite $b\_,b\left( s\right) .$
 
 \textit{Bounds on }$L$
 
-Let $\phi\left( s\right) >0$ be a Lagrange multiplier on the
+Let $\phi(s)$ be a Lagrange multiplier on the
 feasibility. \ The FOC for $L\left( s\right) $ is
 \[
-\frac{1}{1+\gamma }+\phi(s) \left( \frac{1}{1+\gamma }L(s)^{\frac{1}{1+\gamma}
--}-\theta \right) =0.
+\frac{\gamma}{1+\gamma }+\phi(s) \left( \frac{\theta}{1+\gamma }L(s)^{\frac{1}{1+\gamma}
+-1}-1 \right) =0.
 \]%
-This gives%
+
+Strict positivity of $\phi$, implies
 \[
-\frac{1}{1+\gamma }L^{\frac{1}{1+\gamma} -1}-\theta =-\frac{1}{\lambda }\frac{\gamma}{%
-1+\gamma }<0
-\]%
-or%
-\[
-L^{1-\frac{1}{1+\gamma} }\geq \frac{\theta }{1+\gamma }.
+L^{\frac{\gamma}{1+\gamma} }\geq \frac{\theta }{1+\gamma }.
 \]
 
 \textit{Continuity}
 
-For any $L$ that satisfy $L^{1-\frac{}{1+\gamma} }\geq \frac{\theta }{1+\gamma} ,$ define function $%
-\Psi $ that satisfies $\Psi \left( L^{\frac{1}{1+\gamma} }-\theta L\right) =L.$ Since $%
-L^{\frac{1}{1+\gamma} }-L$ is strictly decreasing in $L$ for $L^{1-\frac{1}{1+\gamma} }\geq
-\frac{1}{1+\gamma} $, this function is well defined. Note that $\Psi \left(
-{}\right) \underbrace{\left( \frac{1}{1+\gamma }L^{\frac{1}{1+\gamma} -1}-\theta \right) }%
-_{<0}=1$ (so that $\Psi >0$, i.e. $\Psi $ is strictly decreasing)
-and $\Psi ^{\prime \prime }\underbrace{\left( \frac{1}{1+\gamma }L^{\frac{1}{1+\gamma}
--1}-1\right) ^{2}}_{>0}+\underbrace{\Psi }_{<0}\underbrace{\frac{1%
-}{1+\gamma }\frac{\gamma }{1+\gamma }L^{\frac{1}{1+\gamma} -2}}_{<0}=0$ (so that $\Psi
+For any $L$ that satisfy $L^{\frac{\gamma}{1+\gamma} }\geq \frac{\theta }{1+\gamma} ,$ define function $%
+\Psi $ that satisfies $\Psi \left( \theta L^{\frac{1}{1+\gamma} }-L\right) =\frac{\gamma}{1+\gamma}L.$ Since $%
+\theta L^{\frac{1}{1+\gamma} }-L$ is strictly decreasing in $L$ for $L^{\frac{\gamma}{1+\gamma} }\geq
+\frac{\theta}{1+\gamma} $, this function is well defined. Note that $\Psi'(.)  \underbrace{\left( \frac{\theta}{1+\gamma }L^{\frac{1}{1+\gamma} -1}-1 \right) }%
+_{<0}=\frac{\gamma}{1+\gamma}>0$ (so that $\Psi >0$, i.e. $\Psi $ is strictly decreasing)
+and $\Psi ^{\prime \prime }(.)\underbrace{\left( \frac{\theta}{1+\gamma }L^{\frac{1}{1+\gamma}-1}-1\right) ^{2}}_{>0}+\underbrace{\Psi'(.) }_{<0}\underbrace{\frac{-\gamma \theta
+}{(1+\gamma)^2 }L^{\frac{1}{1+\gamma} -2}}_{<0}=0$ (so that $\Psi
 ^{\prime \prime }\geq 0$, $\Psi ^{\prime \prime }>0,$ i.e. $\Psi $ is
 strictly concave on the interior). $\Psi $ is also continuous. When $%
-L^{1-\frac{1}{1+\gamma} }=\frac{1}{1+\gamma} ,$ $L=(1+\gamma) ^{-\frac{(1+\gamma)} {\left( \gamma \right)} }.$
-Let $D\equiv (1+\gamma) ^{\frac{-1}{ \gamma }-(1+\gamma) ^{-\frac{1+\gamma }{\left(\gamma\right)} }}.$ Then the objective is
+L^{1-\frac{\gamma}{1+\gamma} }=\frac{\\theta}{1+\gamma} ,$ $L=\left(\frac{\theta}{1+\gamma}\right)^{\frac{1+\gamma}{\gamma}}.$
+Let $D\equiv \left[\left(\frac{\theta}{1+\gamma}\right)^{\frac{1+\gamma}{\gamma}}\right]\left[\theta^{\frac{1}{\gamma}}\left(\frac{\theta}{1+\gamma}\right)^{\gamma}-1\right].$ Then the objective is
 \[
 V\left( b\_\right) =\max_{b\left( s\right) }\sum_{s\in S}\pi \left(
 s\right) \left[ \Psi \left( \frac{1}{\beta }P\left( s\right) b-b\left(
@@ -2347,26 +2256,26 @@ concave.
 \begin{lemma}
 \label{lem increasing b}
 $b\left( s,b\_\right) $ is an increasing function of $b$ for all $s$ for all $%
-s,b\_ $ where $b\left( s\right) $ is interior.
+s,b\_ $ where $b( s,b\_) $ is interior.
 \end{lemma}
 
 \begin{proof}
-Take the FOCs for $b\left( s\right) $ from the condition in the previous
-problem. If $b\left( s\right) $ is interior%
+Take the FOCs for $b( s,b\_) $ from the condition in the previous
+problem. If $b\left( s,b\_\right) $ is interior%
 \[
-\Psi \left( \frac{1}{\beta }P\left( s\right) b\_-b\left( s\right)
+\Psi' \left( \frac{1}{\beta }P\left( s\right) b\_-b\left( s\right)
 +g\left( s\right) \right) =\beta V\left( b\left( s\right)
 \right) .
 \]
 
-Suppose $b_{1}<b_{2}$ but $b_{2}\left( s\right) <b_{1}\left( s\right) .$
+Suppose $b^{'}\_<b^{''}\_$ but $b\left( s,b^{'}\_\right) <b\left( s,b^{''}\_\right) .$
 Then from stict concavity%
 \begin{eqnarray*}
-V\left( b_{2}\left( s\right) \right) &<&V^{\prime
-}\left( b_{1}\left( s\right) \right) \\
-\Psi \left( \frac{1}{\beta }P\left( s\right) b_{2}-b_{2}\left(
-s\right) +g\left( s\right) \right) &>&\Psi \left( \frac{1}{\beta }%
-P\left( s\right) b_{1}-b_{1}\left( s\right) +g\left( s\right) \right) .
+V'\left( b\left( s,b^{''}\_\right) \right) &<&V^{\prime
+}\left( b\left( s,b^{'}\_\right) \right) \\
+\Psi' \left( \frac{1}{\beta }P\left( s\right) b\_^{''}-b\left(
+s,b\_^{''}\right) +g\left( s\right) \right) &>&\Psi \left( \frac{1}{\beta }%
+P\left( s\right) b\_^{'}-b\left( s,b^{'}\_\right) +g\left( s\right) \right) .
 \end{eqnarray*}
 \end{proof}
 
@@ -2374,10 +2283,10 @@ P\left( s\right) b_{1}-b_{1}\left( s\right) +g\left( s\right) \right) .
 There exists an invariant distribution of the stochastic process $b_{t+1}=b(s_{t+1},b_t)$
 \end{lemma}
 \begin{proof}
-The state spaces for $b_t$ and $s_t$ are compact. Further the transition function on $s_{t+1}|s_{t}$ is trivially increasing under i.i.d shocks. We can apply standard arguments as in \cite{Prescott1992}(see corollary 3) to argue that there exists invariant distribution of assets.
+The state spaces for $b_t$ and $s_t$ are compact. Further the transition function on $s_{t+1}|s_{t}$ is trivially increasing under i.i.d shocks. We can apply standard arguments as in \citet{Prescott1992}(see corollary 5) to show that there exists invariant distribution of assets.
 \end{proof}
 
-Now we characterize the support of this distribution using further properties of the policy rules for $b(s|b\_)$
+Now we characterize the support of this distribution using further properties of the policy rules for $b(s,b\_)$
 
 
 \begin{lemma}
@@ -2388,46 +2297,57 @@ are strict.
 
 
 \begin{proof}
-The FOCs together with the envelope theorem imply that $\mathbb{E}P(s)V'(b(s))=V'(b\_)+\kappa(s)$
-We can rewrite this as $\mathbb{\tilde{E}}V'(b(s))=b+\kappa(s)$ with $\tilde{\pi}(s)=P(s)\pi(s)$
+The FOCs together with the envelope theorem imply that $\mathbb{E}P(s)V'(b(s))=V'(b\_)+\mathbb{E}P(s)\bar{\kappa}-\mathbb{E}P(s)\underline{\kappa}$
+We can rewrite this as
+\begin{equation}
+\label{foc above}
+\mathbb{\tilde{E}}V'(b(s))=b-\underline{\kappa}+\overline{\kappa},
+\end{equation}
 
-Now if there is at least one $b\left( s\right) $ s.t. $b\left(
-s\right) >b\_,$ by strict concavity of $V$ there must be some $%
-s^{\prime \prime }$ s.t. $b\left( s^{\prime \prime }\right) <b.$
+with $\tilde{\pi}(s)=P(s)\pi(s)$. First we show that $\exists$ $s$ such that $b(s,b\_)\geq b\_$. Suppose not, then $b(s,b\_)<b\_<\overline{b}$ for all $s$. Concavity of $V$ implies,
+\[\mathbb{\tilde{E}}V'(b(s))>V'(b\_)\]
 
-If there is at least one $b\left( s\right) $ s.t. $b\left(
-s\right) <b\_,$ the inequality above is strictly only if $b\left(
-s^{\prime \prime \prime }\right) =\bar{b}$ for some $s^{\prime \prime \prime
-}.$ But $V\left( \bar{b}\right) <V\left(
-b\right) $ so there must be some $s^{\prime \prime }$ s.t. $b\left(
-s^{\prime \prime }\right) >b.$ Equality is possible only if $b\_=b\left(
-s\right) $ for all $s.$
+Since  $b(s,b\_)<b\_<\overline{b}$, $\overline{\kappa}=0$ and \eqref{foc above} implies
+
+\[\mathbb{\tilde{E}}V'(b(s))\leq V'(b\_) \]
+
+This yields a contradiction.
+
+Next we show that if there is at least one $b\left( s\right) $ s.t. $b\left(
+s\right) >b\_,$ then there must be some $%
+s'')$ s.t. $b\left( s''\right) <b\_$ 
+
+The argument is similar to the previous step. Suppose not and $\forall s'', b(s'',b\_)\geq b\_$. Strict concavity of $V$ implies $\mathbb{\tilde{E}}V'(b(s))<V'(b\_)$ but this again contradicts the optimality condition \eqref{foc above}.
+
+Now either we have $b(s,\b\_)=b\_$ for all $s$ or there exists a $s$ such that $b(s,b\_)>b\_$. Under the condition that there exists $s'',s'''$ such that $b(s'',b\
+_)\neq b(s''',b\_)$ we cannot the former. This shows that the inequalities can be made strict.
+
 \end{proof}
 
 
-\begin{lemma}  Let $\mu(b,s)$ be the optimal policy function for the Lagrange multiplier $\mu(s)$.  If $P(s') > P(s'')$ then there exists a $b^*_{s',s''}$ such that for all $b < (>) \; b_{1,s',s''}$ we have $\mu(b,s') > (<) \;\mu(b,s'')$.  If $\underline b < b^*_{s',s''} < \overline b$ then $\mu(b^*_{s',s''},s') = \mu(b^*_{s',s''},s'')$.
+\begin{lemma}  Let $\mu(s,b\_)$ be the optimal policy function for the Lagrange multiplier $\mu(s)$.  If $P(s') > P(s'')$ then there exists a $b^*_{s',s''}$ such that for all $b < (>) \; b_{1,s',s''}$ we have $\mu(s',b\_) > (<) \;\mu(s'',b\_)$.  If $\underline b < b^*_{s',s''} < \overline b$ then $\mu(s',b^*_{s',s''}) = \mu(s'',b^*_{s',s''})$.
 \label{lem.order}
 \end{lemma}
 \begin{proof}
-Suppose that $\mu(b,s')\leq \mu(b,s'')$.  Subtracting the implementability for $s''$ from the implementability constraint for $s'$ we have
+Suppose that $\mu(s',b\_)\leq \mu(s'',b\_)$.  Subtracting the implementability for $s''$ from the implementability constraint for $s'$ we have
 \begin{align*}
-	\frac{P(s')-P(s'')}{\beta}b &= S_{s'}(\mu(b,s'))-S_{s''}(\mu(b,s'')) + b'(b,s')-b'(b,s'')\\
-						&\geq S_{s'}(\mu(b,s')) -S_{s''}(\mu(b,s')) + b'(b,s')-b'(b,s'')\\
-						&\geq  S_{s'}(\mu(b,s')) -S_{s''}(\mu(b,s')) = g(s'')-g(s')
-\end{align*}  We get the first inequality from noting that $S_s(\mu')\geq S_s(\mu'')$ if $\mu' \leq \mu''$.  We obtain the second inequality by noting that $\mu(b,s')\leq \mu(b,s'')$ implies $b'(b,s')\geq b'(b,s'')$ (which comes directly from the concavity of $V$).
-Thus, $\mu(b,s')\leq \mu(b,s'')$ implies that
+	\frac{P(s')-P(s'')}{\beta}b &= S_{s'}(\mu(s',b\_))-S_{s''}(\mu(s'',b\_)) + b'(b,s')-b'(b,s'')\\
+						&\geq S_{s'}(\mu(s',b\_)) -S_{s''}(\mu(s',b\_)) + b'(b,s')-b'(b,s'')\\
+						&\geq  S_{s'}(\mu(s',b\_)) -S_{s''}(\mu(s',b\_)) = g(s'')-g(s')
+\end{align*}  We get the first inequality from noting that $S_s(\mu')\geq S_s(\mu'')$ if $\mu' \leq \mu''$.  We obtain the second inequality by noting that $\mu(s',b\_)\leq \mu(s'',b\_)$ implies $b'(b,s')\geq b'(b,s'')$ (which comes directly from the concavity of $V$).
+Thus, $\mu(s',b\_)\leq \mu(s'',b\_)$ implies that
 \begin{equation}
 \label{pair-wise ss}
 b \geq \frac{\beta(g(s'')-g(s'))}{P(s')-P(s'')} = b^*_{s',s''}
 \end{equation}
 
-The converse of this statement is that if $b<b^*_{s',s''}$ then $\mu(b,s') > \mu(b,s'')$.  The reverse statement that $\mu(b,s') \geq \mu(b,s'')$ implies $b \leq b^*_{s,s'}$ follows by symmetry.   Again, the converse implies that if $b > b^*_{s',s''}$ then $\mu(b,s') < \mu(b,s'')$.    Finally, if $\underline b < b^*_{s',s''} <\overline b$ then continuity of the policy functions implies that there must exist a root of $\mu(b,s')-\mu(b,s'')$ and that root can only be at $b^*_{s',s''}$.
+The converse of this statement is that if $b<b^*_{s',s''}$ then $\mu(s',b\_) > \mu(s'',b\_)$.  The reverse statement that $\mu(s',b\_) \geq \mu(s'',b\_)$ implies $b \leq b^*_{s,s'}$ follows by symmetry.   Again, the converse implies that if $b > b^*_{s',s''}$ then $\mu(s',b\_) < \mu(s'',b\_)$.    Finally, if $\underline b < b^*_{s',s''} <\overline b$ then continuity of the policy functions implies that there must exist a root of $\mu(s',b\_)-\mu(s'',b\_)$ and that root can only be at $b^*_{s',s''}$.
 \end{proof}
 
 
 \begin{lemma}
 \label{lem: existence and uniqueness of ss}
-$P \in \mathcal{P}^*$ is necessary and sufficient for existence of $b^*$ such that $b(s,b^*)=b^*$ for all $s$s
+$P \in \mathcal{P}^*$ is necessary and sufficient for existence of $b^*$ such that $b(s,b^*)=b^*$ for all $s$
 \end{lemma}
 
 \begin{proof}
@@ -2437,8 +2357,8 @@ Thus $P\in\mathcal{P}^*$. The sufficient part follows from the Lemma \ref{lem.or
 \end{proof}
 
 
-Lemma  \ref{lem: existence and uniqueness of ss}  implies that under the hypothesis of part 1 of the Theorem \ref{thm: rep agent general theorem} there cannot exist an interior absorbing point for the dynamics of debt. This allows us to construct a sequences $\{b_t\}_t $ such that $b_t<b_{t+1}$ with the property that $\lim_tb_t=\underline{b}$.
-Thus, for any $\epsilon>0$, there exists a finite history of shocks that can take us arbitrarily close to $\underline{b}$. Since the shocks are i.i.d this finite sequence will repeat i.o. With a symmetric argument we can show that $b_t$ will come arbitrarily close to its upper limit i.o too
+Lemma  \ref{lem: existence and uniqueness of ss}  implies that under the hypothesis of part 1 of the Theorem \ref{thm: rep agent general theorem} there cannot exist an interior absorbing point $b\_$ such that $b(s,b\_)=b\_$. Using Lemma \ref{prop: b(s) relative to b} allows us to construct a sequences $\{b_t\}_t $ such that $b_t<b_{t+1}$ with the property that $\lim_tb_t=\underline{b}$.
+Thus, for any $\epsilon>0$, there exists a finite history of shocks that can take us arbitrarily close to $\underline{b}$. Since the shocks are i.i.d this finite sequence will repeat i.o. With a symmetric argument we can show that $b_t$ will come arbitrarily close to its upper limit $\overline{b}$ i.o too
 
 
 
@@ -2447,7 +2367,7 @@ Thus, for any $\epsilon>0$, there exists a finite history of shocks that can tak
 {Part 2 of Theorem \textbf{\ref{thm: rep agent general theorem}}}
 
 
-In this first section we will show that there exists $b_1$, and if $P(s)$ is sufficiently volatile a $b_2$, such that if $b_t\leq b_1$ then
+We will first show that there exists $b_1$, and if $P(s)$ is sufficiently volatile a $b_2$, such that if $b_t\leq b_1$ then
 \[
 	\mu_t \geq \EE_t \mu_{t+1}
 \] and if $b_t \geq b_2$ then
@@ -2458,7 +2378,7 @@ In this first section we will show that there exists $b_1$, and if $P(s)$ is suf
 With Lemma \ref{lem.order} we can order the policy functions $\mu(b,\cdot)$ for particular regions of the state space.  Take $b_1$ to be
 \[
 	b_1 = \min\left\{b^*_{s',s''}\right\}
-\] and WLOG choose $\underline b < b_1$.  For all $b < b_1$ we have shown that $P(s) > P(s')$ implies that $\mu(b,s) > \mu(b,s')$.  The FOC for the problem imply,
+\] and WLOG choose $\underline b < b_1$.  For all $b < b_1$ we have shown that $P(s) > P(s')$ implies that $\mu(s,b\_) > \mu(s',b\_)$.  The FOC for the problem imply,
 
 \begin{equation}\label{eq.mart}
 	\mu\_ = \EE P(s)\mu(s)+\underline{\kappa}(s)
@@ -2967,6 +2887,110 @@ In the region $[\mathcal{B},\quad b^*]$ the outcomes depend on the exact sequenc
 
 \newpage
 
+\subsection{Proof of Theorem \ref{prop: affine eqm nec and suff}}
+\label{appndx: affine eqm nec and stuff}
+\smallskip
+
+We prove a slight more general version of our result. Consider an infinite
+horizon, incomplete markets economy in which an agent maximizes utility
+function $U:\mathbb{R}_{+}^{n}\rightarrow \mathbb{R}$ subject to an infinite
+sequence of budget constraints. We assume that $U$ is concave and
+differentiable. Let $\mathbf{x}(s^t)$ be a vector of $n$ goods and let $%
+\mathbf{p}(s^{t})$ be a price vector in state $s^{t}$ with $p_{i}(s^{t})$
+denoting the price of good $i.$ We use a normalization $p_{1}\left(
+s^{t}\right) =1$ for all $s^{t}.$
+Let $b(s^{t})$ be the agent's asset holdings, and let $\mathbf{e}\left(
+s^{t}\right) $ be a stochastic vector of endowments.
+
+\textbf{Consumer maximization problem}
+
+\begin{equation}
+\max_{\mathbf{x}_{t},b_{t}}\sum_{t=0}^{\infty }\beta ^{t}\Pr \left(
+s^{t}\right) U(\mathbf{x}\left( s^{t}\right) )
+\label{Tech appendix: consumer maximization}
+\end{equation}%
+subject to%
+\begin{equation}
+\label{Tech appendix: budget constraint}
+\mathbf{p}\left( s^{t}\right) \mathbf{x}\left( s^{t}\right) +q(s^{t})b\left(
+s^{t}\right) =\mathbf{p}\left( s^{t}\right) \mathbf{e}\left( s^{t}\right)
++P(s_t)b\left( s^{t-1}\right)
+\end{equation}%
+and $\left \{ b\left( s^{t}\right) \right \} $ is bounded and $\left \{
+q(s^{t})\right \} $ is the price of the risk-free bond.
+
+The Euler conditions are%
+\begin{eqnarray}
+\mathbf{U}_{x}(s^{t}) &=&U_{1}(s^{t})\mathbf{p}(s^{t})
+\label{Tech appendix: Euler} \\
+\Pr \left( s^{t}\right) U_{1}\left( s^{t}\right) q(s^{t}) &=&\beta
+\sum_{s^{t+1}>s^{t}}\Pr \left( s^{t+1}\right) U_{1}\left( s^{t+1}\right) .
+\notag
+\end{eqnarray}
+
+\begin{theorem}
+
+\smallskip Consider an allocation $\left \{ \mathbf{x}_{t},b_{t}\right \} $
+that satisfies (\ref{Tech appendix: budget constraint}), (\ref{Tech
+appendix: Euler}) and $\left \{ b_{t}\right \} _{t}$ is bounded. Then $%
+\left
+\{ \mathbf{x}_{t},b_{t}\right \} $ is a solution to (\ref{Tech
+appendix: consumer maximization}).
+
+\end{theorem}
+\begin{proof}
+The proof follows closely Constantinides and Duffie (1996). Suppose there is
+another budget feasible allocation $\mathbf{x}+\mathbf{h}$ that maximizes (%
+\ref{Tech appendix: consumer maximization}). Since $U$ is strictly concave,
+\begin{eqnarray}
+&&\mathbb{E}_{0}\sum_{t=0}^{\infty }\beta ^{t}U(\mathbf{x}_{t}+\mathbf{h}%
+_{t})-\mathbb{E}_{0}\sum_{t=0}^{\infty }\beta ^{t}U(\mathbf{x}_{t})
+\label{Tech appendix: gain from h} \\
+&\leq &\mathbb{E}_{0}\sum_{t=0}^{\infty }\beta ^{t}\mathbf{U}_{x}(\mathbf{x}%
+_{t})\mathbf{h}_{t}  \notag
+\end{eqnarray}
+
+To attain $\mathbf{x}+\mathbf{h}$, the agent must deviate by $\varphi _{t}$
+from his original portfolio $b_{t}$ such that $\left\{ \varphi _{t}\right\}
+_{t}$ is bounded$,$ $\varphi _{-1}=0$ and
+\begin{equation*}
+\mathbf{p}(s^{t})\mathbf{h}\left( s^{t}\right) =P(s_t)\varphi
+(s^{t-1})-q(s^{t})\varphi (s^{t})
+\end{equation*}%
+Multiply by $\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})$ to get:%
+\begin{eqnarray*}
+\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})\mathbf{p}(s^{t})\mathbf{h}%
+\left( s^{t}\right)  &=&\beta ^{t}\Pr \left( s^{t}\right)
+U_{1}(s^{t})\varphi (s^{t-1})-q(s^{t})\beta ^{t}\Pr \left( s^{t}\right)
+U_{1}(s^{t})\varphi (s^{t}) \\
+&=&\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})\varphi (s^{t-1})-\beta
+^{t+1}\sum_{s^{t+1}>s^{t}}\Pr \left( s^{t+1}\right) U_{1}\left(
+s^{t+1}\right) \varphi (s^{t})
+\end{eqnarray*}%
+where we used the second part of (\ref{Tech appendix: Euler}) in the second
+equality. Sum over the first $T$ periods and use the first part of (\ref%
+{Tech appendix: Euler}) to eliminate $\mathbf{U}_{x}(\mathbf{x}%
+_{t})=U_{1}(s^{t})\mathbf{p}(s^{t})$%
+\begin{equation*}
+\sum_{t=0}^{T}\beta ^{t}\Pr \left( s^{t}\right) \mathbf{U}_{x}(\mathbf{x}%
+_{t})\mathbf{h}\left( s^{t}\right) =-\sum_{s^{T+1}>s^{T}}\beta ^{T+1}\Pr
+\left( s^{T+1}\right) U_{1}\left( s^{T+1}\right) \varphi (s^{T}).
+\end{equation*}%
+Since $\left\{ \varphi _{t}\right\} _{t}$ is bounded there must exist $\bar{%
+\varphi}$ s.t. $|\varphi _{t}|\leq \bar{\varphi}$ for all $t$. By Theorem
+5.2 of Magill and Quinzii (1994), this equilibrium with debt constraints
+implies a transversality condition on the right hand side of the last
+equation, so by transitivity we have%
+\begin{equation*}
+\lim_{T\rightarrow \infty }\sum_{t=0}^{T}\beta ^{t}\Pr \left( s^{t}\right)
+\mathbf{U}_{x}(\mathbf{x}_{t})\mathbf{h}\left( s^{t}\right) =0.
+\end{equation*}%
+Substitute this into (\ref{Tech appendix: gain from h}) to show that $%
+\mathbf{h}$ does not improve utility of consumer.
+\end{proof}
+
+
+\newpage
 \subsection{Proof of Theorem \protect\ref{thm long run forces}}
 
 The Bellman equation for the optimal planners problem with log quadratic
@@ -4192,20 +4216,20 @@ P\left( s\right) b_{1}-b_{1}\left( s\right) +g\left( s\right) \right) .
 
 
 
-\begin{lemma}  Let $\mu(b,s)$ be the optimal policy function for the Lagrange multiplier $\mu(s)$.  If $P(s') > P(s'')$ then there exists a $b^*_{s',s''}$ such that for all $b < (>) \; b_{1,s',s''}$ we have $\mu(b,s') > (<) \;\mu(b,s'')$.  If $\underline b < b^*_{s',s''} < \overline b$ then $\mu(b^*_{s',s''},s') = \mu(b^*_{s',s''},s'')$.
+\begin{lemma}  Let $\mu(s,b\_)$ be the optimal policy function for the Lagrange multiplier $\mu(s)$.  If $P(s') > P(s'')$ then there exists a $b^*_{s',s''}$ such that for all $b < (>) \; b_{1,s',s''}$ we have $\mu(s',b\_) > (<) \;\mu(s'',b\_)$.  If $\underline b < b^*_{s',s''} < \overline b$ then $\mu(b^*_{s',s''},s') = \mu(b^*_{s',s''},s'')$.
 \label{lem.order}
 \end{lemma}
 \begin{proof}
-Suppose that $\mu(b,s')\leq \mu(b,s'')$.  Subtracting the implementability for $s''$ from the implementability constraint for $s'$ we have
+Suppose that $\mu(s',b\_)\leq \mu(s'',b\_)$.  Subtracting the implementability for $s''$ from the implementability constraint for $s'$ we have
 \begin{align*}
-	\frac{P(s')-P(s'')}{\beta}b &= S_{s'}(\mu(b,s'))-S_{s''}(\mu(b,s'')) + b'(b,s')-b'(b,s'')\\
-						&\geq S_{s'}(\mu(b,s')) -S_{s''}(\mu(b,s')) + b'(b,s')-b'(b,s'')\\
-						&\geq  S_{s'}(\mu(b,s')) -S_{s''}(\mu(b,s')) = g(s'')-g(s')
-\end{align*}  We get the first inequality from noting that $S_s(\mu')\geq S_s(\mu'')$ if $\mu' \leq \mu''$.  We obtain the second inequality by noting that $\mu(b,s')\leq \mu(b,s'')$ implies $b'(b,s')\geq b'(b,s'')$ (which comes directly from the concavity of $V$).
-Thus, $\mu(b,s')\leq \mu(b,s'')$ implies that
+	\frac{P(s')-P(s'')}{\beta}b &= S_{s'}(\mu(s',b\_))-S_{s''}(\mu(s'',b\_)) + b'(b,s')-b'(b,s'')\\
+						&\geq S_{s'}(\mu(s',b\_)) -S_{s''}(\mu(s',b\_)) + b'(b,s')-b'(b,s'')\\
+						&\geq  S_{s'}(\mu(s',b\_)) -S_{s''}(\mu(s',b\_)) = g(s'')-g(s')
+\end{align*}  We get the first inequality from noting that $S_s(\mu')\geq S_s(\mu'')$ if $\mu' \leq \mu''$.  We obtain the second inequality by noting that $\mu(s',b\_)\leq \mu(s'',b\_)$ implies $b'(b,s')\geq b'(b,s'')$ (which comes directly from the concavity of $V$).
+Thus, $\mu(s',b\_)\leq \mu(s'',b\_)$ implies that
 \[
 	b \geq \frac{\beta(g(s'')-g(s'))}{P(s')-P(s'')} = b^*_{s',s''}
-\]The converse of this statement is that if $b<b^*_{s',s''}$ then $\mu(b,s') > \mu(b,s'')$.  The reverse statement that $\mu(b,s') \geq \mu(b,s'')$ implies $b \leq b^*_{s,s'}$ follows by symmetry.   Again, the converse implies that if $b > b^*_{s',s''}$ then $\mu(b,s') < \mu(b,s'')$.    Finally, if $\underline b < b^*_{s',s''} <\overline b$ then continuity of the policy functions implies that there must exist a root of $\mu(b,s')-\mu(b,s'')$ and that root can only be at $b^*_{s',s''}$.
+\]The converse of this statement is that if $b<b^*_{s',s''}$ then $\mu(s',b\_) > \mu(s'',b\_)$.  The reverse statement that $\mu(s',b\_) \geq \mu(s'',b\_)$ implies $b \leq b^*_{s,s'}$ follows by symmetry.   Again, the converse implies that if $b > b^*_{s',s''}$ then $\mu(s',b\_) < \mu(s'',b\_)$.    Finally, if $\underline b < b^*_{s',s''} <\overline b$ then continuity of the policy functions implies that there must exist a root of $\mu(s',b\_)-\mu(s'',b\_)$ and that root can only be at $b^*_{s',s''}$.
 \end{proof}
 
 The FOC and the envelope theorem now modify the martingale equation for $\mu_t$ as follows,
@@ -4217,7 +4241,7 @@ The FOC and the envelope theorem now modify the martingale equation for $\mu_t$ 
 With Lemma \ref{lem.order} we can order the policy functions $\mu(b,\cdot)$ for particular regions of the state space.  Take $b_1$ to be
 \[
 	b_1 = \min\left\{b^*_{s',s''}\right\}
-\] and WLOG choose $\underline b < b_1$.  For all $b < b_1$ we have shown that $P_s > P(s')$ implies that $\mu(b,s) > \mu(b,s')$.  By decomposing $\EE \mu_{t+1}P_{t+1}$ in equation \eqref{eq.mart}, we obtain (using $\EE_t P_{t+1} = 1$)
+\] and WLOG choose $\underline b < b_1$.  For all $b < b_1$ we have shown that $P_s > P(s')$ implies that $\mu(s,b\_) > \mu(s',b\_)$.  By decomposing $\EE \mu_{t+1}P_{t+1}$ in equation \eqref{eq.mart}, we obtain (using $\EE_t P_{t+1} = 1$)
 \begin{equation}
 	\mu_t = \EE\mu_{t+1} +\cov_t(\mu_{t+1},P_{t+1})
 \end{equation}Our analysis has just shown that for $b_t < b_1$ we have $\cov_t (\mu_{t+1},P_{t+1})  >0$ so
