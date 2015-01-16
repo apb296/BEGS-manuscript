@@ -168,6 +168,7 @@
 \newcommand{\bI}{\mathbf I}
 \newcommand{\barB}{{\overline B}}
 \newcommand{\barC}{{\overline C}}
+\newcommand{\barD}{{\overline D}}
 \newcommand{\pbar}{{\overline p}}
 \newcommand{\bbar}{{\overline b}}
 \newcommand{\mubar}{{\overline \mu}}
@@ -931,7 +932,7 @@ $c_{2,t}\geq0$
 
  Requiring that $c_{2t} \geq 0$ is  an easy way to make transfers too   costly
 to a Ramsey planner who cares too little about the unproductive agent.\footnote{In the absence of the constraint $c_{2,t}\geq0$,
-with quasi-linear preferences the Ramsey plan sets constant a constant tax rate and constant asset holdings for all $t\geq0$.} 
+with quasi-linear preferences the Ramsey plan sets constant a constant tax rate and the constant asset holdings for all $t\geq0$.} 
 
 
 \noindent Let $(\omega,n) \in [0,1] \times [0,1]$ be the Pareto weight and mass assigned to the  productive type $1$ agent. Let $V(B\_)$ 
@@ -983,10 +984,8 @@ whose  welfare the planner  values too little.
 % Lemma \ref{lemma threshold} also provides a good property of the normalization $b_{2,t} \equiv 0$ that we have imposed to
 % allow us to interpret $-B_t$ as public debt. 
  The normalization $b_{2,t} \equiv 0$ that we have imposed throughout to
-allow us to interpret $-B_t$ as public debt is one ingredient that via Lemma \ref{lemma threshold} makes    the Ramsey plan in an
+allow us to interpret $-B_t$ as public debt is one ingredient that via Lemma \ref{lemma threshold} makes the Ramsey plan in an
  economy with two types of agent be identical to that for  representative agent economy with zero lump sum transfers.   
-\textbf{Anmol XXXXX:
-I edited your sentence.  We might have to iterate.}
 We shall now characterize the dynamics of debt and taxes for such a $T_t \equiv 0$ representative agent economy
 before turning to the case in which a lower Pareto weight attached to productive gent induces the Ramsey planner to use positive transfers.
  
@@ -1031,7 +1030,7 @@ assets drift towards an interior region. %\textbf{Anmol XXXXX: I have moved the 
 \item Suppose $P(s)\in \mathcal{P}^*$.  Government assets converge to a degenerate steady state
 \[\lim_tB_t=  B^*\quad a.s \quad \forall B_{-1} \]
 where $B^*$ is the object appearing in definition \eqref{eqn:setP} of $\mathcal{P}^*$ and satisfies,
-\begin{equation} \label{ss-debt} B^*=\beta \frac{\var(g(s))}{\cov(P(s),g(s))}. \end{equation}
+\begin{equation} \label{ss-debt} B^*=\beta \frac{\var(g(s))}{\cov(P^*(s),g(s))}. \end{equation}
 The long-run tax rate is inversely related to $B^*$ and satisfies:
 \[\lim_{B^*\to\underline{B}}\tau^*=\frac{\gamma}{1+\gamma}, \quad \lim_{B^*\to\infty}\tau^*=-\infty .\]
 
@@ -1061,7 +1060,7 @@ by the initial government assets,  as it is in the \citeauthor{LucasJr.1983} mod
 
 
 
-In part 3 of theorem \ref{thm: rep agent general theorem} where  $P(s)\in\mathcal{P}^*$,
+In part 3 of Theorem \ref{thm: rep agent general theorem} where  $P(s)\in\mathcal{P}^*$,
 after government assets have converged to $B^*$, % under the case 3 that assumes that  $P(s)\in\mathcal{P}^*$,
 the government perfectly hedges fluctuations in
 its net-of-interest deficit.   Whether the government eventually holds assets or owes  debt is determined
@@ -1105,13 +1104,12 @@ Under a  first order approximation of dynamics around $P^*(s)$, the ergodic dist
   \]
   \item \textbf{Convergence rate:} The speed of convergence to the ergodic distribution is
   \[
-    \frac{\EE_{t-1}(B_t-B^*)}{(B_{t-1} - B^*)} = \frac1{1+|\cov(P(s),g(s))|}.
+    \frac{\EE_{t-1}(B_t-B^*)}{(B_{t-1} - B^*)} = \frac1{1+ \var(P)\corr^2(P,g)},
   \]
-
 \end{itemize}
-
-
+where $\corr(P,g)$ is the correlation coefficient between $P(s)$ and $g(s)$
 \end{theorem}
+
  We relegate the proof to appendix  \ref{appndx: ergodic distribution linearization}, where we describe how %We construct  $P^* $ as the projection of $P$ onto the space spanned by $\mathcal{P}^*$.
 we take a first-order Taylor approximation to the decision rules and laws of motion for the state variables of our
 economy around complete market counterparts associated with $P^*\in \mathcal{P}^*$.
@@ -1127,12 +1125,14 @@ by using fluctuations in the earnings  $P^*(s)B^*$ from its  portfolio.  When $P
 hedged with a combination of changes in the tax rate
 and the level of government debt. Theorem \ref{thm: rep agent linear policies}  asserts   how  deviations from $\mathcal{P}^*$ map into larger variances for government debt and the tax rate
 under the ergodic distribution. Figure \ref{fig: ergodic distribution ql} illustrates  how the ergodic distribution of government debt and the tax rate spread as we
-exogenously alter  the covariance of $P(s)$ with $g(s)$. \footnote{For the purposes of these graphs we used the global approximation to the policy rules using standard projection methods rather than the linear approximations appealed to in Theorem \ref{thm: rep agent linear policies}.}
+exogenously alter  the covariance of $P(s)$ with $g(s)$. \footnote{For the purposes of these graphs we used the global approximation to the policy rules using standard projection methods rather than the linear approximations appealed to in Theorem \ref{thm: rep agent linear policies}.} The last part of Theorem \ref{thm: rep agent linear policies} decomposes the the speed of convergence of assets $B_t$ to their ergodic mean into two components: variance of $P$ and the correlation between $P(s)$ and $g(s)$.  If $P$ were to belong to $\mathcal{P}^*$, the second term relating to correlation would be equal to one,  and this gives an upper bound to the speed of convergence for $P(s)$ close enough to $\mathcal{P}^*$. 
+ 
+ 
  \begin{figure}[htp]
  \centering
-	 \includegraphics[width=7in]{plots/ErgodicQL.pdf}
+	 \includegraphics[width=5in]{plots/ErgodicQL.pdf}
  \caption{Ergodic distribution for government assets $B_t$ and the labor tax rate $\tau_t$ in the representative agent quasilinear economy for three different
- asset payoff vectors$P(s)$.}
+ asset payoff vectors $P(s)$.}
   %\textbf{Anmol and David XXXXX: I recommend
 % trimming the range so that only positive densities are mostly shown.}}
  \label{fig: ergodic distribution ql}
@@ -1705,10 +1705,10 @@ From these facts we infer a slope  $m=\frac{1.5}{0.8}$.
 
  {
   \begin{figure}
-  \label{fig:fatih_picture}
     \centering
     \includegraphics[width = 0.5\textwidth]{fg13.jpeg}
     \caption{ Change in log average earnings during recessions, prime-age males from \cite{Fatih2014}}
+      \label{fig:fatih_picture}
   \end{figure}
 
 }
@@ -1792,10 +1792,11 @@ all share the same sequence of underlying shocks.
 
  {
   \begin{figure}
-  \label{fig:long_simulation}
+
     \centering
     \includegraphics[width = 0.9\textwidth]{cesplots/long_simulation_debt.png}
     \caption{The dashed, bold and dotted lines plot simulations for a common sequence of shocks for values of $\chi=-1.0,-0.06,1.0$ respectively}
+      \label{fig:long_simulation}
   \end{figure}
 
 }
@@ -1825,10 +1826,10 @@ Note how these conditional mean  paths smooth the high frequency movements in th
 
  {
   \begin{figure}
-  \label{fig:speed_of_convergence}
     \centering
     \includegraphics[width = .9\textwidth]{cesplots/speed_of_convergence.png}
     \caption{The plot shows conditional mean paths for different values of $\chi$. The dashed (solid) lines have $\chi<0$ ($\chi>0$). The thicker lines represent larger values. The dotted line have $\chi=-0.06$}
+      \label{fig:speed_of_convergence}
   \end{figure}
 
 }
@@ -1840,10 +1841,10 @@ we take the initial conditions at the end of the long simulation and subject the
 
 {
   \begin{figure}
-  \label{fig: wide support of taxes}
     \centering
     \includegraphics[width = 0.8\textwidth]{cesplots/taxes_only_bad_shocks.png}
     \caption{Taxes for a sequence of -1 s.d shocks to aggregate productivity of length 100}
+      \label{fig: wide support of taxes}
   \end{figure}
 
 }
@@ -1856,10 +1857,10 @@ In figure \ref{fig: comp_stats_alpha} we plot mean of the government assets in t
 
  {
   \begin{figure}
-  \label{fig: comp_stats_alpha}
     \centering
     \includegraphics[width = .9\textwidth]{cesplots/comp_stats_alpha.pdf}
     \caption{This plot shows long run assets of the government as a function of $\alpha$ which parametrizes the redistributive concern. Higher $\alpha$ represent planner's with relatively higher weights on productive agents.}
+      \label{fig: comp_stats_alpha}
   \end{figure}
 
 }
@@ -1894,10 +1895,10 @@ responds by decreasing transfers and  increasing both debt and
 the tax rate, but by  amounts an order of magnitude smaller than in the benchmark.
 {
   \begin{figure}
-  \label{fig: irf}
     \centering
     \includegraphics[width = 0.9\textwidth]{cesplots/irf_bm_chi_shocks.png}
     \caption{The bold line is the total response. The dashed (dotted) line reflects the only TFP (inequality) effect. The shaded region is the recession}
+    \label{fig: irf}
   \end{figure}
 
 }
@@ -1940,7 +1941,7 @@ the second and third questions posed in our first paragraph of this paper are in
  transfers join  imperfect fiscal hedging as a force that contributes to the optimal  dynamics of both government debt and the tax rate on labor income. 
  They also add a smoothing  motive along another dimenstion to the wish list of a Ramsey planner: in addition to an interest
  in  smoothing fluctuations in the tax rate on labor income identified by \citet{Barro1979}, our Ramsey planner wants to  smooth fluctuations in 
- transfersd, at least he does  when he cares enough about poorer agents.  
+ transfers, at least he does  when he cares enough about poorer agents.  
  
  In the process of answering the three questions posed in our first paragraph, we have recast them by refining an appropriate notion
  of the state variable for an incomplete markets, heterogeneous agent economy like ours.  The pertinent state variable is  really the distribution
@@ -2345,7 +2346,7 @@ are strict.
 
 
 \begin{proof}
-The FOCs together with the envelope theorem imply that $\mathbb{E}P(s)V'(b(s))=V'(b\_)+\mathbb{E}P(s)\bar{\kappa}-\mathbb{E}P(s)\underline{\kappa}$
+The FOCs together with the envelope theorem imply that $\mathbb{E}P(s)V'(b(s))=V'(b\_)+\mathbb{E}P(s)\bar{\kappa}(s)-\mathbb{E}P(s)\underline{\kappa}(s)$
 We can rewrite this as
 \begin{equation}
 \label{foc above}
@@ -2585,40 +2586,42 @@ Differentiating equation \eqref{eq.lin_imp} with respect to $\mu$ around $(\over
 For an arbitrary $\left (\overline \mu,\{\overline {P}(s )\}_{s}\right)$, using the derivatives that we computed, we can characterize the dynamics of $\hat{\mu}\equiv\mu_t-\mubar$ using our approximated policies.
 
 
+\begin{equation}
+\label{eq linear dynamics of mu}
+\hat \mu_{t+1} = D(s_{t+1}) \hat\mu_t + C(s_{t+1}),
+\end{equation}
+where $D(s)$ and $C(s)$ are respective derivatives. Note that both are random variables and let us denote their means $\barD$ and $\barC$, and variances $\sigma_D^2$ and $\sigma_C^2$ .  Suppose that $\hat\mu$ is distributed according to the ergodic distribution of this linear system with mean $\EE\hat\mu$ and variance $\sigma^2_\mu$.  Since
 \[
-	\hat \mu_{t+1} = B(s_{t+1}) \hat\mu_t + C(s_{t+1}),
-\]  where $B(s)$ and $C(s)$ are respective derivatives. Note that both are random variables and let us denote their means $\barB$ and $\barC$, and variances $\sigma_B^2$ and $\sigma_C^2$ .  Suppose that $\hat\mu$ is distributed according to the ergodic distribution of this linear system with mean $\EE\hat\mu$ and variance $\sigma^2_\mu$.  Since
-\[
-	B\hat\mu +C,
+	D\hat\mu +C,
 \]has the same distribution we can compute the mean of this distribution as
 \[
 \begin{split}
-	\EE\hat\mu &= \EE\left[ B\hat\mu+C\right]\\
-			  &= \EE\left[\EE_{\hat\mu}\left[B\hat\mu+C\right]\right]\\
-			  &= \EE\left[\barB\hat\mu +\barC\right]\\
-			  &=\barB\EE\hat\mu+\barC
+	\EE\hat\mu &= \EE\left[ D\hat\mu+C\right]\\
+			  &= \EE\left[\EE_{\hat\mu}\left[D\hat\mu+C\right]\right]\\
+			  &= \EE\left[\barD\hat\mu +\barC\right]\\
+			  &=\barD\EE\hat\mu+\barC
 \end{split}
 \]solving for $\EE\hat\mu$ we get
 \begin{equation}
-	\EE\hat\mu = \frac{\barC}{1-\barB}
+	\EE\hat\mu = \frac{\barC}{1-\barD}
 \end{equation}For the variance $\sigma^2_{\hat\mu}$ we know that
 \[
-	\sigma^2_{\hat\mu} = \var(B\hat\mu+C) = \var(B\hat\mu) + \sigma_C^2 + 2\cov(B\hat\mu,C)
-\]Computing the variance of $B\hat \mu$ we have
+	\sigma^2_{\hat\mu} = \var(D\hat\mu+C) = \var(D\hat\mu) + \sigma_C^2 + 2\cov(D\hat\mu,C)
+\]Computing the variance of $D\hat \mu$ we have
 \[
 \begin{split}
-	\var(B\hat\mu) &=\EE\left[(B\hat\mu - \barB\EE\hat\mu)^2\right]\\
-			       &=\EE\left[(B\hat\mu-\barB\hat\mu +\barB\hat\mu -\barB\EE\hat\mu)^2\right]\\
-			      &=\EE\left[\EE_{\hat\mu}\left[(B-\barB)^2\hat\mu^2 +2(B-\barB)(\hat\mu-\EE\hat\mu)\barB\EE\hat\mu + (\hat\mu-\EE\hat\mu)^2\bar B^2\right]\right]\\
-			&=\EE\left[\sigma_B^2\hat\mu^2 +(\hat\mu-\EE\hat\mu)^2\barB\right]\\
-			& = \sigma_B^2(\sigma_{\hat\mu}^2+(\EE\hat\mu)^2) + \sigma_{\hat\mu}^2\barB^2
+	\var(D\hat\mu) &=\EE\left[(D\hat\mu - \barD\EE\hat\mu)^2\right]\\
+			       &=\EE\left[(D\hat\mu-\barD\hat\mu +\barD\hat\mu -\barD\EE\hat\mu)^2\right]\\
+			      &=\EE\left[\EE_{\hat\mu}\left[(D-\barD)^2\hat\mu^2 +2(D-\barD)(\hat\mu-\EE\hat\mu)\barD\EE\hat\mu + (\hat\mu-\EE\hat\mu)^2\bar D^2\right]\right]\\
+			&=\EE\left[\sigma_D^2\hat\mu^2 +(\hat\mu-\EE\hat\mu)^2\barD\right]\\
+			& = \sigma_D^2(\sigma_{\hat\mu}^2+(\EE\hat\mu)^2) + \sigma_{\hat\mu}^2\barD^2
 \end{split}
-\]while for the covariance of $B\hat\mu$ and $C$
+\]while for the covariance of $D\hat\mu$ and $C$
 \[
-	\cov(B\hat\mu,C) = \sigma_{BC}\EE\hat\mu
+	\cov(D\hat\mu,C) = \sigma_{DC}\EE\hat\mu
 \]Putting this all together we have
 \begin{equation}
-	\sigma_{\hat\mu}^2 = \frac{\sigma_B^2(\EE\hat\mu)^2 + \sigma_{BC}\EE\hat\mu + \sigma_C^2}{1-\barB^2-\sigma_B^2}
+	\sigma_{\hat\mu}^2 = \frac{\sigma_D^2(\EE\hat\mu)^2 + \sigma_{DC}\EE\hat\mu + \sigma_C^2}{1-\barD^2-\sigma_D^2}
 \end{equation}
 
 
@@ -2653,8 +2656,8 @@ Since all payoffs in $\mathcal{P}^*$ are associated with some $b^*$ and $\mu^*$ 
 \]Taking expectations we have that
 \begin{equation}
 \begin{split}
-	\barC &= \sum_s\left\{\frac{{b^{*}}}{\beta\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]}\left(\pi(s) - \frac{\pi(s)P^*(s)}{\EE\pbar^2}\right)( P(s)-P^*(s))\right\}\\
-	&=\frac{{b^{*}}}{\beta\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]}\left(\EE( P-\pbar) -\frac{\EE\left[( P-\pbar)\pbar\right]}{\EE\pbar^2}\right)\\
+	\barC &= \sum_s\left\{\frac{{b^{*}}}{\beta\left[I'(\mu^*)+\frac{\partial b}{\partial\mu}\right]}\left(\pi(s) - \frac{\pi(s)P^*(s)}{\EE\pbar^2}\right)( P(s)-P^*(s))\right\}\\
+	&=\frac{{b^{*}}}{\beta\left[I'(\mu^*)+\frac{\partial b}{\partial\mu}\right]}\left(\EE( P-P^*) -\frac{\EE\left[( P-P^*)P^*\right]}{\EE {P^*}^2}\right)\\
 	&= 0
 \end{split}
 \end{equation}  Thus the linearized system will have the same mean for $\mu$, $\mubar$, as the closest approximating steady state payoff structure.
@@ -2662,25 +2665,25 @@ Since all payoffs in $\mathcal{P}^*$ are associated with some $b^*$ and $\mu^*$ 
 We can also compute the variance of the ergodic distribution for $\mu$.  Note
 \[
 \begin{split}
-	C(s') &= \sum_s\left\{\frac{{b^{*}}}{\beta\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]}\left(1_{s,s'}-\frac{\pi(s) P^*(s)P^*(s')}{\EE{P^*}^2}\right)(P(s)-P^*(s)) \right\}\\
-		 &=\frac{{b^{*}}}{\beta\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]}\left( P(s')-P^*(s') -P^*(s')\frac{\sum_s\pi(s)P^*(s)( p_s-P^*(s))}{\EE{P^*}^2}\right)\\
-		&= \frac{{b^{*}}}{\beta\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]}( P(s')-P^*(s))
+	C(s') &= \sum_s\left\{\frac{{b^{*}}}{\beta\left[I'(\mu^*)+\frac{\partial b}{\partial\mu}\right]}\left(1_{s,s'}-\frac{\pi(s) P^*(s)P^*(s')}{\EE{P^*}^2}\right)(P(s)-P^*(s)) \right\}\\
+		 &=\frac{{b^{*}}}{\beta\left[I'(\mu^*)+\frac{\partial b}{\partial\mu}\right]}\left( P(s')-P^*(s') -P^*(s')\frac{\sum_s\pi(s)P^*(s)( p_s-P^*(s))}{\EE{P^*}^2}\right)\\
+		&= \frac{{b^{*}}}{\beta\left[I'(\mu^*)+\frac{\partial b}{\partial\mu}\right]}( P(s')-P^*(s))
 \end{split}
 \]  As noted before
 \[
-	\sigma_{\mu}^2 = \frac{{b^{*}}^ 2}{\beta^2\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]^2\left(1-\barB^2-\sigma_B^2\right)}\| P-{P^*}\|^2
+	\sigma_{\mu}^2 = \frac{{b^{*}}^ 2}{\beta^2\left[I'(\mu^*)+\frac{\partial b}{\partial\mu}\right]^2\left(1-\barD^2-\sigma_D^2\right)}\| P-{P^*}\|^2
 \]  The variance of government debt in the linearized system is
 \[
-	\sigma_b^2 = \frac{{b^{*}}^2\left(\frac{\partial b}{\partial\mu}\right)^2}{\beta^2\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]^2\left(1-\barB^2-\sigma_B^2\right)}\| P-{P^*}\|^2
+	\sigma_b^2 = \frac{{b^{*}}^2\left(\frac{\partial b}{\partial\mu}\right)^2}{\beta^2\left[I'(\mubar)+\frac{\partial b}{\partial\mu}\right]^2\left(1-\barD^2-\sigma_D^2\right)}\| P-{P^*}\|^2
 \]  This can be simplified using the following expressions:
 \[
-	I'(\mubar)+\frac{\partial b}{\partial \mu} = \frac{\EE{P^*}^2}{\beta}\frac{\partial b}{\partial\mu},
+	I'(\mu^*)+\frac{\partial b}{\partial \mu} = \frac{\EE{P^*}^2}{\beta}\frac{\partial b}{\partial\mu},
 \]
 \[
-	\barB = \frac{1}{\EE{P^*}^2}
+	\barD = \frac{1}{\EE{P^*}^2}
 \]and
 \[
-	\sigma_B^2 = \frac{\var({P^*})}{(\EE{P^*}^2)^2}
+	\sigma_D^2 = \frac{\var({P^*})}{(\EE{P^*}^2)^2}
 \] to
 \begin{equation}
 	\sigma^2_b = \frac{{b^{*}}^2}{\EE{P^*}^2\var({P^*})}\|P-{P^*}\|^2
@@ -2688,6 +2691,41 @@ We can also compute the variance of the ergodic distribution for $\mu$.  Note
 \begin{equation}
 	\frac{\sigma_b}{{b^{*}}} \leq \sqrt\frac{\|P-{P^*}\|^2}{\var({P^*})}
 \end{equation}
+
+Lastly we derive the rates at which the ergodic means converge. Taking expectations of \eqref{eq linear dynamics of mu} we get that,
+
+\[\frac{\mathbb{E}\hat{\mu}_{t+1}}{\hat{\mu}_t}=\overline{D},\]
+
+where we have used the result that $\overline{C}=0$.
+
+We now proceed to express $\overline{D}$ in terms of the primitives $P(s)$ and $g(s)$. 
+
+\[\overline{D}=\frac{1}{\mathbb{E}{P^*}^2}\]
+
+Using the orthogonal decomposition, 
+
+
+\[\mathbb{E}P^*=\mathbb{E}P P^*\]
+
+Since $P^*\in \mathcal{P}^*$, it satisfies
+
+
+\[P^*(s)-1=-\frac{\beta}{b^*}[g(s)-\mathbb{E}g]\]
+
+Substituting this we get 
+\[\mathbb{E}P P^*=1-\frac{\beta}{b^*}\cov(P(s),g(s))\]
+
+This can be further simplified to 
+
+\[
+\mathbb{E}P P^*=1+\frac{\cov(P^*(s),g(s))}{\var(g(s))}\cov(P(s),g(s))
+\]
+
+Using the fact that $P-P^*$ is orthogonal to $g(s)$, we get expression,
+
+\[\overline{D}=\frac{1}{1+\var{P(s)}\corr(P(s),g(s))}\]
+
+
 
 
 \newpage
@@ -2701,7 +2739,7 @@ We can also compute the variance of the ergodic distribution for $\mu$.  Note
 \subsection{Proof of Theorem \protect\ref{thm heterogeneous agents}}
 \label{apndx: proof heterogeneous agent}
 \begin{proof}
-Using Theorem \ref{theorem: main} let $\tilde{b}=b_1-b_2$. Under the normalization that $b_2=0$, the variable $\tilde{b}$ represents public debt government or the assets of the productive agent. The  optimal plan solves the following Bellman equation,
+Let $\tilde{b}=b_1-b_2$. Under the normalization that $b_2=0$, the variable $n_1\tilde{b}$ represents public debt government or the assets of the productive agent. The  optimal plan solves the following Bellman equation,
 
 \begin{equation}
 	\label{eq-2 agent QL obj}
@@ -2767,7 +2805,7 @@ V'(\tilde{b}\_)=\sum_{s}\pi(s)\mu(s)\beta^{-1}P(s)
 \end{subequations}
 \end{proof}
 
-To show part 1 of Theorem \ref{thm heterogeneous agents}, we show that $\frac{\omega}{n}>\frac{1+\gamma}{\gamma}$ is sufficient for the Lagrange multiplier $\lambda(s)$ on the non-negativity constraint to bind.
+To show part 1 of Theorem \ref{thm heterogeneous agents}, we show that $\frac{\omega}{n}>\frac{1+\gamma}{\gamma}$ is sufficient for the Lagrange multiplier $\lambda(s)$ on the non-negativity constraint to be strictly positive.
 
 \begin{lemma} The multiplier on the budget constraint $\mu(s)$ is bounded above
 \[\mu(s)\leq \min \left\{\omega-n,\frac{\omega}{1+\gamma}\right\}\]
@@ -2785,7 +2823,7 @@ As taxes go to $-\infty$ \eqref{eq.het.agent.foc.l} implies that $\mu(s)$ approa
 
 
 \begin{lemma}
-There exists a $\bar{\omega}$ such that $\omega>\bar{\omega}$ implies $c_2(s)=0$ for all $b$
+There exists a $\bar{\omega}$ such that $\omega>\bar{\omega}$ implies $c_2(s)=0$ for all $b\_$
 \end{lemma}
 \begin{proof}
 
@@ -2832,7 +2870,7 @@ In the next lemma we show how $\mathcal{B}$ varies with $\omega$.
 
 \begin{lemma}
 \label{lem comparative statics of B with omega}
-For $\omega\leq n \frac{1+\gamma}{\gamma} $, we have $\frac{\partial \mathcal{B}}{\partial \omega}>0$.
+For $\omega\leq n \left(\frac{1+\gamma}{\gamma}\right) $, we have $\frac{\partial \mathcal{B}}{\partial \omega}>0$.
 \end{lemma}
 \begin{proof}
 The sign of the derivative of $\mathcal{B}$ with respect to $\omega$ is the same as the sign of the following derivative:
@@ -2841,11 +2879,11 @@ Note that \eqref{eq.opt.int.labor} implies that $l^*$  is increasing in $\omega$
 
 \[\frac{\partial \left[{l^*}^{1+\gamma}-\theta l^*\right]}{\partial \omega}=\frac{\partial l^*}{\partial \omega}\left [ (1+\gamma){l^*}^{\gamma}-\theta\right]\]
 
-So the sign of the required derivative depends on $\left [ (1+\gamma){l^*}^{\gamma}-\theta\right]$. We now argue that this expression is positive over the range $\omega\leq n \frac{1+\gamma}{\gamma}$.
+So the sign of the required derivative depends on $\left [ (1+\gamma){l^*}^{\gamma}-\theta\right]$. We now argue that this expression is positive over the range $\omega\leq n \left(\frac{1+\gamma}{\gamma}\right)$.
 
 
 Again from the expression for $l^*$, we see that
-\[\min_{\omega \leq n\frac{1+\gamma}{\gamma}}{l^*}^{\gamma}=\frac{\theta}{1+\gamma}\].
+\[\min_{\omega \leq n\left(\frac{1+\gamma}{\gamma}\right)}{l^*}^{\gamma}=\frac{\theta}{1+\gamma}\].
 
 Thus we can see that $\mathcal{B}$ is increasing in $\omega$
 
@@ -2881,11 +2919,7 @@ This further implies,
 
 Combining the previous two inequalities yields a contradiction. The other  inequality, $\tilde{b}(\underline s,\tilde{b}\_)>\mathcal{B}$ follows from the definition of $\mathcal{B}$. This is because if it was not true then $\tilde{b}(s,\tilde{b}\_)\leq \mathcal{B}$ for all shocks. This implies that the solution is interior. However the only initial conditions that have this property are less than equal to $\mathcal{B}$.
 
-
-Now define $\overline \mu (\tilde b(s,\tilde{b}\_))$ as $\max_{s} \mu (s,\tilde{b}\_)$ and $\hat{s}(\tilde{b}\_)$ as the shock that achieves this maximum. Now we show that $\hat \mu(\tilde b(s,\tilde{b}\_))$ is finite for all $b\_\leq\overline{b}$. We show the claim for the natural debt limit.
-
-
-Let $b^{n}(s)=(\beta ^{-1}P(s)-1)^{-1}\left[\theta^{\frac{\gamma}{1+\gamma}}\left(\frac{1}{1+\gamma} \right)^{\frac{1}{\gamma}}\left(\frac{\gamma}{1+\gamma}\right)-g(s)\right]$ be the maximum debt supported by a particular shock $s$. The natural debt limit is defined as $\overline b^{n}=\min_{s}b^{n}(s)$. Note that $\lim_{b\to \overline b^{n}}\mu(\tilde{b}\_)=\infty$
+Define $\overline \mu (\tilde b(s,\tilde{b}\_))$ as $\max_{s} \mu (s,\tilde{b}\_)$ and $\hat{s}(\tilde{b}\_)$ as the shock that achieves this maximum. Now we show that $\hat \mu(\tilde b(s,\tilde{b}\_))$ is finite for all $b\_\leq\overline{b}$. We show the claim for the natural debt limit. Let $b^{n}(s)=(\beta ^{-1}P(s)-1)^{-1}\left[\theta^{\frac{\gamma}{1+\gamma}}\left(\frac{1}{1+\gamma} \right)^{\frac{1}{\gamma}}\left(\frac{\gamma}{1+\gamma}\right)-g(s)\right]$ be the maximum debt supported by a particular shock $s$. The natural debt limit is defined as $\overline b^{n}=\min_{s}b^{n}(s)$. Note that $\lim_{b\to \overline b^{n}}\mu(\tilde{b}\_)=-\infty$
 
 Now choose $s$ such that $b^{n}(s)>\overline b^{n}$ and consider the debt choice next period for the same shock $s$ when it comes in with debt $\overline b^{n}$.
 
@@ -2900,7 +2934,7 @@ However the  right hand side is the definition of $b^{n}(s)$ and,
 
 Thus we have a contradiction and the optimal choice of debt at the natural debt limit $\tilde{b}(s,\overline {b}^{n})<\overline b^{n}$.
 
-This inturn means that $\lim_{\tilde b\to \overline b^{n}}\overline \mu (\tilde b) <\infty$.
+This inturn means that $\lim_{\tilde b\to \overline b^{n}}\overline \mu (\tilde b) >-\infty$.
 
 
 Now note that $\overline \mu(\tilde b\_)-\mu(\tilde b\_)$ is continuous on $[\check b, \quad \overline b^{n}]$ and is bounded below by zero, therefore attains a minimum at $\tilde b^{min}$. Let $\delta=\hat \mu(\tilde b^{min})-\mu(\tilde b^{min})>\eta>0$. If this was not true then $P(s)\in \mathcal {P}^*$ as $\mu$ will have an absorbing state.
@@ -2911,7 +2945,7 @@ Let $\mu(\omega,n)=\omega-n$. This is the value of $\mu$ when debt falls below $
 Now consider any initial $\tilde b\_ \in [\mathcal{B},\overline b^{n}]$. If $\tilde{b}\_\leq \check b$, then by lemma \ref{lem.limit.in.one.step}, we know that $\mathcal{B}$ will be reached in one shock. Otherwise if $\tilde b\_>\check b$, we can construct a sequence of shocks $s_t=\hat s (\tilde b_{t-1})$ of length $N=\frac{\mu(\omega,n)-\mu(\tilde b\_)}{\delta}$. There exits $t<N$ such that $\tilde b_t<\check b$, otherwise,
 \[\mu_t>\mu(\tilde b\_)+N\delta>\mu(\omega,n)\]
 
-Thus we can reach $\mathcal{B}$ in finite steps. Since shocks are i.i.d, this is an almost sure statement. At $\mathcal{B}$, transfers are strictly positive for some shocks $T_t>0$ a.s. and taxes are given by $\tau^*$.
+Thus we can reach $\mathcal{B}$ in finite steps. Since shocks are i.i.d, this is event is almost surely true. At $\mathcal{B}$, transfers are strictly positive for some shocks $T_t>0$ a.s. and taxes are given by $\tau^*$.
 
 
 
@@ -2929,7 +2963,7 @@ In the region $\tilde b\_>b^*$, as before $\mu_t$ is supermartingale bounded bel
 
 
 
-In the region $[\mathcal{B},\quad b^*]$ the outcomes depend on the exact sequence of shocks we can show that $\mu_t$ is a submartingale. This follows from the observation that for all $\tilde b\_> \mathcal{B}$, we have $T(s)=0$ and the outcomes from the representative agent economy allow us to order $\mu(s)$ relative $P(s)$. At $\tilde{b}\_=\mathcal{B}$, $\mu(s)=\omega-n$ and is constant. Thus in the region $[\mathcal{B},\quad B^*]$, $\mu_t$ is sub martingale and it converges. However if $\tilde b_t$ gets sufficiently close to $\check b$, then it can converge to $\mathcal{B}$ and if it gets sufficiently close to $b^*$, it can converge to $b^*$. Either of this can happen with strictly positive probability.
+In the region $[\mathcal{B},\quad b^*]$ the outcomes depend on the exact sequence of shocks we can show that $\mu_t$ is a submartingale. This follows from the observation that for all $\tilde b\_> \mathcal{B}$, we have $T(s)=0$ and the outcomes from the representative agent economy allow us to order $\mu(s)$ relative $P(s)$. At $\tilde{b}\_=\mathcal{B}$, $\mu(s)=\omega-n$ and is constant. Thus in the region $[\mathcal{B},\quad B^*]$, $\mu_t$ is sub martingale and it converges. However if $\tilde b_t$ gets sufficiently close to $\check b$, then it can converge to $\mathcal{B}$ and if it gets sufficiently close to $b^*$, it can converge to $b^*$.
 \end{proof}
 
 
@@ -2953,7 +2987,7 @@ s^{t}\right) $ be a stochastic vector of endowments.
 \textbf{Consumer maximization problem}
 
 \begin{equation}
-\max_{\mathbf{x}_{t},b_{t}}\sum_{t=0}^{\infty }\beta ^{t}\Pr \left(
+\max_{\mathbf{x}_{t},b_{t}}\sum_{t=0}^{\infty }\beta ^{t}\pi\left(
 s^{t}\right) U(\mathbf{x}\left( s^{t}\right) )
 \label{Tech appendix: consumer maximization}
 \end{equation}%
@@ -2971,8 +3005,8 @@ The Euler conditions are%
 \begin{eqnarray}
 \mathbf{U}_{x}(s^{t}) &=&U_{1}(s^{t})\mathbf{p}(s^{t})
 \label{Tech appendix: Euler} \\
-\Pr \left( s^{t}\right) U_{1}\left( s^{t}\right) q(s^{t}) &=&\beta
-\sum_{s^{t+1}>s^{t}}\Pr \left( s^{t+1}\right) U_{1}\left( s^{t+1}\right) .
+\pi \left( s^{t}\right) U_{1}\left( s^{t}\right) q(s^{t}) &=&\beta
+\sum_{s^{t+1}>s^{t}}\pi \left( s^{t+1}\right) U_{1}\left( s^{t+1}\right) .
 \notag
 \end{eqnarray}
 
@@ -3005,14 +3039,14 @@ _{t}$ is bounded$,$ $\varphi _{-1}=0$ and
 \mathbf{p}(s^{t})\mathbf{h}\left( s^{t}\right) =P(s_t)\varphi
 (s^{t-1})-q(s^{t})\varphi (s^{t})
 \end{equation*}%
-Multiply by $\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})$ to get:%
+Multiply by $\beta ^{t}\pi \left( s^{t}\right) U_{1}(s^{t})$ to get:%
 \begin{eqnarray*}
-\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})\mathbf{p}(s^{t})\mathbf{h}%
-\left( s^{t}\right)  &=&\beta ^{t}\Pr \left( s^{t}\right)
-U_{1}(s^{t})\varphi (s^{t-1})-q(s^{t})\beta ^{t}\Pr \left( s^{t}\right)
+\beta ^{t}\pi \left( s^{t}\right) U_{1}(s^{t})\mathbf{p}(s^{t})\mathbf{h}%
+\left( s^{t}\right)  &=&\beta ^{t}\pi \left( s^{t}\right)
+U_{1}(s^{t})\varphi (s^{t-1})-q(s^{t})\beta ^{t}\pi \left( s^{t}\right)
 U_{1}(s^{t})\varphi (s^{t}) \\
-&=&\beta ^{t}\Pr \left( s^{t}\right) U_{1}(s^{t})\varphi (s^{t-1})-\beta
-^{t+1}\sum_{s^{t+1}>s^{t}}\Pr \left( s^{t+1}\right) U_{1}\left(
+&=&\beta ^{t}\pi \left( s^{t}\right) U_{1}(s^{t})\varphi (s^{t-1})-\beta
+^{t+1}\sum_{s^{t+1}>s^{t}}\pi \left( s^{t+1}\right) U_{1}\left(
 s^{t+1}\right) \varphi (s^{t})
 \end{eqnarray*}%
 where we used the second part of (\ref{Tech appendix: Euler}) in the second
@@ -3020,8 +3054,8 @@ equality. Sum over the first $T$ periods and use the first part of (\ref%
 {Tech appendix: Euler}) to eliminate $\mathbf{U}_{x}(\mathbf{x}%
 _{t})=U_{1}(s^{t})\mathbf{p}(s^{t})$%
 \begin{equation*}
-\sum_{t=0}^{T}\beta ^{t}\Pr \left( s^{t}\right) \mathbf{U}_{x}(\mathbf{x}%
-_{t})\mathbf{h}\left( s^{t}\right) =-\sum_{s^{T+1}>s^{T}}\beta ^{T+1}\Pr
+\sum_{t=0}^{T}\beta ^{t}\pi \left( s^{t}\right) \mathbf{U}_{x}(\mathbf{x}%
+_{t})\mathbf{h}\left( s^{t}\right) =-\sum_{s^{T+1}>s^{T}}\beta ^{T+1}\pi
 \left( s^{T+1}\right) U_{1}\left( s^{T+1}\right) \varphi (s^{T}).
 \end{equation*}%
 Since $\left\{ \varphi _{t}\right\} _{t}$ is bounded there must exist $\bar{%
@@ -3030,7 +3064,7 @@ Since $\left\{ \varphi _{t}\right\} _{t}$ is bounded there must exist $\bar{%
 implies a transversality condition on the right hand side of the last
 equation, so by transitivity we have%
 \begin{equation*}
-\lim_{T\rightarrow \infty }\sum_{t=0}^{T}\beta ^{t}\Pr \left( s^{t}\right)
+\lim_{T\rightarrow \infty }\sum_{t=0}^{T}\beta ^{t}\pi \left( s^{t}\right)
 \mathbf{U}_{x}(\mathbf{x}_{t})\mathbf{h}\left( s^{t}\right) =0.
 \end{equation*}%
 Substitute this into (\ref{Tech appendix: gain from h}) to show that $%
@@ -3045,7 +3079,7 @@ The Bellman equation for the optimal planners problem with log quadratic
 preferences and IID shocks can be written as
 \begin{equation*}
 V(x,\rho) = \max_{c_1,c_2,l_1,x^{\prime },\rho^{\prime }} \sum_s \pi(s)\left[%
-\alpha_1\left(\log c_1(s) -\frac{l_1(s)^2}{2}\right)+\alpha_2\log
+\omega_1\left(\log c_1(s) -\frac{l_1(s)^2}{2}\right)+\omega_2\log
 c_2(s)+\beta V(x^{\prime }(s),\rho^{\prime }(s))\right]
 \end{equation*}%
 subject to the constraints
@@ -3059,25 +3093,25 @@ c_2(s)}}{\mathbb{E}[\frac{P(s)}{c_2(s)}]}=0  \label{eq.conStart} \\
 where the $\pi(s)$ is the probability distribution of the aggregate state $s$. If
 we let $\pi(s)\mu(s)$, $\lambda$, $\pi(s)\xi(s)$ and $\pi(s)\phi(s)$ be the
 Lagrange multipliers for the constraints (\ref{eq.conStart})-(\ref{eq.conEnd}%
-) respectively then we obtain the following FONC for the planners problem \footnote{Appendix \ref{apndx: numerical methods} discuses the associated second order conditions that ensure these policies are optimal}
+) respectively then we obtain the following FONC for the planners problem \footnote{Appendix \ref{apndx: numerical methods} discuses the associated second order conditions that ensure these policies are optimal at the steady state}
 
 \begin{enumerate}
 \item[$c_1(s):$]
 \begin{equation}
-\frac{\alpha_1\pi(s)}{c_1(s)}-\frac{\lambda \pi(s)}{c_1(s)^2}(\rho^{\prime
+\frac{\omega_1\pi(s)}{c_1(s)}-\frac{\lambda \pi(s)}{c_1(s)^2}(\rho^{\prime
 }(s)-\rho)-\pi(s)\xi(s)-\pi(s)\phi(s) = 0  \label{eq.c1FOC}
 \end{equation}
 
 \item[$c_2(s):$]
 \begin{equation}
-\frac{\alpha_2 \pi(s)}{c_2(s)} + \frac{x P(s)\pi(s)}{c_2(s)^2\mathbb{E}[\frac{P}{c_2}]}%
+\frac{\omega_2 \pi(s)}{c_2(s)} + \frac{x P(s)\pi(s)}{c_2(s)^2\mathbb{E}[\frac{P}{c_2}]}%
 \left[\mu(s)-\frac{\mathbb{E}[\mu\frac{P}{c_2}]}{\mathbb{E}[\frac{P}{c_2}]}%
 \right]-\pi(s)\xi(s)+\pi(s)\rho^{\prime }(s)\phi(s)=0  \label{eq.c2FOC}
 \end{equation}
 
 \item[$l_1(s):$]
 \begin{equation}
--\alpha_1\pi(s)l_1(s)+2\mu(s)\pi(s)\rho^{\prime
+-\omega_1\pi(s)l_1(s)+2\mu(s)\pi(s)\rho^{\prime
 }(s)l_1(s)+\theta_1(s)\pi(s)\xi(s)=0
 \end{equation}
 
@@ -3119,24 +3153,24 @@ steady can then be written simply as
 \label{eq.imp} \\
 \theta_1(s) l_1(s) - c_1(s)-c_2(s)-g=0  \label{eq.res} \\
 \ \rho c_2(s)-c_1(s) = 0  \label{eq.rhoFOC} \\
-\frac{\alpha_1}{c_1(s)}-\xi(s)-\phi(s) = 0  \label{eq.c1} \\
-\frac{\alpha_2}{c_2(s)}-\xi(s)+\rho\phi(s) = 0  \label{eq.c2} \\
-[2\mu \rho-\alpha_1]l_1(s)+\theta_1(s)\xi(s) = 0  \label{eq.l1} \\
+\frac{\omega_1}{c_1(s)}-\xi(s)-\phi(s) = 0  \label{eq.c1} \\
+\frac{\omega_2}{c_2(s)}-\xi(s)+\rho\phi(s) = 0  \label{eq.c2} \\
+[2\mu \rho-\omega_1]l_1(s)+\theta_1(s)\xi(s) = 0  \label{eq.l1} \\
 \lambda\left(\frac{P(s)}{c_1(s)}-\beta\mathbb{E}\left[\frac{P}{c_1}\right]\right)+\mu[%
 l_1(s)^2-1]+\phi(s)c_2(s) = 0  \label{eq.R}
 \end{align}
 We can rewrite equation (\ref{eq.c1}) as
 \begin{equation*}
-\frac{\alpha_1}{c_2(s)} - \rho\xi(s) -\rho\phi(s) = 0
+\frac{\omega_1}{c_2(s)} - \rho\xi(s) -\rho\phi(s) = 0
 \end{equation*}%
 by substituting $c_1(s) = \rho c_2(s)$. Adding this to equation (\ref{eq.c2}%
-) and normalizing $\alpha_1+\alpha_2 = 1$ we obtain
+) and normalizing $\omega_1+\omega_2 = 1$ we obtain
 \begin{equation}
 \xi(s) = \frac1{\left(1+\rho\right)c_2(s)}\label{eq.xi}
 \end{equation}%
 which we can use to solve for $\phi(s)$ as
 \begin{equation}
-\phi(s) = \frac{\alpha_1-\rho\alpha_2}{\left(\rho(1+\rho)\right)c_2(s)}
+\phi(s) = \frac{\omega_1-\rho\omega_2}{\left(\rho(1+\rho)\right)c_2(s)}
 \label{eq.phi}
 \end{equation}
 From equation (\ref{eq.imp}) we can solve for $l_1(s)^2 -1$ as
@@ -3149,7 +3183,7 @@ obtain
 \begin{equation*}
 \left(\frac\lambda \rho+\frac{\mu x}{\rho\mathbb{E}[\frac{P}{c_2}]}%
 \right)\left(\frac{P(s)}{c_2(s)}-\beta\mathbb{E}\left[\frac{P}{c_2}\right]%
-\right) = \frac{\mu}{\rho}+\frac{\rho\alpha_2-\alpha_1}{\rho(1+\rho)}
+\right) = \frac{\mu}{\rho}+\frac{\rho\omega_2-\omega_1}{\rho(1+\rho)}
 \end{equation*}
 Note that the LHS depends on $s$ while the RHS does not, hence the solution to
 this equation is
@@ -3158,16 +3192,16 @@ this equation is
 \end{equation}%
 and
 \begin{equation}
-\mu = \frac{\alpha_1-\rho\alpha_2}{1+\rho}  \label{eq.mu}
+\mu = \frac{\omega_1-\rho\omega_2}{1+\rho}  \label{eq.mu}
 \end{equation}
 Combining these with equation (\ref{eq.l1}) we quickly obtain that
 \begin{equation*}
-\left[2\rho\frac{\alpha_1-\rho\alpha_2}{1+\rho}-\alpha_1\right]%
+\left[2\rho\frac{\omega_1-\rho\omega_2}{1+\rho}-\omega_1\right]%
 l_1(s)+\frac{\theta_1(s)}{\left(1+\rho\right)c_2(s)} = 0
 \end{equation*}%
 Then solving for $l_1(s)$ gives
 \begin{equation*}
-l_1(s) = \frac{\theta_1(s)}{\left(\alpha_1(1-\rho)+2\rho^2\alpha_2\right)c_2(s)}
+l_1(s) = \frac{\theta_1(s)}{\left(\omega_1(1-\rho)+2\rho^2\omega_2\right)c_2(s)}
 \end{equation*}
 
 \begin{remark}
@@ -3177,10 +3211,10 @@ Note that the labor tax rate is given by $1-\frac{c_1(s)l_1(s)}{\theta(s)}$. The
 This we can plug into the aggregate resource constraint (\ref{eq.res}) to
 obtain
 \begin{equation*}
-l_1(s) = \left(\frac{1+\rho}{\alpha_1(1-\rho)+2\rho^2\alpha_2}\right)\frac{1}{l_1(s)} +
+l_1(s) = \left(\frac{1+\rho}{\omega_1(1-\rho)+2\rho^2\omega_2}\right)\frac{1}{l_1(s)} +
 \frac{g}{\theta_1(s)}
 \end{equation*}%
-letting $C(\rho) = \frac{1+\rho}{\alpha_1(1-\rho)+2\rho^2\alpha_2}$ we can
+letting $C(\rho) = \frac{1+\rho}{\omega_1(1-\rho)+2\rho^2\omega_2}$ we can
 then solve for $l_1(s)$ as
 \begin{equation*}
 l_1(s) = \frac{g\pm\sqrt{g^2+4C(\rho)\theta_1(s)^2}}{2\theta_1(s)}
@@ -3277,13 +3311,13 @@ for all $\rho > 0$ such that $C(\rho)\geq 0$. To begin with we will define $%
 Note that we will have to deal with two different cases.
 
 \begin{description}
-\item[$\protect\alpha_1(1-\protect\rho)+2\protect\rho^2\protect\alpha_2 > 0$
+\item[$\protect\omega_1(1-\protect\rho)+2\protect\rho^2\protect\omega_2 > 0$
 for all $\protect\rho\geq 0$:] In this case we know that $C(\rho)\geq 0$ for
 all $\rho$ and is bounded above and thus we will let $\underline \rho =0$.
 
-\item[$\protect\alpha_1(1-\protect\rho)+2\protect\rho^2\protect\alpha_2 = 0$
+\item[$\protect\omega_1(1-\protect\rho)+2\protect\rho^2\protect\omega_2 = 0$
 for some $\protect\rho>0$:] In this case let $\underline \rho$ be the
-largest positive root of $\alpha_1(1-\rho)+2\rho^2\alpha_2$. Note that $%
+largest positive root of $\omega_1(1-\rho)+2\rho^2\omega_2$. Note that $%
 \lim_{\rho\rightarrow \underline \rho^+}C(\rho) = \infty$
 \end{description}
 
@@ -3358,7 +3392,7 @@ It is then possible to choose $P (s)$ such that $\beta <\frac{P(s)/c_{2}(\rho_{S
 P(s_h)/c_{2}(\rho_{SS},s_{h})}{\mathbb{E}[\frac{P}{c_{2}}]}%
 -\beta }  \label{eq.beta_cond}
 \end{equation}%
-Implying that for Payoff shocks $P(s)$, $\rho_{SS}$ is a
+Implying that for payoff shocks $P(s)$, $\rho_{SS}$ is a
 steady state level for the ratio of marginal utilities, with steady state
 marginal utility weighted government debt
 \begin{equation*}
@@ -3384,41 +3418,41 @@ Thus $P(s_l)<P(s_h)$ i.e payoffs have to be sufficiently procyclical.
 \subsection{Linearization Algorithm}\label{apndx: numerical methods}
 This section will outline our numerical methods used to solve for and linearize around the steady state in the case of a 2 state iid process for the aggregate state.
 \begin{equation}
-	V(\bm x,\bm \rho) = \max_{c_i(s),l_i(s),\bm x'(s),\bm\rho'(s)} \sum_s P(s)\left(\left[\sum_i\pi_i \alpha_i U(c_i(s),l_i(s))\right] + \beta(s) V(\bm x'(s),\bm \rho'(s))\right)\label{eq.obj}
+	V(\bm x,\bm \rho) = \max_{c_i(s),l_i(s),\bm x'(s),\bm\rho'(s)} \sum_s \pi(s)\left(\left[\sum_i \omega_i U(c_i(s),l_i(s))\right] + \beta(s) V(\bm x'(s),\bm \rho'(s))\right)\label{eq.obj}
 \end{equation}
 \begin{subequations}
 \begin{align}
-	&U_{c,i}(s)c_i(s)+U_{l,i}(s)l_i(s) - \rho_i'(s)\left[U_{c,1}(s)c_1(s)+U_{l,1}(s)l_1(s)\right]+ \beta(s)x_i'(s) = \frac{x_i U_{c,i}(s)}{\mathbb{E} U_{c,i}}\label{eq.imp_con}\\
-	&\sum_s \Pr(s) U_{c,1}(s)(\rho_i(s) -\rho_i) = 0\\
+	&U_{c,i}(s)c_i(s)+U_{l,i}(s)l_i(s) - \rho_i'(s)\left[U_{c,1}(s)c_1(s)+U_{l,1}(s)l_1(s)\right]+ x_i'(s) = \frac{x_i P(s) U_{c,i}(s)}{\beta \mathbb{E} P U_{c,i}}\label{eq.imp_con}\\
+	&\sum_s \pi(s) P(s)U_{c,1}(s)(\rho_i(s) -\rho_i) = 0\\
 	&\frac{\rho'(s)}{\theta_1(s)}U_{l,1}(s) = \frac{1}{\theta_i(s)}U_{l,i}(s)\\
-	& \sum_{j=0}^I\pi_j c_j(s)  + g(s) = \sum_{j=0}^{I} \pi_j\theta_j(s)l_j(s)\\
+	& \sum_{j=0}^In_j c_j(s)  + g(s) = \sum_{j=0}^{I} n_j\theta_j(s)l_j(s)\\
 	& U_{c,i}(s) = \rho_i'(s) U_{c,1}(s)\label{eq.rho_con}
-\end{align}\end{subequations}  For $i=2,\ldots,I$.  Note that some of the constraints have been modified a little for ease of differentiation.  Associated with these constraints we have the Lagrange multipliers $\Pr(s)\mu'_i(s)$, $\lambda_i$,$\Pr(s)\phi_i(s)$,$\Pr(s)\xi(s)$, and $P(s)\zeta_i(s)$.
+\end{align}\end{subequations}  For $i=2,\ldots,I$.  Note that some of the constraints have been modified a little for ease of differentiation.  Associated with these constraints we have the Lagrange multipliers $\pi(s)\mu'_i(s)$, $\lambda_i$,$\pi(s)\phi_i(s)$,$\pi(s)\xi(s)$, and $\pi(s)\zeta_i(s)$.
 %\subsubsection{Steady State}
 
 %By taking first order conditions it is possible to numerically determine the location of a stationary steady state.
-The first order conditions with respect to the choice variables are as follows (note we will be using the notation $\mathbb E z$ to represent $\sum_s \Pr(s) z(s)$ for some variable $z$)
+The first order conditions with respect to the choice variables are as follows:
 \begin{subequations}
 \begin{description}
 	\item[$c_1(s)$:]
 	\begin{align}
-		 &\pi_1\alpha_1U_{c,1}(s)+\sum_{i=2}^I\left(\mu'_i(s)\rho_i'(s)\right)\left[U_{cc,1}(s)c_1(s)+U_{c,1}(s)\right]\nonumber\\&\quad\quad+\lambda U_{cc,1}(s)\sum_{i=2}^I(\rho_i'(s)-\rho_i)-\pi_1\xi(s)+\sum_{i=2}^N\zeta_i(s)\rho'_i(s)U_{cc,1}(s) = 0\label{eq.foc_c1}
+		 &\omega_1U_{c,1}(s)+\sum_{i=2}^I\left(\mu'_i(s)\rho_i'(s)\right)\left[U_{cc,1}(s)c_1(s)+U_{c,1}(s)\right]\nonumber\\&\quad\quad+\lambda U_{cc,1}(s)P(s)\sum_{i=2}^I(\rho_i'(s)-\rho_i)-n_1\xi(s)+\sum_{i=2}^I\zeta_i(s)\rho'_i(s)U_{cc,1}(s) = 0\label{eq.foc_c1}
 	\end{align}
 	\item[$c_i(s)$: ] for $i\geq 2$
 	\begin{equation}
-		\pi_i\alpha_i U_{c,i}(s)-\mu'_i(s)\left[U_{cc,i}(s)c_i(s)+ U_{c,i}(s)\right] +\frac{x_iU_{cc,i}(s)}{\mathbb E U_{c,i}}\left(\mu'_i(s) - \frac{\mathbb E \mu'_i U_{c,i}}{\mathbb E U_{c,i}}\right) - \pi_i\xi(s) -\zeta_i(s) U_{cc,i}(s) = 0
+		\omega_i U_{c,i}(s)-\mu'_i(s)\left[U_{cc,i}(s)c_i(s)+ U_{c,i}(s)\right] +\frac{x_iU_{cc,i}(s)P(s)}{\mathbb E U_{c,i}P}\left(\mu'_i(s) - \frac{\mathbb E \mu'_i U_{c,i}P}{\mathbb E U_{c,i}P}\right) - n_i\xi(s) -\zeta_i(s) U_{cc,i}(s) = 0
 	\end{equation}
 	\item[$l_1(s)$:]
 	\begin{equation}
-		\pi_1\alpha_1 U_{l,1}(s)+\sum_{i=2}^I\mu'_i(s)\rho_i(s)\left[U_{ll,1}(s)l_1(s)+U_{l,1}(s)\right]-\sum_{i=2}^N\frac{\rho_i'(s)\phi_i(s)}{\theta_1(s)}U_{ll,1}(s)+\pi_1\theta_1(s)\xi(s) = 0
+		\omega_1 U_{l,1}(s)+\sum_{i=2}^I\mu'_i(s)\rho_i(s)\left[U_{ll,1}(s)l_1(s)+U_{l,1}(s)\right]-\sum_{i=2}^I\frac{\rho_i'(s)\phi_i(s)}{\theta_1(s)}U_{ll,1}(s)+n_1\theta_1(s)\xi(s) = 0
 	\end{equation}
-	\item[$l_2(s)$:]
+	\item[$l_i(s)$:]
 	\begin{equation}
-		\pi_i \alpha_i U_{l,i}(s) -\mu'_i(s)\left[ U_{ll,i}(s)l_i(s)+U_{l,i}(s)\right] + \frac{\phi_i(s)}{\theta_i(s)}U_{ll,i}(s) +\pi_i\theta_i(s)\xi(s) = 0
+		 \omega_i U_{l,i}(s) -\mu'_i(s)\left[ U_{ll,i}(s)l_i(s)+U_{l,i}(s)\right] + \frac{\phi_i(s)}{\theta_i(s)}U_{ll,i}(s) +n_i\theta_i(s)\xi(s) = 0
 	\end{equation}
 	\item[$\rho_i'(s)$:]
 	\begin{equation}
-		\beta(s) V_{\rho_i}(\bm x'(s),\bm \rho_i'(s)) +\mu'_i(s)\left[U_{c,1}(s)c_1(s)+U_{l,1}(s)l_1(s)\right] + \lambda_i U_{c,1}(s) - \phi_i(s) \frac{U_{l,1}(s)}{\theta_1(s)} + U_{c,1}(s)\zeta_i(s) = 0\label{eq.foc_rho}
+		\beta V_{\rho_i}(\bm x'(s),\bm \rho_i'(s)) +\mu'_i(s)\left[U_{c,1}(s)c_1(s)+U_{l,1}(s)l_1(s)\right] + \lambda_i U_{c,1}(s) - \phi_i(s) \frac{U_{l,1}(s)}{\theta_1(s)} + U_{c,1}(s)\zeta_i(s) = 0\label{eq.foc_rho}
 	\end{equation}
 	\item[$x_i'(s)$:]
 	\begin{equation}
@@ -3427,10 +3461,10 @@ The first order conditions with respect to the choice variables are as follows (
 \end{description} \end{subequations} Equations (\ref{eq.imp_con})-(\ref{eq.rho_con}) and (\ref{eq.foc_c1})-(\ref{eq.foc_rho}) then define the necessary conditions for an interior maximization of the planners problem for the state $(\bm x, \bm \rho)$.  In addition to these we have the two envelop conditions
 \begin{subequations}
 \begin{equation}
-	V_{x_i}(\bm x,\bm \rho)= \frac{\sum_sP(s) \mu'_i(s) U_{c,i}(s)}{\mathbb E U_{c,i}(s)} = \frac{\mathbb E\mu_i' U_{c,i}}{\mathbb E U_{c,i}}\label{eq.env_x},
+	V_{x_i}(\bm x,\bm \rho)= \frac{\sum_s\pi(s) P(s)\mu'_i(s) U_{c,i}(s)}{\mathbb E U_{c,i}(s)P} = \frac{\mathbb E\mu_i' U_{c,i}P}{\mathbb E U_{c,i}P}\label{eq.env_x},
 \end{equation}and
 \begin{equation}
-	V_{\rho_i}(\bm x,\bm \rho) = -\lambda_i \mathbb E U_{c,1}\label{eq.env_rho}.
+	V_{\rho_i}(\bm x,\bm \rho) = -\lambda_i \mathbb E U_{c,1}P\label{eq.env_rho}.
  \end{equation}\end{subequations}
 
 %  A steady state will then be a set of allocations and Lagrange multipliers $\{c_1(s),c_i(s),l_1(s),l_i(s),\bm x,\bm \rho,\bm \mu'(s),\bm \lambda,\bm \phi(s),\xi(s),\bm \zeta(s)\}$  that solve equations (\ref{eq.imp_con})-(\ref{eq.rho_con}), (\ref{eq.foc_c1})-(\ref{eq.foc_rho}), and (\ref{eq.env_x})-(\ref{eq.env_rho}).  It should be noted that taking $\mu_i(s) = \mu_i = V_{x_i}(\bm x,\bm \rho)$ will solve both equations (\ref{eq.foc_x}) and (\ref{eq.env_x}).  Thus a steady state will be a set of allocations and Lagrange multipliers $\{c_1(s),c_i(s),l_1(s),l_i(s),\bm x,\bm \rho,\bm \mu,\bm \lambda,\bm \phi(s),\xi(s),\bm \zeta(s)\}$ that solves the following system of equations
@@ -3438,18 +3472,18 @@ The first order conditions with respect to the choice variables are as follows (
 % \begin{align}
 % 	U_{c,i}(s)c_i(s)+U_{l,i}(s)l_i(s) - \rho_i\left[U_{c,1}(s)c_1(s)+U_{l,1}(s)l_1(s)\right]+\beta(s)x_i -\frac{x_i U_{c,i}(s)}{\mathbb E U_{c,i}}\label{eq.FSS_start}\\
 % 	\frac{U_{l,i}(s)}{\theta_i(s)} - \frac{\rho U_{l,1}(s)}{\theta_1(s)}=0\\
-% 	\sum_{i=1}^N\pi_i c_i(s)+g(s) = \sum_{i=1}^N\pi_i \theta_i(s) l_i(s)\\
+% 	\sum_{i=1}^Nn_i c_i(s)+g(s) = \sum_{i=1}^Nn_i \theta_i(s) l_i(s)\\
 % 	\rho_i U_{c,1}(s)-U_{c,i}(s) =0
-% 	\pi_1\alpha_1 U_{c,1}(s) + \sum_{i=2}^N\mu_i\rho_i\left[ U_{cc,1}(s) c_1(s)+U_{c,1}(s)\right] -\pi_1\xi(s)  +\sum_{i=2}^N \rho_i\eta_i(s)U_{cc,1}(s) = 0\\
-% 	\pi_i\alpha_i U_{cc,i}(s) - \mu_i\left[ U_{cc,i}(s)c_i(s)+U_{c,i}(s)\right] - \pi_i\xi(s) -\eta_i(s) U_{cc,i}(s) = 0\\
-% 	\pi_1 \alpha_1 U_{l,1}(s) +\sum_{i=2}^N\mu_i\rho_i\left[U_{ll,1}(s) l_1(s) + U_{l,1}(s)\right] - \sum_{i=2}^N\frac{\rho_i\phi_i(s)}{\theta_1(s)} U_{ll,1}(s) + \pi_1\theta_1(s)\xi(s) = 0\\
-% 	\pi_i\alpha_i U_{l,i}(s)  -\mu_i\left[U_{ll,i}(s)l_i(s) + U_{l,i}(s)\right] +\frac{\phi_i(s)}{\theta_i(s)} U_{ll,i}(s) + \pi_i\theta_i(s)\xi(s) = 0\\
+% 	n_1\alpha_1 U_{c,1}(s) + \sum_{i=2}^N\mu_i\rho_i\left[ U_{cc,1}(s) c_1(s)+U_{c,1}(s)\right] -n_1\xi(s)  +\sum_{i=2}^N \rho_i\eta_i(s)U_{cc,1}(s) = 0\\
+% 	n_i\alpha_i U_{cc,i}(s) - \mu_i\left[ U_{cc,i}(s)c_i(s)+U_{c,i}(s)\right] - n_i\xi(s) -\eta_i(s) U_{cc,i}(s) = 0\\
+% 	n_1 \alpha_1 U_{l,1}(s) +\sum_{i=2}^N\mu_i\rho_i\left[U_{ll,1}(s) l_1(s) + U_{l,1}(s)\right] - \sum_{i=2}^N\frac{\rho_i\phi_i(s)}{\theta_1(s)} U_{ll,1}(s) + n_1\theta_1(s)\xi(s) = 0\\
+% 	n_i\alpha_i U_{l,i}(s)  -\mu_i\left[U_{ll,i}(s)l_i(s) + U_{l,i}(s)\right] +\frac{\phi_i(s)}{\theta_i(s)} U_{ll,i}(s) + n_i\theta_i(s)\xi(s) = 0\\
 % 	\lambda_i\left[U_{c,1}(s)-\beta(s)\mathbb E U_{c,1}\right] + \mu_i\left[ U_{c,1}(s)c_1(s) + U_{l,1}(s) l_1(s)\right] - \phi_i(s)\frac{U_{l,1}(s)}{\theta_1(s)} + U_{c,1}(s)\eta_i(s) = 0\label{eq.FSS_end}
 % \end{align}\end{subequations}  Taking $z$ to be the stacked vector $\{c_1(s),c_i(s),l_1(s),l_i(s),\bm x,\bm \rho,\bm \mu,\bm \lambda,\bm \phi(s),\xi(s),\bm \zeta(s)\}$, the equations (\ref{eq.FSS_start})-(\ref{eq.FSS_end}) then define a vector function $F_{SS}(X)$ for which the steady state must satisfy $F_{SS}(X_{SS}) = 0$.  An observant reader will have noted that the system $F_{SS}(X) = 0$ is only square when then number of aggregates states is 2.   In the case of where there are 2 aggregate states we have verified numerically ( using a non-linear equation solver ) that a steady state does exist for nearly all of the parameter space.  When the number of states is greater than two, there generically does not exist a steady state, however we find numerically that there exists an $\tilde X$ such that $F_{SS}(\tilde X) \approx 0$.  Our solutions to Bellman equation find that the economy will converge in the long run to a region a round this point.
 % \subsubsection{Linearization}
 In order to check local stability we linearize locally around the steady state. Furthermore we find that the policy functions have better numerical properties when the state variables are chosen to be ($\bm \mu,\bm \rho$) rather than ($\bm x,\bm \rho$), and thus, we will proceed with the linearization procedure using $(\bm \mu,\bm \rho)$ as the endogenous state vector.  The evolution of the state variable $\bm  \mu$ must follow the weighted martingale
 \begin{equation}
-	\mu_i - \frac{\sum_s P(s) \mu_i'(s)U_{c,i}(s)}{\sum_s P(s) U_{c,i}(s)} = 0\label{eq.mu_mart}.
+	\mu_i - \frac{\sum_s \pi(s) \mu_i'(s)U_{c,i}(s)P(s)}{\sum_s \pi(s) U_{c,i}(s)P(s)} = 0\label{eq.mu_mart}.
 \end{equation}  The optimal policy function, which we will denote as $z(\bm \mu,\bm\rho)$, must satisfy $F(z,y,g(z)) = 0$ where $F$ represents the system of equations (\ref{eq.imp_con})-(\ref{eq.foc_rho})and \eqref{eq.mu_mart}, $y$ is the state vector $(\bm x,\bm \rho)$, and $g$ is the mapping of the policies into functions of future variables, namely $\bm x'(s)$ and $V_{\bm \rho}(\bm \mu'(s),\bm \rho(s))$.  In other words
 \[
 	g(z) = \left(\bmat \bm x(\bm \mu'(1),\bm \rho'(1))\\ V_{\bm \rho}(\bm \mu'(1),\bm \rho'(1)\\ \bm x(\bm \mu'(2),\bm \rho'(2))\\ V_{\bm \rho}(\bm \mu'(2),\bm \rho'(2))\emat\right).
@@ -3522,9 +3556,9 @@ Note that  if eigenvalues of $\overline C$ are positive and strictly less that 1
 %  	\begin{align}
 %  		\Sigma_{\Psi,t} &= \mathbb{E}_0\left[\hat{\Psi}_t\hat{\Psi}_t'-B_t \hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'\overline B'-\overline B \hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'B_t'+\overline B\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'\overline B'\right]\nonumber\\
 %  		&=\mathbb{E}_0[B_t \hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'B_t']-\overline B\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'\overline B'\nonumber\\
-%  		&=\mathbb{E}_0[\sum_s \Pr(s) B(s) \hat{\Psi}_{t-1}\hat{\Psi}_{t-1}' B(s)']-\overline B\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'\overline B'\nonumber\\
-%  		&=\sum_s \Pr(s) B(s)(\Sigma_{\Psi,t-1}+\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}')B(s)-\overline B\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'\overline B'\nonumber\\
-%  		&=\sum_s \Pr(s)\left[ B(s)\Sigma_{\Psi,t-1} B(s)' +(B(s)-\overline B)\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'(B(s)-\overline B)'\right]\nonumber\\
+%  		&=\mathbb{E}_0[\sum_s \pi(s) B(s) \hat{\Psi}_{t-1}\hat{\Psi}_{t-1}' B(s)']-\overline B\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'\overline B'\nonumber\\
+%  		&=\sum_s \pi(s) B(s)(\Sigma_{\Psi,t-1}+\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}')B(s)-\overline B\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'\overline B'\nonumber\\
+%  		&=\sum_s \pi(s)\left[ B(s)\Sigma_{\Psi,t-1} B(s)' +(B(s)-\overline B)\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'(B(s)-\overline B)'\right]\nonumber\\
 %  		&= \mathbb{E}[B\Sigma_{\Psi,t-1}B'] +\mathbb{E}[(B-\overline B)\hat{\Psi}_{t-1}\hat{\Psi}_{t-1}'(B-\overline B)']\label{eq:SigmaFull}
 %  	\end{align}
 % 	The first term is the transformation of the previous variance by $B$ and the second term is the additional variance introduced by  $B$.  Note, though, that this term depends on $\hat{\Psi}_{t-1}$ being away from $\bm 0$.  Thus, taking the limit as $t\rightarrow\infty$, we obtain
@@ -3534,9 +3568,9 @@ Note that  if eigenvalues of $\overline C$ are positive and strictly less that 1
 	That process can be rewritten as follows
 	\begin{align}
 		\Sigma_{\Psi,t|0} &= \mathbb{E}[C \Sigma_{\Psi,t-1|0} C']\\
-				    &=\sum_s \Pr(s) C(s) \Sigma_{\Psi,t-1|0} C(s)'\\
-				   &=\sum_s \Pr(s) (\overline C+(C(s)-\overline C))\Sigma_{\Psi,t-1|0}(\overline C+(C(s)-\overline C))'\\
-				  &=\overline C \Sigma_{\Psi,t-1|0}\overline C' +\sum_s\Pr(s) (C(s)-\overline B)\Sigma_{\Psi,t-1|0}(C(s)-\overline C)'.\label{eq:sigma_trasnsition}
+				    &=\sum_s \pi(s) C(s) \Sigma_{\Psi,t-1|0} C(s)'\\
+				   &=\sum_s \pi(s) (\overline C+(C(s)-\overline C))\Sigma_{\Psi,t-1|0}(\overline C+(C(s)-\overline C))'\\
+				  &=\overline C \Sigma_{\Psi,t-1|0}\overline C' +\sum_s\pi(s) (C(s)-\overline B)\Sigma_{\Psi,t-1|0}(C(s)-\overline C)'.\label{eq:sigma_trasnsition}
 	\end{align}
 % 	
  	This is a deterministic linear system in $\Sigma_{\Psi,t|0}$. Suppose we reshape $\Sigma_{\Psi,t|0}$  as a vector (denoted by $\text{vec}(\Sigma_{\Psi,t|0})$) and let $\hat{C}$ be a (square) matrix such that equation \ref{eq:sigma_trasnsition} is written as
@@ -3568,12 +3602,12 @@ the spread between the expenditure levels (risk aversion). }
 This appendix applies a method of \cite{Evans2014} to approximate a Ramsey plan for the $I$ type of agents economy of section \ref{sec: numerical results}. To focus on essential steps, we take a special case where productivities
 %\color{red}Tom: I cant read your remark here\color{black}
 for agent $i$ are $\log \theta_{i,t}=\log \overline{\theta}_i+\sigma_{\epsilon} \epsilon_t$ and where $\epsilon_t$ is i.i.d with mean zero and variance one.\footnote{Extending the method to more general productivity process as in \eqref{wage equation calibration} is straightforward.}
-We will use the following notation for the rmainder of this appendix:
+We will use the following notation for the remainder of this appendix:
 
 \begin{itemize}
 
 \item Vectors $z_{i,{t-1}} \in \mathcal{R}^{n_z}$ of state variables for agents of type  $i =1, \ldots, I$.
-\item Vectors $y_{i,t} \in \mathcal{R}^{n_y}$ of choice variables for agents of type $i =1, \ldots, N$; the vector $y_{i,t}$ often includes components of $z_{i,t}$.
+\item Vectors $y_{i,t} \in \mathcal{R}^{n_y}$ of choice variables for agents of type $i =1, \ldots, I$; the vector $y_{i,t}$ often includes components of $z_{i,t}$.
 \item A vector $Y_t \in \mathcal{R}^{n_Y}$ of   policy variables chosen by a Ramsey planner
 \item A distribution $\Gamma_{t-1}$ over $z_{i,t-1}\in \mathcal{R}^{n_z}$. This can be a measure confined to $I$ mass points. For a $I$ type case with fixed masses of agents and no idiosyncratic risk, $\Gamma_{t-1}$ has all information that is in the set $\{z_{i,t-1}\}_i$. However the algorithm applies for more general economies with idiosyncratic risk, and there the notation $\Gamma_{t-1}$  helps.
 
@@ -3614,7 +3648,6 @@ expansion (i.e., around $\sigma_{\epsilon}=0$) to those functions at state $\{z_
  Thus, to approximate sample paths drawn from the recursive system \eqref{eqns:Ramsey}, we use a sequence of Taylor series approximations around a sequence of points generated
 endogenously during a simulation.
 
-\textbf{Anmol, David, and Tom: we need a sentence or two right here describing the virtues of the approximation.}
 
 %\color{blue}\textbf{Anmol XXXXXX: I edited and added the above paragraph.  It surely needs fine tuning. But once polished it will explain in
 %a few words what the method is doing.}
@@ -3683,7 +3716,7 @@ The objects listed above are defined now using modifications of the Bellman equa
 \end{equation}
 subject to
 \begin{align}
-\mu^i(s):&&	\frac{P(s)U^i_c(s) x^i_{-} }{\beta\EE_- PU^i_c} = U^i_c(s)(c^i(s)-T(s)) + U^i_l(s) l^i(s) + x^i(s)\\\label{mod imp}
+\mu^i(s):&&	\frac{\pi(s)U^i_c(s) x^i_{-} }{\beta\EE_- PU^i_c} = U^i_c(s)(c^i(s)-T(s)) + U^i_l(s) l^i(s) + x^i(s)\\\label{mod imp}
 \phi^i(s):&&	U^i_c(s)\exp{\epsilon(s)}\theta^i(1-\tau_l(s)) = -U^i_l(s)\\
 \rho^i(s):&&	\alpha(s) = m^i(s) U^i_c(s)\\ \label{m def}
 \psi^i_{-}:&&	\gamma_-=  m^i_-\EE_- P U^i_c\\ \label{mod asset pricing equation}
@@ -3715,7 +3748,7 @@ In particular, we have alternatives that express allocations as:
 	\end{itemize}
 We employ the second alternative because when  $\sigma_{\epsilon}=0$, for $I>2$ that there are multiple $\mu\_$ associated with an arbitrary $x\_$ although only one survives in the limit $\sigma_{\epsilon}\to 0$.  However, making $\mu\_$  to be the state retrieves a unique $x\_$.\footnote{We solved in both ways (using projection methods) for $I = 2$ to verify that they produce same allocation.}
 
- We include productivity processes like equation $\eqref{wage equation calibration}$  by adding an auxiliary aggregate state variable $\mathcal{Q}_t$ that is a vector of length $N$ and that stores the quantiles of productivities of agents $1,2,\ldots,I$, respectively. Its (trivial) law of motion is $\mathcal{Q}_t=\mathcal{Q}_{t-1}$. This allows us to express the vector of wages as a function of the shock and the state variable $\mathcal{Q}_t$.
+ We include productivity processes like equation $\eqref{wage equation calibration}$  by adding an auxiliary aggregate state variable $\mathcal{Q}_t$ that is a vector of length $I$ and that stores the quantiles of productivities of agents $1,2,\ldots,I$, respectively. Its (trivial) law of motion is $\mathcal{Q}_t=\mathcal{Q}_{t-1}$. This allows us to express the vector of wages as a function of the shock and the state variable $\mathcal{Q}_t$.
 
 
 
@@ -3759,7 +3792,7 @@ and the market clearing for bonds $b_t+B_t=0$.
 
 
 
-\noindent The optimal Ramsey allocation solves  $\max_{\{c_t,l_t\}_t}W_0(b_{-1})$ subject to \eqref{rep agent QL seq implementability}, feasibility \eqref{feasibility} and natural debt limits for the government $\underline{B}$\footnote{These will be explicitly derived for the examples we solve in this section.}. For the rest of the note we assume i.i.d exogenous shocks to expenditures denote expenditure and payoffs by $g_t=g(s_t)$and $P_t=P(s_t)$ with the normalization $\mathbb{E}P(s)=1$
+\noindent The optimal Ramsey allocation solves  $\max_{\{c_t,l_t\}_t}W_0(b_{-1})$ subject to \eqref{rep agent QL seq implementability}, feasibility \eqref{feasibility} and natural debt limits for the government $\underline{B}$\footnote{These will be explicitly derived for the examples we solve in this section.}. For the rest of the note we assume i.i.d exogenous shocks to expenditures denote expenditure and payoffs by $g_t=g(s_t)$and $P_t=P(s_t)$ with the normalization $\mathbb{E}\pi(s)=1$
 
 
 \begin{theorem}
