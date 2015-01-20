@@ -14,7 +14,7 @@
 %% Graphic files need to be converted from the text format (this is    %
 %% done for e-mail compatability) to the original 8-bit binary format. %
 %% Files included:                                                     %
-%% "/document/NonbalancedJune18.tex", Document, 124302, 6/18/2004, 0:45:10, ""%
+%% "/document/NonbalancedJune1.tex", Document, 124302, 6/18/2004, 0:45:10, ""%
 %% "/document/HZH9JA00.wmf", PastePict, 30602, 6/17/2004, 21:53:40, "" %
 %% "/document/HZH9JA01.wmf", PastePict, 31310, 6/17/2004, 21:55:05, "" %
 %% "/document/HZH9JA02.wmf", PastePict, 31498, 6/17/2004, 21:56:09, "" %
@@ -507,7 +507,7 @@ and transfers that are unrestricted in sign. He obtains counterparts to our Rica
 results about net versus gross asset positions, including the legitimacy of a normalization allowing government
 assets to be set to zero in all periods. Because he allows unrestricted
 taxation of initial assets, the initial distribution of assets plays no
-role. Our theorem \ref{theorem: main} and corollary \ref{corr: B does not matter}
+role. Our corollary \ref{corr assets dont matter} and corollary \ref{corr: B does not matter}
 generalize Werning's results by showing that all allocations of assets among
 agents and the government that imply the same net asset position
 lead to the same optimal allocation, a conclusion that holds for market
@@ -636,24 +636,10 @@ c_{i,t},l_{i,t}\right \} _{i,t}$. An \emph{asset profile} is a sequence $\{
 
 \begin{remark}
 \label{rem:debtlimits}
-We impose debt limits on asset profiles.\footnote{For households, we shall impose natural debt limits that  depend
-on the  tax policy. An alternative is to impose ad-hoc debt limits in the form of  exogenous history-contingent bounds
-for each agent. Appendix \ref{appndx: credit limits and RE} discusses how restricting attention to natural debt limits for the households only shrinks the set of allocations that can
-be implemented as competitive equilibria.}
-%Owing to a Ricardian property, limits on gross government holdings are irrelevant (see section \ref{sec:Ricardian101}).\color{black}}
+We will impose debt limits on asset profiles. These can be either be natural debt limits which correspond to the maximum debt that an agent can repay almost surely or adhoc ones that are tighter.  
+
  \end{remark}
 
-
-
-%
-%
-% Representative agent models usually impose debt limits on the government.
-% Section XX describes that in our setting with affine taxes and heterogeneous agents, competitive allocations only pin down net asset positions.
-% Thus $\tilde{D}_t=-(B_t-b_{i,t})$ for some $i$ is comparable to the notion of \emph{public debt} and we will assume that it is bounded.
-% As far the households we will impose natural debt limits.
-% These typically depend on the tax and transfer policies adopted by the government.\footnote{An alternative is to use ad-hoc debt limits which are exogenous history contingent bounds
-% for each agent. Appendix XX discusses how restricting attention to natural debt limits for the households only shrinks the set of allocations that can
-% be implemented as competitive equilibria.}
 
 \begin{definition}
 \label{Def: CE with affine taxes}For a given initial asset distribution $\left(
@@ -732,93 +718,23 @@ competitive equilibrium with affine taxes is a competitive equilibrium with an a
 \color{black}
 
 \subsection{Ricardian equivalence \label{sec:Ricardian101}}
-%In this section we recover a \emph{Ricardian equivalence} result in the spirit of \citet{Barro1974}.
-%We use this result to highlight that the level of government debt is not a state variable in our setting.
-The arithmetic of budget constraints and market clearing instructs us how to  formulate the optimal policy problem concisely.
-An equivalence class of tax policies and asset profiles supports the same competitive equilibrium allocation.
+{\color{blue} In this section we elaborate more on the quote from \citep{newcomb1865critical},  that it is not total debt but who owns it that matters for welfare. More specifically, given an initial distribution of assets, the maximum welfare that the Ramsey planner can achieve only depends on  \emph{net assets}, i.e., assets relative to those of some benchmark agent. 
 
 \begin{theorem}
-\label{theorem: main} Given $\left( \left \{ b_{i,-1}\right \}
-_{i},B_{-1}\right) $, let $\left \{ \left \{ c_{i,t},l_{i,t},b_{i,t}\right \} _{i},B_{t},R_{t}\right \} _{t} $ and $\left \{ \tau _{t},T_{t}\right
-\} _{t}$ be a competitive equilibrium. For any bounded sequences $%
-\left \{ \hat{b}_{i,t}\right \} _{i,t\geq -1}$ that satisfy
-\begin{equation*}
-\hat{b}_{i,t}-\hat{b}_{1,t}=\tilde{b}_{i,t}\equiv b_{i,t}	-b_{1,t} \ \text{\rm  for all }t\geq -1,i\geq 2,
-\end{equation*}%
-there exist  sequences $\left \{ \hat{T}_{t}\right \} _{t}$ and $%
-\left \{ \hat{B}_{t}\right \} _{t\geq -1}$ that satisfy (\ref{feasibility
-bonds}) and that make $\left \{ \left \{ c_{i,t},l_{i,t},\hat{b}%
-_{i,t}\right \} _{i},\hat{B}_{t},R_{t}\right \} _{t}$ and $\left \{
-\tau _{t},\hat{T}_{t}\right \} _{t}$ constitute a competitive
-equilibrium given $\left( \left \{ \hat{b}_{i,-1}\right \} _{i},\hat{B}%
-_{-1}\right) $.
-\end{theorem}
-
-
-
-We relegate the proof to appendix \ref{appndx: thm RE}. In the spirit of \citet{Barro1974}, we interpret Theorem \ref{theorem: main} as  asserting a type of  Ricardian equivalence.
-Similar results  hold in more general environments. For example, we could allow
-agents to trade all conceivable  Arrow securities and still show that  equilibrium allocations depend only on agents' net assets positions.
-
-% \begin{proof}
-% Let
-% \begin{equation}
-% \hat{T}_{t}=T_{t} + \left(\hat{b}_{1,t} - b_{1,t}\right) -
-% R_{t-1}\left(\hat{b}_{1,t-1} - b_{1,t-1}\right) \text{ for
-% all }t\geq 0.  \label{construct That}
-% \end{equation}%
-% Given  a tax policy $\left \{ \tau _{t},\hat{T}_{t}\right \} _{t},$ the
-% allocation $\left \{ c_{i,t},l_{i,t},\hat{b}_{i,t}\right \}_{i,t}$ is a feasible choice for consumer $i$ since it satisfies%
-% \begin{eqnarray*}
-% c_{i,t}&=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+R_{t-1}b_{i,t-1}-b_{i,t}+T_{t}\\
-% &=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+R_{t-1}\left( b_{i,t-1}-b_{1,t-1}\right) -\left(
-% b_{i,t}-b_{1,t}\right) +T_{t}+R_{t-1}b_{1,t-1}-b_{1,t} \\
-% &=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+R_{t-1}\left( \hat{b}_{i,t-1}-\hat{b}_{1,t-1}\right) -\left( \hat{b%
-% }_{i,t}-\hat{b}_{1,t}\right) +T_{t}+R_{t-1}b_{1,t-1}-b_{1,t} \\
-%  &=&\left( 1-\tau _{t}\right) \theta
-% _{i,t}l_{i,t}+R_{t-1}\hat{b}_{i,t-1}-\hat{b}_{i,t}+\hat{T}_{t}.
-% \end{eqnarray*}%
-% Suppose that $\left \{ c_{i,t},l_{i,t},\hat{b}_{i,t}\right \}_{i,t}$ is not the optimal choice for consumer $i$, in the sense that there exists some
-% other sequence $\left \{ \hat{c}_{i,t},\hat{l}_{i,t},\hat{b}_{i,t}\right \}_{t}$ that gives strictly higher utility.  Then the choice $%
-% \left \{ \hat{c}_{i,t},\hat{l}_{i,t},b_{i,t}\right \}_{t}$ is
-% feasible given the tax rates  $\left \{ \tau _{t},T_{t}\right \} _{t}$%
-% , which contradicts the assumption that $\left \{ c_{i,t},l_{i,t},b_{i,t}\right \}_{t}$ is the optimal choice for
-% the consumer given taxes $\left \{ \tau _{t},T_{t}\right \}
-% _{t}$. The new allocation satisfies all other constraints and
-% therefore is an equilibrium.
-% \end{proof}
-
-
-%\smallskip An immediate corollary is  that it is not
-%total government debt but rather who owns it that affects equilibrium
-%allocations.
-
-\begin{corollary}
-\label{corr: B does not matter} For any pair $B_{-1}^{\prime },B_{-1}^{\prime
+\label{thm relative assets}
+For any pair $B_{-1}^{\prime },B_{-1}^{\prime
 \prime }$, there are asset profiles $\left\{ b_{i,-1}^{\prime }\right\} _{i}$ and $%
 \left\{ b_{i,-1}^{\prime \prime }\right\} _{i}$ such that
-equilibrium allocations starting from  $\left( \left\{ b_{i,-1}^{\prime }\right\}
+value of \eqref{govmt objective} at the optimal allocations starting from  $\left( \left\{ b_{i,-1}^{\prime }\right\}
 _{i},B_{-1}^{\prime }\right) $ and  from  $\left( \left\{ b_{i,-1}^{\prime
 \prime }\right\} _{i},B_{-1}^{\prime \prime }\right) $ are the same.
-%Such sequences $\left\{ b_{i,-1}^{\prime }\right\} _{i}$ and $\left\{
-%b_{i,-1}^{\prime \prime }\right\} _{i}$
-These asset profiles satisfy%
-\begin{equation*}
-b_{i,-1}^{\prime }-b_{1,-1}^{\prime }=b_{i,-1}^{\prime \prime
-}-b_{1,-1}^{\prime \prime } \ \forall i.
-\end{equation*}
-\end{corollary}
-
-Thus, total government debt is not what matters, who owns it does.
-To  illustrate,
-% and to
-% appreciate how  Ricardian irrelevance affects optimal equilibria,
-imagine an increase an
+\end{theorem}
+We relegate the proof to the appendix \ref{appndx: thm relative assets}. }To see the intuition for the result, imagine an increase an
 initial level of government debt from $0$ to some arbitrary level $%
 B_{-1}^{\prime } < 0$. If the government were to hold transfers $\left\{ T_{t}\right\} _{t}$ fixed, it would
  have  to increase  tax rates $\left\{ \tau
 _{t}\right\} _{t}$ enough to collect a present value of revenues sufficient to
-repay $B_{-1}^{\prime }$. Since deadweight losses are convex in $\tau ,$
+repay $B_{-1}^{\prime }$. Since dead weight losses are convex in $\tau ,$
 higher levels of debt financed with bigger distorting taxes $\{\tau_t\}_t$  impose larger
 distortions and thereby degrade the equilibrium allocation.  But this would not happen  if
 the government were instead  to adjust transfers in response to a higher initial debt. To determine suitable transfers, we need to
@@ -853,25 +769,26 @@ holdings of domestic debt. The more government debt is owned by the
 foreigners, the higher are the distorting taxes that  the government  needs to
 impose.}
 \color{black}
-%
-%We use
-%the insight in theorem \ref{theorem: main}  that  the tax policy and asset profile
-%%$\left\{\left\{b_{i,t}^{\ast }\right\}
-%%_{i},B_{t}^{\ast }\right\} _{t}$
-%contain some information that it is convenient to eliminate to concisely  formulate the Ramsey problem.
 
+{\color{blue} We can strengthen theorem \ref{thm relative assets} for natural debt limits. The irrelevance of gross position holds not only for the initial distribution of assets but for distributions at any history associated with a competitive equilibrium. \footnote{Appendix \ref{appndx: credit limits and RE} shows how ad-hoc debt limits in the form of  exogenous history-contingent bounds for each agent can in fact expand the set of allocations that can be implemented as competitive equilibria relative to those feasible with natural debt limits.} 
 
-The Ricardian equivalance theorem  \ref{theorem: main} seems to
-send a message that the level of government assets itself does not affect welfare. However, a 
-better  interpretation is that public debt and transfers are 
-not  pinned down separately within a competitive equilibrium. To acknowledge this situation,
-throughout the paper  we assume that productivities are ordered as 
-$\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and then set $b_{I,t}=0$.
-Theorem   \ref{theorem: main} gives us the freedom to set $b_{I,t}$ in this way.  Doing so 
-allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as ``public debt''.  
-Limits on $\sum_{i<I}n_ib_{i,t}$ now  become  counterparts  to what would be 
-debt limits in a representative agent economy. 
-
+\begin{corollary}
+\label{corr assets dont matter} Given $\left( \left \{ b_{i,-1}\right \}
+_{i},B_{-1}\right) $, let $\left \{ \left \{ c_{i,t},l_{i,t},b_{i,t}\right \} _{i},B_{t},R_{t}\right \} _{t} $ and $\left \{ \tau _{t},T_{t}\right
+\} _{t}$ be a competitive equilibrium with bounded net assets. For any bounded sequences $%
+\left \{ \hat{b}_{i,t}\right \} _{i,t\geq -1}$ that satisfy
+\begin{equation*}
+\hat{b}_{i,t}-\hat{b}_{1,t}=\tilde{b}_{i,t}\equiv b_{i,t}	-b_{1,t} \ \text{\rm  for all }t\geq -1,i\geq 2,
+\end{equation*}%
+there exist  sequences $\left \{ \hat{T}_{t}\right \} _{t}$ and $%
+\left \{ \hat{B}_{t}\right \} _{t\geq -1}$ that satisfy (\ref{feasibility
+bonds}) and that make $\left \{ \left \{ c_{i,t},l_{i,t},\hat{b}%
+_{i,t}\right \} _{i},\hat{B}_{t},R_{t}\right \} _{t}$ and $\left \{
+\tau _{t},\hat{T}_{t}\right \} _{t}$ constitute a competitive
+equilibrium given $\left( \left \{ \hat{b}_{i,-1}\right \} _{i},\hat{B}%
+_{-1}\right) $.
+\end{corollary}
+We relegate the proof to appendix \ref{appndx: corr assets dont matter}. Note that the result in Corollary \ref{corr assets dont matter} applies to \emph{any} competitive equilibrim and not just the optimal one as in Theorem \ref{thm relative assets}. In the spirit of \citet{Barro1974}, we interpret Theorem \ref{thm relative assets} and Corollary \ref{corr assets dont matter} as  asserting a type of  Ricardian equivalence. Similar results  hold in more general environments. For example, we could allow agents to trade all conceivable  Arrow securities and still show that  equilibrium allocations depend only on agents' net assets positions. Later in section  \ref{Sec: more general economies} we will use the insights from Corollary \ref{corr assets dont matter} to formulate the optimal policy problem concisely.}
 
 
 \section{Quasilinear preferences}\label{Sec: quasilinear}
@@ -915,28 +832,19 @@ Subtract the budget constraint of the unproductive agent \eqref{budget consts su
 and get 
  \begin{equation} \label{implementability constraint ql} c_{1,t} -c_{2,t} + b_{1,t}-b_{2,t} = l_{1,t}^{1+\gamma} + \frac{P(s_t)}{\beta} [b_{1,t-1}-b_{2,t-1}], \quad t \geq 0.
  \end{equation}
- 
- Equation \eqref{implementability constraint ql} presents a recursive version of the implementability constraints appropriate for the quasilinear setting.
- As promised in subsection \ref{sec:Ricardian101},
- we use the freedom offered us by the Ricardian theorem \ref{theorem: main} and corollary \ref{corr: B does not matter}
-of  section  to  set the assets $b_{2,t}$ of the unproductive agent  always to
-zero. This makes the asset market clearing condition imply  that   $nb_{1,t} = -B_t$ and
-%\footnote{We will adhere to this normalization throughout this section}. 
-also implies that  transfers  $T_t=c_{2,t}$. Next we make
+ {\color{blue}
+ Equation \eqref{implementability constraint ql} presents a recursive version of the implementability constraints appropriate for the quasilinear setting. Note from equation \eqref{implementability constraint ql} that only relative assets, $b_{1,t}-b_{2,t}$ matter, so we adopt a normalization where we set the assets $b_{2,t}$ of the unproductive agent  always to
+zero. This makes the asset market clearing condition imply  that   $nb_{1,t} = -B_t$ and also implies that  transfers  $T_t=c_{2,t}$. }Next we make
 \begin{assumption}
 \label{ass non negativity}
 $c_{2,t}\geq0$
 \end{assumption}
 
- 
-
- Requiring that $c_{2t} \geq 0$ is  an easy way to make transfers too   costly
+Requiring that $c_{2t} \geq 0$ is  an easy way to make transfers too   costly
 to a Ramsey planner who cares too little about the unproductive agent.\footnote{In the absence of the constraint $c_{2,t}\geq0$,
 with quasi-linear preferences the Ramsey plan sets constant a constant tax rate and the constant asset holdings for all $t\geq0$.} 
 
-
-\noindent Let $(\omega,n) \in [0,1] \times [0,1]$ be the Pareto weight and mass assigned to the  productive type $1$ agent. Let $V(B\_)$ 
-be the value of the Ramsey plan for initial government assets $B\_$.
+\noindent Let $(\omega,n) \in [0,1] \times [0,1]$ be the Pareto weight and mass assigned to the  productive type $1$ agent and $V(B\_)$ be the value of the Ramsey plan for initial government assets $B\_$.
 It satisfies the Bellman equation  
 
 \begin{equation}
@@ -956,11 +864,12 @@ nc_1(s)+(1-n)c_2(s)+g(s)\leq\theta l_1(s)
 c_2(s)\geq0
 \end{equation}
 \begin{equation}
-  \label{ndl}
+  \label{ndl1}
 \underline{B}\leq B(s)\leq \overline{B}
 \end{equation}
 \end{subequations}   
-
+{\color{blue}
+Given our normalization $b_{2,t}=0$, bounds on planner's asset positions $B_t$ are equivalently restrictions on net assets positions. We assume that households face asset limits that are looser than those implied by \eqref{ndl1}. }
 
 We will  characterize of a Ramsey plan in two steps. We begin by studying a case  in which the Pareto weight attached to 
 the productive agent is sufficiently high that the Ramsey planner chooses to set transfers to zero always.
@@ -1305,7 +1214,7 @@ _{t-1}p_tU_{c,t}^{i}}\tilde{b}_{i,t-1}\ \text{\rm for \ }i>1 \ \text{\rm and \ }
 so that  the planner's
 maximization problem involves only on the $I-1$ variables $\tilde{b}_{i,t-1}.$
 %The reduction of  the dimensionality from \ $I$ to $I-1$ is
-% a consequence of corollary \ref{corr: B does not matter} of theorem \ref{theorem: main}.
+% a consequence of corollary \ref{corr: B does not matter} of corollary \ref{corr assets dont matter}.
 
 
 Let $\bm{x}= \left( U_{c}^{1}\tilde{b}_{1},...,U_{c}^{I-1}\tilde{b}_{I-1}\right)$, $\bm{\rho }=\left( U_{c}^{1}/U_{c}^{I},...,U_{c}^{I-1}/U_{c}^{I}\right) $, and denote an allocation $a=\{c_i,l_i\}^{I}_{i=1}.$
@@ -1388,7 +1297,11 @@ _{I,0}U_{c}^{I,0}}\text{ for all } i<I
 \end{equation}
 \end{subequations}
 A tell-tale sign of the time inconsistency of the optimal  plan is that    (\ref{eq:BM2_Bonds_cons}) is absent from the
-time $0$ problem.
+time $0$ problem. {\color{blue} As asserted in Corollary \ref{corr assets dont matter}, with natural debt limits, public debt and transfers are 
+not  pinned down separately within a competitive equilibrium. To acknowledge this situation,
+for the rest of the paper  we assume that productivities are ordered as 
+$\theta_{1,t}\geq\theta_{2,t}\ldots\geq \theta_{I,t}$ and then set $b_{I,t}=0$. Doing so 
+allows us to interpret $-B_t=\sum_{i<I}n_ib_{i,t}$ as ``public debt''.  Limits on $\sum_{i<I}n_ib_{i,t}$ now  become  counterparts  to what would be  debt limits in a representative agent economy.} 
 
 
 
@@ -1533,7 +1446,7 @@ In both cases, the tax rate $\tau(s)=\tau^{SS}$ is independent of $s$.
 
 
 
-Normalizing the assets of the unproductive agent to zero %\footnote{Which theorem \ref{theorem: main} again  tells us amounts only to  a normalization.}
+Normalizing the assets of the unproductive agent to zero %\footnote{Which corollary \ref{corr assets dont matter} again  tells us amounts only to  a normalization.}
 let us  interpret $B$ as the government's assets.
 %\textbf{Anmol XXXXX: please check the previous important sentence which I edited
 %and may have degraded.}
@@ -1577,7 +1490,7 @@ all  distortions from fluctuations in transfers are eliminated.\footnote{This co
 % a similar flavor to "back-loading"\ results  of
 % \cite{Ray2002} and \cite{Albanesi2012} that reflect the  optimality of structuring policies intertemporally eventually to disarm  distortions.
 
-% Theorem \ref{theorem: main} provides  a useful way to compare our results with
+% corollary \ref{corr assets dont matter} provides  a useful way to compare our results with
 %  representative agent economies. By that theorem, we can normalize $%
 % b_{2,t}=0 $ for all $t$, in which case the negative of net assets of high-skilled agents can be
 % interpreted as assets of the government. Because $x^{SS}>0,$
@@ -2001,7 +1914,7 @@ constraints by extending Definition \ref{Def: optimal CE affine}.
 
 %The role of the initial distribution of assets  is
 %unaffected by the introduction of the ad-hoc debt limits and  so is Corollary  \ref{corr: B does not matter}.
-The introduction of the ad-hoc debt limits leaves unaltered the conclusions of  Corollary  \ref{corr: B does not matter} and
+The introduction of the ad-hoc debt limits leaves unaltered the conclusions of  Theorem \ref{thm relative assets} and
 the role of the initial distribution of assets across agents.
  The next theorem asserts
 that ad-hoc borrowing limits do not limit a government's ability to respond to
@@ -2026,8 +1939,7 @@ allocation in an economy with exogenous borrowing constraints $\left(
 Let $\left\{ c_{i,t},l_{i,t},b_{i,t}\right\} _{i,t}$
 be a competitive equilibrium allocation without exogenous borrowing
 constraints. Let $\Delta _{t}\equiv \max_{i}\left\{ \underline{b}%
-_{i}-b_{i,t}\right\} .$ Define $\hat{b}_{i,t}\equiv b_{i,t}+\Delta _{t}$ \ for all $t\geq 0$ and $\hat{b}_{i,-1}=b_{-1}.$ By Theorem %
-\ref{theorem: main}, $\left\{ c_{i,t},l_{i,t},\hat{b}%
+_{i}-b_{i,t}\right\} .$ Define $\hat{b}_{i,t}\equiv b_{i,t}+\Delta _{t}$ \ for all $t\geq 0$ and $\hat{b}_{i,-1}=b_{-1}.$ By Corollary \ref{corr assets dont matter}, $\left\{ c_{i,t},l_{i,t},\hat{b}%
 _{i,t}\right\} _{i,t}$ is also a competitive equilibrium allocation without
 exogenous borrowing constraints. Moreover, by construction $\hat{b}_{i,t}-%
 \underline{b}_{i}=b_{i,t}+\Delta _{t}-\underline{b}_{i}\geq 0$.
@@ -2061,7 +1973,7 @@ redistribution, this can improve welfare. %In the next several paragraphs, we wi
 %intuition.
 
 We next construct an example in which the government can achieve
-higher welfare in the economy with ad-hoc borrowing limits. For this example, we impose $g_t=0$, $P(s_t)=1$, $\theta_{i,t}=\theta_i$ and work with $I=2$.  Further the utility function over consumption and labor supply $U(c,l)$ is separable in the arguments and satisfies the Inada conditions. Slightly different from section \ref{Sec: environment}, we write the budget constraints of the agents in with prices $q_t$ rather than returns $R_{t-1}$, As will be clear, this modification turns out to be convenient for this simple example. Thus the budget constraints \ref{agent bc affine} are modified to,
+higher welfare in the economy with ad-hoc borrowing limits. For this example, we impose $g_t=0$, $P(s_t)=1$, $\theta_{i,t}=\theta_i$ and work with $I=2$.  Further the utility function over consumption and labor supply $U(c,l)$ is separable in the arguments and satisfies the Inada conditions. Slightly different from section \ref{Sec: environment}, we write the budget constraints of the agents in with prices $q_t$ rather than returns $ R_{t}$, As will be clear, this modification turns out to be convenient for this simple example. Thus the budget constraints \ref{agent bc affine} are modified to,
 
 \begin{equation}
 \label{agent bc modified}
@@ -2113,27 +2025,70 @@ We will consider the candidate allocation where $c_{i,t} = c^{fb}_i$, $l_{i,t} =
 This will strictly improve upon the planners problem without exogenous borrowing constraints. The reason is that without borrowing constraints $q_t=\beta$ and consequently the first best allocation  can be achieved only if $b_{2,-1}-b_{1,-1} = \tilde b_2^{fb}$.
 
 
+
 \newpage
 
-\subsection{Proof of Theorem \ref{theorem: main}}
-\label{appndx: thm RE}
+\subsection{Proof of Theorem \protect\ref{thm relative assets}}
+\label {appndx: thm relative assets}
+\begin{proof}
+
+Let $W\left(\left \{b_{i,-1}\right\}_i,B_{-1}\right)$ be the welfare associated with initial assets $\{b_{i,-1}\}_i,B_{-1}$. Pick $\left(B_{-1}',\left\{ b_{i,-1}'\right\} _{i}\right)$ and  $\left(B_{-1}'', \left\{ b_{i,-1}''\right\} _{i}\right)$ such that for all $i$ we have,
+
+\begin{equation}
+\label{same relative asssets}
+b'_{i,-1}-b'_{1,-1}=b''_{i}-b''_{1,-1}.
+\end{equation}
+
+
+WLOG suppose $W\left(\left\{b'_{i,-1}\right\}_i,B'_{-1}\right)>W\left(\left \{b''_{i,-1}\right\}_i,B''_{-1}\right)$. Let $\{\tau^*_t,T^*_t\}_t$ be the optimal policy and $\{c^*_{i,t},l^*_{i,t},b^*_{i,t}\}_{i,t},\{B^*_t\}_t,\{R^*_t\}$ be the optimal competitive allocation that attains  $W\left(\left\{b'_{i,-1}\right\}_i,B'_{-1}\right)$. 
+
+\noindent Consider the following policy $\hat{T}_0=T^*_0+R^*_0\left(b'_{1,-1}-b''_{1,-1}\right)$ and $\hat{T}_t=T^*_t \quad \forall t\geq 1$ and $\hat{\tau}_t=\tau^*_t$. We show that  $\{c^*_{i,t},l^*_{i,t},b^*_{i,t}\}_{i,t},\{B^*_t\}_t,\{R^*_t\}$  is a feasible competitive allocation for initial conditions $\left(\left\{b''_{i,-1}\right\}_i,B''_{-1}\right)$. For this to be true we only need to verify the budget constraints of the agents at time $t=0$. For any $i$, 
+
+\[c^*_{i,0}+b^*_{i,0}=(1-\tau^*_0)\theta_{i,0}l^*_{i,0}+
+T^*_0+R^*_0 b'_{i,-1},\]
+follows from the fact that $(c^*_{i,0},l^*_{i,0},b^*_{i,0})$, $R^*_0$ are a part of a competitve equilibria given $\tau^*_0$ and $T^*_0$. Substituting the definition of $\hat{T}_0$, we get 
+
+\[c^*_{i,0}+b^*_{i,0}=(1-\tau^*_0)\theta_{i,0}l^*_{i,0}+
+\hat{T}_0-R^*_0\left(b'_{1,-1}-b''_{1,-1}\right)+R^*_0 b'_{i,-1}\]
+
+or 
+
+\[c^*_{i,0}+b^*_{i,0}=(1-\tau^*_0)\theta_{i,0}l^*_{i,0}+
+\hat T_0 + R^*_0\left(b'_{i,-1}-b'_{1,-1}+b''_{1,-1}\right)\]
+
+Condition \eqref{same relative asssets} implies,
+
+\[c^*_{i,0}+b^*_{i,0}=(1-\tau^*_0)\theta_{i,0}l^*_{i,0}+
+\hat T_0 + R^*_0b''_{i,-1}\]
+
+Since the budget constraints at $t=0$ are satisfied for all agents the allocation $\{c^*_{i,t},l^*_{i,t},b^*_{i,t}\}_{i,t},\{B^*_t\}_t,\{R^*_t\}$  is a feasible competitive equilibrium allocation for initial conditions $\left(\left\{b''_{i,-1}\right\}_i,B''_{-1}\right)$ given the alternative policy $\{\hat \tau_ t,\hat{T}_t\}$\footnote{The only other place $\hat T_0$ appears is the government's budget constraint. But since we have verified the agents' budget constraints and the $\{c^*_{i,0},l^*_{i,0}\}$ satisfy the resource constraint, Walras law implies the government’s budget constraint is also satisfied} and  
+\[W\left(\left \{b'_{i,-1}\right\}_i,B'_{-1}\right)=\mathbb{E}_{0}\sum_{i=1}^{I}\omega_{i}
+\sum_{t=0}^{\infty}\beta^{t}U_{t}^{i}\left(c^*_{i,t},l^*_{i,t}\right)>W\left(\left \{b''_{i,-1}\right\}_i,B''_{-1}\right)\]
+
+Thus we have a contradiction that $W\left(\left \{b''_{i,-1}\right\}_i,B''_{-1}\right)$ is the maximum welfare.
+
+
+\end{proof}
+
+\subsection{Proof of Corollary \ref{corr assets dont matter}}
+\label{appndx: corr assets dont matter}
  \begin{proof}
  Let
  \begin{equation}
  \hat{T}_{t}=T_{t} + \left(\hat{b}_{1,t} - b_{1,t}\right) -
- R_{t-1}\left(\hat{b}_{1,t-1} - b_{1,t-1}\right) \text{ for
+ R_{t}\left(\hat{b}_{1,t-1} - b_{1,t-1}\right) \text{ for
  all }t\geq 0.  \label{construct That}
  \end{equation}%
  Given  a tax policy $\left \{ \tau _{t},\hat{T}_{t}\right \} _{t},$ the
  allocation $\left \{ c_{i,t},l_{i,t},\hat{b}_{i,t}\right \}_{i,t}$ is a feasible choice for consumer $i$ since it satisfies%
  \begin{eqnarray*}
- c_{i,t}&=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+R_{t-1}b_{i,t-1}-b_{i,t}+T_{t}\\
- &=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+R_{t-1}\left( b_{i,t-1}-b_{1,t-1}\right) -\left(
- b_{i,t}-b_{1,t}\right) +T_{t}+R_{t-1}b_{1,t-1}-b_{1,t} \\
- &=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+R_{t-1}\left( \hat{b}_{i,t-1}-\hat{b}_{1,t-1}\right) -\left( \hat{b%
- }_{i,t}-\hat{b}_{1,t}\right) +T_{t}+R_{t-1}b_{1,t-1}-b_{1,t} \\
+ c_{i,t}&=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+ R_{t}b_{i,t-1}-b_{i,t}+T_{t}\\
+ &=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+ R_{t}\left( b_{i,t-1}-b_{1,t-1}\right) -\left(
+ b_{i,t}-b_{1,t}\right) +T_{t}+ R_{t}b_{1,t-1}-b_{1,t} \\
+ &=&\left( 1-\tau _{t}\right) \theta _{i,t}l_{i,t}+ R_{t}\left( \hat{b}_{i,t-1}-\hat{b}_{1,t-1}\right) -\left( \hat{b%
+ }_{i,t}-\hat{b}_{1,t}\right) +T_{t}+ R_{t}b_{1,t-1}-b_{1,t} \\
   &=&\left( 1-\tau _{t}\right) \theta
- _{i,t}l_{i,t}+R_{t-1}\hat{b}_{i,t-1}-\hat{b}_{i,t}+\hat{T}_{t}.
+ _{i,t}l_{i,t}+ R_{t}\hat{b}_{i,t-1}-\hat{b}_{i,t}+\hat{T}_{t}.
  \end{eqnarray*}%
  Suppose that $\left \{ c_{i,t},l_{i,t},\hat{b}_{i,t}\right \}_{i,t}$ is not the optimal choice for consumer $i$, in the sense that there exists some
  other sequence $\left \{ \hat{c}_{i,t},\hat{l}_{i,t},\hat{b}_{i,t}\right \}_{t}$ that gives strictly higher utility.  Then the choice $%
@@ -2145,7 +2100,6 @@ This will strictly improve upon the planners problem without exogenous borrowing
  therefore is an equilibrium.
  \end{proof}
 \newpage
-
 \subsection{Proof of Theorem \protect\ref{thm: rep agent general theorem}}
 
 
